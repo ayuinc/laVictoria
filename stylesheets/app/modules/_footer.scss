@@ -1,0 +1,60 @@
+.footer {
+	padding: 56px 0;
+	background: $gray-lighter;
+	.container {
+		border-top: 1px solid $gray-light;
+		padding-top: 14px;
+		nav {
+			a {
+				i {
+					font-size: 21px;
+					// color: $brand-danger;
+				}
+				&:first-child {
+					i {
+						font-size: 24px;
+					}
+				}
+				&:nth-child(n+2) {
+					margin-left: 7px;
+				}
+			}
+		}
+		ul.footer-nav {
+			@include list-unstyled;
+			@include clearfix;
+			> li {
+				text-align: right;
+				float: right;
+				a {
+					text-transform: uppercase;
+					@include medium;
+					color: $gray-darker;
+					&.light {
+						@include light;
+					}
+					&.dropdown-toggle {
+						&:after {
+							content: " v";
+							text-transform: lowercase;
+							font-size: 12px;
+							color: $gray;
+						}
+					}
+				}
+				&:nth-child(n-2) {
+					margin-left: 14px;
+				}
+				.dropdown {
+					@include list-unstyled;
+					&.language-dropdown {
+						li {
+							margin: 0;
+							padding-right: 10px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

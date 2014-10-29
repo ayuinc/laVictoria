@@ -1,0 +1,17 @@
+@media #{$sm-up} {
+	.container-xs {
+		width: $container-xs;
+	}
+	.container-sm {
+		width: $container-sm;
+	}	
+}
+
+@media #{$xs-only} {
+	.container-xs {
+		width: 100%;
+	}
+	.container-sm {
+		width: 100%;
+	}		
+}
