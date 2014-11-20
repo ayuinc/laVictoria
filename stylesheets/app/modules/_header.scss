@@ -47,6 +47,10 @@
 					}
 				}
 				&.header-off {
+					.logo {
+						background: url('../assets/img/logo_lavictorialabs-' + '#{nth($brand-colors-sufix-list, $i)}' + '-black.png') no-repeat center center;
+						background-size: 137px 76px;
+					}
 					nav {
 						a {
 							color: $gray-dark;
