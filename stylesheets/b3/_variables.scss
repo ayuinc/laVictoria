@@ -43,14 +43,15 @@ $brand-success:         #00a75c !default;
 $brand-info:            #47AAE0 !default;
 $brand-warning:         #ea5e31 !default;
 $brand-danger:          #ec008b !default;
+$brand-home:          	$brand-primary !default;
 
 $brand-inverse: 				#081A26 !default;
 
 $grayscale-list: $gray-darker, $gray-dark, $gray, $gray-light, $gray-lighter, #fff;
-$brand-colors-list: $brand-primary, $brand-success, $brand-info, $brand-warning, $brand-danger;
+$brand-colors-list: $brand-primary, $brand-success, $brand-info, $brand-warning, $brand-danger, $brand-home;
 
 $grayscale-sufix-list: 'gray-darker', 'gray-dark', 'gray', 'gray-light', 'gray-lighter', 'white';
-$brand-colors-sufix-list: 'primary', 'success', 'info', 'warning', 'danger';
+$brand-colors-sufix-list: 'primary', 'success', 'info', 'warning', 'danger', 'home';
 
 
 //== Scaffolding

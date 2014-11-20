@@ -1,7 +1,7 @@
 .header {
 	min-height: 70px;
 	// background: rgba($gray-darker, 0.7);
-	position: fixed;
+	position: absolute;
 	width: 100%;
 	z-index: 1000;
 	top: 0;
@@ -25,8 +25,8 @@
 				margin-left: 14px;
 			}
 			&:hover {
-				text-decoration: none;
-			}
+				text-decoration: underline !important;
+			}			
 		}
 	}
 }
@@ -40,26 +40,15 @@
 					background: url('../assets/img/logo_lavictorialabs-' + '#{nth($brand-colors-sufix-list, $i)}' + '.png') no-repeat center center;
 					background-size: 137px 76px;
 				}
+				nav {
+					a {
+						&.active {
+							color: #{nth($brand-colors-list, $i)};
+							@include medium;
+						}
+					}
+				}
 			}
 		}
-	}
-}
-
-.headroom {
-	@include transition(all 0.2s ease-in-out);
-	&.headroom--not-top {
-		// background: rgba(#fff, 0.7);
-		// nav {
-		// 	a {
-		// 		color: $gray-dark !important;
-		// 	}
-		// }
-	}
-	&.headroom--top {}
-	&.headroom--pinned {
-		@include transform(translateY(0%));
-	}
-	&.headroom--unpinned {
-		@include transform(translateY(-100%));	
 	}
 }

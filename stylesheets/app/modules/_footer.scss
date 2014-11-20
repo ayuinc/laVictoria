@@ -26,6 +26,7 @@
 			> li {
 				text-align: right;
 				float: right;
+				position: relative;
 				a {
 					text-transform: uppercase;
 					@include medium;
@@ -48,6 +49,8 @@
 				.dropdown {
 					@include list-unstyled;
 					&.language-dropdown {
+						// position: absolute;
+						// top: -100%;
 						li {
 							margin: 0;
 							padding-right: 10px;

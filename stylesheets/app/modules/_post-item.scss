@@ -2,6 +2,13 @@
 	position: relative;
 	a {
 		color: $gray-darker;
+		&:hover {
+			.pic {
+				.overlay {
+					display: block;
+				}
+			}
+		}
 	}
 	.pic {
 		position: relative;
@@ -14,6 +21,22 @@
 			position: absolute;
 			top: $container-fluid;
 			left: $container-fluid;
+		}
+		.overlay {
+			display: none;
+			position: absolute;
+			width: 100%;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			z-index: 30;
+			&.overlay-blog {
+				background: rgba($brand-warning, 0.3);
+			}
+			&.overlay-work {
+				background: rgba($brand-success, 0.3);
+			}
 		}
 	}
 	.body {

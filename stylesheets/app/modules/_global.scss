@@ -20,8 +20,11 @@ body {
 .site-content {
 	position: relative;
 	z-index: 900;
-	margin-top: 100%;
+	margin-top: 56%;
 	background: $gray-lighter;
+	&.no-video {
+		margin-top: 0;
+	}
 }
 
 a.more,
@@ -41,6 +44,20 @@ button.more {
 	zoom: 1;
 	top: 0;
 	.overlay {
+		height: 100%;
+		@include display(flex);
+		@include justify-content(center);
+		@include flex-direction(column);
+		@include align-items(center);
+	}
+}
+
+.video-wrapper-team {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	.overlay {
+		@include position(absolute, 0 0 0 0);
 		height: 100%;
 		@include display(flex);
 		@include justify-content(center);
@@ -82,6 +99,8 @@ button.more {
 }
 
 .site-wrapper {
+
+	// GLOBAL COLOR CONTROL
 	@for $i from 1 through length($brand-colors-list) {
 		&.global-color-#{nth($brand-colors-sufix-list, $i)} {
 			.text-global-color {
@@ -104,6 +123,96 @@ button.more {
 			}
 			.bg-global-color-op {
 				background: #{rgba(nth($brand-colors-list, $i), 0.7)} !important; 
+			}
+			// COLORS FOR HEADROOM CLASSES
+			.header {
+				&.headroom {
+					&.headroom--not-top {
+						nav {
+							a {
+								color: $gray-dark !important;
+								&:hover {
+									color: #{darken(nth($brand-colors-list, $i), 14%)} !important;
+								}
+							}
+						}
+					}
+				}
+			}
+			// COLORS FOR WORK POSTS
+			.text-color-work {
+				color: $brand-success !important;
+				a {
+					color: $brand-success !important;
+					&:hover {
+						color: darken($brand-success, 14%) !important;
+					}
+				}
+			}
+			.bg-color-work {
+				background: $brand-success !important;
+			}
+			// COLORS FOR US POSTS
+			.text-color-us {
+				color: $brand-info !important;
+				a {
+					color: $brand-info !important;
+					&:hover {
+						color: darken($brand-info, 14%) !important;
+					}
+				}
+			}
+			.bg-color-us {
+				background: $brand-info !important;
+			}
+		}
+	}
+}
+
+// SCROLL DETECT
+.scroll-detect {
+	.header {
+		@include transition(all 0.2s ease-in-out);
+		// position: fixed;
+	}
+	&.scroll-detect--not-top {
+		.header {
+		}
+	}
+	&.scroll-detect--top {
+		.header	{
+			position: absolute;
+			
+		}
+	}
+	&.scroll-detect--down {
+		.header {
+			// nav {
+			// 	a {
+			// 		color: $gray-dark !important;
+			// 		&:hover {
+			// 			text-decoration: underline !important;
+			// 		}
+			// 	}
+			// }
+			// opacity: 0;
+			// display: none;
+			// position: fixed;
+			@include transform(translateY(-100%));
+		}
+	}
+	&.scroll-detect--up {
+		.header {
+			position: fixed;
+			@include transform(translateY(0%));
+			background: rgba(#fff, 0.7);
+			nav {
+				a {
+					color: $gray-dark !important;
+					&:hover {
+						text-decoration: underline !important;
+					}
+				}
 			}
 		}
 	}
