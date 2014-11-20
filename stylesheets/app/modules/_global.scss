@@ -170,50 +170,50 @@ button.more {
 }
 
 // SCROLL DETECT
-.scroll-detect {
-	.header {
-		@include transition(all 0.2s ease-in-out);
-		// position: fixed;
-	}
-	&.scroll-detect--not-top {
-		.header {
-		}
-	}
-	&.scroll-detect--top {
-		.header	{
-			position: absolute;
+// .scroll-detect {
+// 	.header {
+// 		@include transition(all 0.2s ease-in-out);
+// 		// position: fixed;
+// 	}
+// 	&.scroll-detect--not-top {
+// 		.header {
+// 		}
+// 	}
+// 	&.scroll-detect--top {
+// 		.header	{
+// 			position: absolute;
 			
-		}
-	}
-	&.scroll-detect--down {
-		.header {
-			// nav {
-			// 	a {
-			// 		color: $gray-dark !important;
-			// 		&:hover {
-			// 			text-decoration: underline !important;
-			// 		}
-			// 	}
-			// }
-			// opacity: 0;
-			// display: none;
-			// position: fixed;
-			@include transform(translateY(-100%));
-		}
-	}
-	&.scroll-detect--up {
-		.header {
-			position: fixed;
-			@include transform(translateY(0%));
-			background: rgba(#fff, 0.7);
-			nav {
-				a {
-					color: $gray-dark !important;
-					&:hover {
-						text-decoration: underline !important;
-					}
-				}
-			}
-		}
-	}
-}
+// 		}
+// 	}
+// 	&.scroll-detect--down {
+// 		.header {
+// 			// nav {
+// 			// 	a {
+// 			// 		color: $gray-dark !important;
+// 			// 		&:hover {
+// 			// 			text-decoration: underline !important;
+// 			// 		}
+// 			// 	}
+// 			// }
+// 			// opacity: 0;
+// 			// display: none;
+// 			// position: fixed;
+// 			@include transform(translateY(-100%));
+// 		}
+// 	}
+// 	&.scroll-detect--up {
+// 		.header {
+// 			position: fixed;
+// 			@include transform(translateY(0%));
+// 			background: rgba(#fff, 0.7);
+// 			nav {
+// 				a {
+// 					color: $gray-dark !important;
+// 					&:hover {
+// 						text-decoration: underline !important;
+// 					}
+// 				}
+// 			}
+// 		}
+// 	}
+// }

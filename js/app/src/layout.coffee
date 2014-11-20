@@ -68,7 +68,7 @@ $(document).ready ->
 		# callback when below offset `this` is headroom object
 		onNotTop: ->
 
-	$('.site-wrapper').headroom($scrollDetectOps)
+	# $('.site-wrapper').headroom($scrollDetectOps)
 
 	return
 

@@ -44,7 +44,6 @@
       },
       onNotTop: function() {}
     };
-    $('.site-wrapper').headroom($scrollDetectOps);
   });
 
   reset = 0;

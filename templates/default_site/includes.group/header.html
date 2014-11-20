@@ -7,16 +7,7 @@
  \ \_\ \_\  \/\_____\  \ \_____\     \ \_\  \ \_\\"\_\  \ \_____\ 
   \/_/\/_/   \/_____/   \/_____/      \/_/   \/_/ \/_/   \/_____/ 
 ================================================================== -->
-  
-  <!--[if IE 8]> <html class="no-js lt-ie9" lang="en" > <![endif]-->
-  <!--[if gt IE 8]><!--> <html class="no-js" lang="es" > <!--<![endif]-->
   <head>
-    <!--[if lt IE 9]>
-    <script src="{site_url}/js/ie9/html5shiv.js"></script>
-    <script src="{site_url}/js/ie9/nwmatcher-1.2.5-min.js"></script>
-    <script src="{site_url}/js/ie9/respond.min.js"></script>
-    <script src="{site_url}/js/ie9/selectivizr-min.js"></script>
-    <![endif]-->
     <meta charset="utf-8">
 
     <title>La Victoria</title>
@@ -66,10 +57,36 @@
     <!-- APP STYLES -->
     <link rel="stylesheet" href="{site_url}stylesheets/main.css">
     <link rel="stylesheet" href="{site_url}stylesheets/ebm.css">
-
+    
+    {if segment_1=='aboutus'}
     <!-- VIDEO JS -->
     <link href="//vjs.zencdn.net/4.10/video-js.css" rel="stylesheet">
     <script src="//vjs.zencdn.net/4.10/video.js"></script>
+    {/if}
   </head>
   <body>
-    <div class="site-wrapper global-color-home">
+
+    {if segment_1=='projects'}
+      <div class="site-wrapper global-color-success">
+    {if:elseif segment_1=='contact'}
+      <div class="site-wrapper global-color-home">
+    {if:elseif segment_1=='blog'}
+      <div class="site-wrapper global-color-warning">
+    {if:elseif segment_1=='aboutus'}
+      <div class="site-wrapper global-color-info">
+    {if:else}
+      <div class="site-wrapper global-color-home">
+    {/if}
+
+
+
+
+
+
+
+
+
+
+
+
+

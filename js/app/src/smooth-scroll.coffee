@@ -25,44 +25,39 @@ $(document).ready ->
 		}
 		return
 
-  # OCULTAR NAVEGACION CUANDO USUARIO EN FOOTER
-	# getDocHeight = ->
- #    D = document
- #    return Math.max(
- #      D.body.scrollHeight, D.documentElement.scrollHeight,
- #      D.body.offsetHeight, D.documentElement.offsetHeight,
- #      D.body.clientHeight, D.documentElement.clientHeight)
-
-	# $(window).scroll ->
-	#   if($(window).scrollTop() > ($(window).height() / 2))
- #      $('.site-wrapper').addClass 'scrolling'
- #      # $('.on-scroll').addClass 'on-scroll-down'
- #    else
- #      # $('.on-scroll').removeClass 'on-scroll-up'
- #    	$('.site-wrapper').removeClass 'scrolling'
-	# 		return		
-
 	return
 
-$navSectionRef = $('.smooth-scroll a')
+$headerScrollRef = $('.header-scroll a')
+$header = $('.header')
+$headerOff = $('#header-off')
+
+
 onScroll = (e) ->	
 	$scrollPos = $(document).scrollTop()
-	$navSectionRef.each ->
-    $currLink = $(this)
-    $currLinkParent = $currLink.parent()
-    $refElement = $($currLink.attr('href'))
-    if ($refElement.position().top <= $scrollPos && $refElement.position().top + $refElement.height() > $scrollPos)
-      $currLink.addClass 'active'
-		  if $refElement.selector == '#video-wrapper-team'
-		  	setTimeout(
-		  		->
-				  	player = videojs('example_video_1')
-				  	player.play()
-		  		, 3000
-		  	)
-    else
-      $currLink.removeClass 'active'
-    return
+	$headerScrollRef.each ->
+		$currLink = $(this)
+		$currLinkParent = $currLink.parent()
+		$refElement = $($currLink.attr('href'))
+		$selector = $refElement.selector
+		$top = $refElement.position().top
+		$refCalc = ($top <= $scrollPos && $top + $refElement.height() > $scrollPos)
+		if $refCalc
+			$currLink.addClass 'active'
+			if $selector is '#video-wrapper-team'
+				setTimeout(
+					->
+						player = videojs('example_video_1')
+						player.play()
+					3000
+					)
+		else
+			$currLink.removeClass 'active'
+		return
+	if $headerOff.hasClass 'active'
+		$header.removeClass 'header-off'
+	else
+		console.log 'should header-off'
+		$header.addClass 'header-off'
 	return
 
 

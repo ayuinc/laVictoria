@@ -1,32 +1,29 @@
 .header {
 	min-height: 70px;
-	// background: rgba($gray-darker, 0.7);
-	position: absolute;
+	position: fixed;
 	width: 100%;
 	z-index: 1000;
 	top: 0;
+	@include transition(all 0.2s ease-in-out);
 	.logo {
 		display: block;
 		width: 137px;
 		height: 76px;
-		// img {
-		// 	width: 156px;
-		// 	width: rem(156);
-		// 	height: auto;
-		// }
 	}
 	nav {
 		text-align: right;
-		a {
-			text-transform: uppercase;
-			color: white;
-			@include book;
+		span {
+			a {
+				text-transform: uppercase;
+				color: white;
+				@include book;
+				&:hover {
+					text-decoration: underline !important;
+				}			
+			}
 			&:nth-child(n+2) {
 				margin-left: 14px;
 			}
-			&:hover {
-				text-decoration: underline !important;
-			}			
 		}
 	}
 }
@@ -45,10 +42,33 @@
 						&.active {
 							color: #{nth($brand-colors-list, $i)};
 							@include medium;
+							text-decoration: underline;
+						}
+					}
+				}
+				&.header-off {
+					nav {
+						a {
+							color: $gray-dark;
+							&:hover {
+								text-decoration: underline;
+							}
+							&.active {
+								color: #{nth($brand-colors-list, $i)};
+								@include medium;
+								text-decoration: underline;
+							}
 						}
 					}
 				}
 			}
 		}
+	}
+}
+
+.header {
+	&.header-off {
+		background: rgba(#fff, 0.9);
+		@include transition(all 0.2s ease-in-out);
 	}
 }

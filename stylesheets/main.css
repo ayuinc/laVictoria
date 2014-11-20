@@ -1,6 +1,6 @@
 /*
 
-  Ayu Consulting Frontend Boilerplate - @MadeByGus
+   Ayu Consulting Frontend Boilerplate - @MadeByGus
   ultima actualizacion: 26 de Septiembre 2014
   Author: @MadeByGus - G. Andres Ibarra yo@soygus.com
   Desde la consola navega hasta el directorio "stylesheets" y ejecuta: 
@@ -3267,53 +3267,31 @@ button.more {
 .site-wrapper.global-color-home .bg-color-us {
   background: #47AAE0 !important; }
 
-.scroll-detect .header {
+.header {
+  min-height: 70px;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  top: 0;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out; }
-.scroll-detect.scroll-detect--top .header {
-  position: absolute; }
-.scroll-detect.scroll-detect--down .header {
-  -webkit-transform: translateY(-100%);
-  -moz-transform: translateY(-100%);
-  -ms-transform: translateY(-100%);
-  -o-transform: translateY(-100%);
-  transform: translateY(-100%); }
-.scroll-detect.scroll-detect--up .header {
-  position: fixed;
-  -webkit-transform: translateY(0%);
-  -moz-transform: translateY(0%);
-  -ms-transform: translateY(0%);
-  -o-transform: translateY(0%);
-  transform: translateY(0%);
-  background: rgba(255, 255, 255, 0.7); }
-  .scroll-detect.scroll-detect--up .header nav a {
-    color: #454848 !important; }
-    .scroll-detect.scroll-detect--up .header nav a:hover {
-      text-decoration: underline !important; }
-
-.header {
-  min-height: 70px;
-  position: absolute;
-  width: 100%;
-  z-index: 1000;
-  top: 0; }
   .header .logo {
     display: block;
     width: 137px;
     height: 76px; }
   .header nav {
     text-align: right; }
-    .header nav a {
+    .header nav span a {
       text-transform: uppercase;
       color: white;
       font-family: "gesta", Helvetica, Arial, sans-serif !important;
       font-weight: 400;
       font-style: normal; }
-      .header nav a:nth-child(n+2) {
-        margin-left: 14px; }
-      .header nav a:hover {
+      .header nav span a:hover {
         text-decoration: underline !important; }
+    .header nav span:nth-child(n+2) {
+      margin-left: 14px; }
 
 .site-wrapper.global-color-primary .header .logo {
   background: url("../assets/img/logo_lavictorialabs-primary.png") no-repeat center center;
@@ -3322,7 +3300,18 @@ button.more {
   color: #47AAE0;
   font-family: "gesta", Helvetica, Arial, sans-serif !important;
   font-weight: 500;
-  font-style: normal; }
+  font-style: normal;
+  text-decoration: underline; }
+.site-wrapper.global-color-primary .header.header-off nav a {
+  color: #454848; }
+  .site-wrapper.global-color-primary .header.header-off nav a:hover {
+    text-decoration: underline; }
+  .site-wrapper.global-color-primary .header.header-off nav a.active {
+    color: #47AAE0;
+    font-family: "gesta", Helvetica, Arial, sans-serif !important;
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: underline; }
 .site-wrapper.global-color-success .header .logo {
   background: url("../assets/img/logo_lavictorialabs-success.png") no-repeat center center;
   background-size: 137px 76px; }
@@ -3330,7 +3319,18 @@ button.more {
   color: #00a75c;
   font-family: "gesta", Helvetica, Arial, sans-serif !important;
   font-weight: 500;
-  font-style: normal; }
+  font-style: normal;
+  text-decoration: underline; }
+.site-wrapper.global-color-success .header.header-off nav a {
+  color: #454848; }
+  .site-wrapper.global-color-success .header.header-off nav a:hover {
+    text-decoration: underline; }
+  .site-wrapper.global-color-success .header.header-off nav a.active {
+    color: #00a75c;
+    font-family: "gesta", Helvetica, Arial, sans-serif !important;
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: underline; }
 .site-wrapper.global-color-info .header .logo {
   background: url("../assets/img/logo_lavictorialabs-info.png") no-repeat center center;
   background-size: 137px 76px; }
@@ -3338,7 +3338,18 @@ button.more {
   color: #47AAE0;
   font-family: "gesta", Helvetica, Arial, sans-serif !important;
   font-weight: 500;
-  font-style: normal; }
+  font-style: normal;
+  text-decoration: underline; }
+.site-wrapper.global-color-info .header.header-off nav a {
+  color: #454848; }
+  .site-wrapper.global-color-info .header.header-off nav a:hover {
+    text-decoration: underline; }
+  .site-wrapper.global-color-info .header.header-off nav a.active {
+    color: #47AAE0;
+    font-family: "gesta", Helvetica, Arial, sans-serif !important;
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: underline; }
 .site-wrapper.global-color-warning .header .logo {
   background: url("../assets/img/logo_lavictorialabs-warning.png") no-repeat center center;
   background-size: 137px 76px; }
@@ -3346,7 +3357,18 @@ button.more {
   color: #ea5e31;
   font-family: "gesta", Helvetica, Arial, sans-serif !important;
   font-weight: 500;
-  font-style: normal; }
+  font-style: normal;
+  text-decoration: underline; }
+.site-wrapper.global-color-warning .header.header-off nav a {
+  color: #454848; }
+  .site-wrapper.global-color-warning .header.header-off nav a:hover {
+    text-decoration: underline; }
+  .site-wrapper.global-color-warning .header.header-off nav a.active {
+    color: #ea5e31;
+    font-family: "gesta", Helvetica, Arial, sans-serif !important;
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: underline; }
 .site-wrapper.global-color-danger .header .logo {
   background: url("../assets/img/logo_lavictorialabs-danger.png") no-repeat center center;
   background-size: 137px 76px; }
@@ -3354,7 +3376,18 @@ button.more {
   color: #ec008b;
   font-family: "gesta", Helvetica, Arial, sans-serif !important;
   font-weight: 500;
-  font-style: normal; }
+  font-style: normal;
+  text-decoration: underline; }
+.site-wrapper.global-color-danger .header.header-off nav a {
+  color: #454848; }
+  .site-wrapper.global-color-danger .header.header-off nav a:hover {
+    text-decoration: underline; }
+  .site-wrapper.global-color-danger .header.header-off nav a.active {
+    color: #ec008b;
+    font-family: "gesta", Helvetica, Arial, sans-serif !important;
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: underline; }
 .site-wrapper.global-color-home .header .logo {
   background: url("../assets/img/logo_lavictorialabs-home.png") no-repeat center center;
   background-size: 137px 76px; }
@@ -3362,7 +3395,24 @@ button.more {
   color: #47AAE0;
   font-family: "gesta", Helvetica, Arial, sans-serif !important;
   font-weight: 500;
-  font-style: normal; }
+  font-style: normal;
+  text-decoration: underline; }
+.site-wrapper.global-color-home .header.header-off nav a {
+  color: #454848; }
+  .site-wrapper.global-color-home .header.header-off nav a:hover {
+    text-decoration: underline; }
+  .site-wrapper.global-color-home .header.header-off nav a.active {
+    color: #47AAE0;
+    font-family: "gesta", Helvetica, Arial, sans-serif !important;
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: underline; }
+
+.header.header-off {
+  background: rgba(255, 255, 255, 0.9);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
 
 .footer {
   padding: 56px 0;
