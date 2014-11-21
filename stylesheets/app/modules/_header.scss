@@ -4,6 +4,7 @@
 	width: 100%;
 	z-index: 1000;
 	top: 0;
+	padding-top: 42px;
 	@include transition(all 0.2s ease-in-out);
 	.logo {
 		display: block;
@@ -55,7 +56,7 @@
 						a {
 							color: $gray-dark;
 							&:hover {
-								text-decoration: underline;
+								// text-decoration: underline;
 							}
 							&.active {
 								color: #{nth($brand-colors-list, $i)};
@@ -72,7 +73,9 @@
 
 .header {
 	&.header-off {
-		background: rgba(#fff, 0.9);
+		padding: 14px 0;
+		padding: rem(14px) 0;
+		background: white;
 		@include transition(all 0.2s ease-in-out);
 	}
 }

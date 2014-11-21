@@ -1,15 +1,26 @@
 {embed="includes/header"}
 {embed="includes/head"}
 {embed="includes/menu"}
-      <div class="video-wrapper" id="fold">
+      <div class="video-wrapper-fold bg-gray-lighter mhp-100" id="video-wrapper-fold">
+        <video 
+          id="fold_video"
+          class="video-js vjs-default-skin"
+          controls preload="auto" width="100%" height="100%"
+          data-setup='{}'
+          poster="{site_url}assets/img/project-bg-2.jpg">
+          <source src="{site_url}assets/video/lab-construction.mp4" type='video/mp4' />
+          <source src="{site_url}assets/video/lab-construction.webm" type='video/webm' />
+          <source src="{site_url}assets/video/lab-construction.ogg" type='video/ogg' />
+          <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+        </video>
         <div class="overlay text-center">
           <div class="container-sm text-white overlay-trigger overlay-us on-scroll">
             <h1 class="mb-21 lead">Improving the lives of Peruvian people through human centered innovation.</h1>
-            <a href="#" class="more">Learn more</a><span> &#8594;</span>
+            <a href="#" class="h1 lead play-video"><i class="flaticon-play43"></i></a>
           </div>
-        </div>
-        <div class="scroll-down smooth-scroll text-global-color">
-          <a href="#main">&#8595;</a>
+          <div class="scroll-down smooth-scroll text-global-color">
+            <a href="#main">&#8595;</a>
+          </div>
         </div>
       </div>
       <div class="site-content" id="main">
@@ -59,9 +70,9 @@
             class="video-js vjs-default-skin"
             controls preload="auto" width="100%" height="100%"
             data-setup='{}'>
-            <source src="assets/video/waterlily.mp4" type='video/mp4' />
-            <source src="assets/video/waterlily.webm" type='video/webm' />
-            <!-- <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' /> -->
+            <source src="{site_url}assets/video/TeamPicture.mp4" type='video/mp4' />
+            <source src="{site_url}assets/video/TeamPicture.webm" type='video/webm' />
+            <source src="{site_url}assets/video/TeamPicture.ogg" type='video/ogg' />
             <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
           </video>
           <div class="overlay text-center">

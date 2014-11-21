@@ -1,7 +1,7 @@
 <div class="footer">
   <div class="container">
     <div class="row">
-      <div class="col-sm-6">
+      <div class="col-sm-6 pl-0-sm">
         <nav class="text-danger {if segment_1!=''}text-global-color{/if}">
           <a href="#"><i class="flaticon-packet"></i></a>
           <a href="#"><i class="flaticon-twitter42"></i></a>
@@ -9,7 +9,7 @@
           <a href="#"><i class="flaticon-instagram15"></i></a>
         </nav>
       </div>
-      <div class="col-sm-6">
+      <div class="col-sm-6 pr-0-sm">
         <ul class="footer-nav">
           <li>
             <a href="#" class="light dropdown-toggle">EN</a>
@@ -17,10 +17,10 @@
               <li><a href="#">ES</a></li>
             </ul>
           </li>                  
-          <li>
+          <li class="{if segment_1=='blog'}text-global-color{/if}">
             <a href="{site_url}blog" class="medium">Blog</a>
           </li>
-          <li>
+          <li class="{if segment_1=='contact'}text-global-color{/if}">
             <a href="{site_url}contact" class="medium">Contact Us</a>
           </li>
         </ul>

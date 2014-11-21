@@ -1,9 +1,9 @@
 /*
 
-  Ayu Consulting Frontend Boilerplate - @MadeByGus
+  Ayu C onsulting Frontend Boilerplate - @MadeByGus
   ultima actualizacion: 26 de Septiembre 2014
   Author: @MadeByGus - G. Andres Ibarra yo@soygus.com
-  D esde la consola navega hasta el directorio "stylesheets" y ejecuta: 
+  Desde la consola navega hasta el directorio "stylesheets" y ejecuta: 
 
   sass --watch main.scss:main.css
   sass --watch main.scss:main.css -t compressed
@@ -2574,64 +2574,64 @@ h6.lead, .h6.lead {
       color: #c9c9c9; }
 
 .hover-primary:hover {
-  color: #228dc8; }
+  color: #228dc8 !important; }
 .hover-primary a:hover {
-  color: #228dc8; }
+  color: #228dc8 !important; }
 
 .hover-success:hover {
-  color: #006a3a; }
+  color: #006a3a !important; }
 .hover-success a:hover {
-  color: #006a3a; }
+  color: #006a3a !important; }
 
 .hover-info:hover {
-  color: #228dc8; }
+  color: #228dc8 !important; }
 .hover-info a:hover {
-  color: #228dc8; }
+  color: #228dc8 !important; }
 
 .hover-warning:hover {
-  color: #c94015; }
+  color: #c94015 !important; }
 .hover-warning a:hover {
-  color: #c94015; }
+  color: #c94015 !important; }
 
 .hover-danger:hover {
-  color: #af0067; }
+  color: #af0067 !important; }
 .hover-danger a:hover {
-  color: #af0067; }
+  color: #af0067 !important; }
 
 .hover-home:hover {
-  color: #228dc8; }
+  color: #228dc8 !important; }
 .hover-home a:hover {
-  color: #228dc8; }
+  color: #228dc8 !important; }
 
 .hover-gray-darker:hover {
-  color: #040505; }
+  color: #040505 !important; }
 .hover-gray-darker a:hover {
-  color: #040505; }
+  color: #040505 !important; }
 
 .hover-gray-dark:hover {
-  color: #272929; }
+  color: #272929 !important; }
 .hover-gray-dark a:hover {
-  color: #272929; }
+  color: #272929 !important; }
 
 .hover-gray:hover {
-  color: #6d7272; }
+  color: #6d7272 !important; }
 .hover-gray a:hover {
-  color: #6d7272; }
+  color: #6d7272 !important; }
 
 .hover-gray-light:hover {
-  color: #919696; }
+  color: #919696 !important; }
 .hover-gray-light a:hover {
-  color: #919696; }
+  color: #919696 !important; }
 
 .hover-gray-lighter:hover {
-  color: #c8caca; }
+  color: #c8caca !important; }
 .hover-gray-lighter a:hover {
-  color: #c8caca; }
+  color: #c8caca !important; }
 
 .hover-white:hover {
-  color: #e0e0e0; }
+  color: #e0e0e0 !important; }
 .hover-white a:hover {
-  color: #e0e0e0; }
+  color: #e0e0e0 !important; }
 
 .text-left {
   text-align: left !important; }
@@ -2730,17 +2730,23 @@ a.not-underline:hover {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-.flaticon-instagram15:before {
+.flaticon-facebook48:before {
   content: "\e000"; }
 
-.flaticon-packet:before {
+.flaticon-instagram15:before {
   content: "\e001"; }
 
-.flaticon-twitter42:before {
+.flaticon-packet:before {
   content: "\e002"; }
 
-.flaticon-youtube34:before {
+.flaticon-play43:before {
   content: "\e003"; }
+
+.flaticon-twitter42:before {
+  content: "\e004"; }
+
+.flaticon-youtube34:before {
+  content: "\e005"; }
 
 a.btn.form-control,
 button.btn.form-control,
@@ -2942,23 +2948,32 @@ body {
   position: relative;
   z-index: 900;
   margin-top: 56%;
-  background: #e7e8e8; }
+  background: #e7e8e8;
+  padding-top: 77px; }
   .site-content.no-video {
-    margin-top: 0; }
+    margin-top: 0;
+    padding-top: 0; }
 
 a.more,
 button.more {
   text-decoration: underline;
   content: "\2192"; }
 
-.video-wrapper {
+.video-wrapper,
+.video-wrapper-fold {
   height: 100%;
   position: fixed;
   width: 100%;
   zoom: 1;
   top: 0; }
-  .video-wrapper .overlay {
+  .video-wrapper .overlay,
+  .video-wrapper-fold .overlay {
     height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     display: -webkit-box;
     display: -moz-box;
     display: box;
@@ -3267,8 +3282,21 @@ button.more {
 .site-wrapper.global-color-home .bg-color-us {
   background: #47AAE0 !important; }
 
+.on-scroll {
+  padding-top: 12%; }
+
 .no-bg-1 {
   background: url(../assets/img/bg-pattern-1.png); }
+
+.grid-list.match-margin {
+  margin-left: -14px !important;
+  margin-right: -14px !important; }
+
+.back-arrow {
+  position: absolute;
+  top: 18px;
+  left: -21%;
+  font-size: 35px; }
 
 .header {
   min-height: 70px;
@@ -3276,6 +3304,7 @@ button.more {
   width: 100%;
   z-index: 1000;
   top: 0;
+  padding-top: 42px;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out; }
@@ -3310,8 +3339,6 @@ button.more {
   background-size: 137px 76px; }
 .site-wrapper.global-color-primary .header.header-off nav a {
   color: #454848; }
-  .site-wrapper.global-color-primary .header.header-off nav a:hover {
-    text-decoration: underline; }
   .site-wrapper.global-color-primary .header.header-off nav a.active {
     color: #47AAE0;
     font-family: "gesta", Helvetica, Arial, sans-serif !important;
@@ -3332,8 +3359,6 @@ button.more {
   background-size: 137px 76px; }
 .site-wrapper.global-color-success .header.header-off nav a {
   color: #454848; }
-  .site-wrapper.global-color-success .header.header-off nav a:hover {
-    text-decoration: underline; }
   .site-wrapper.global-color-success .header.header-off nav a.active {
     color: #00a75c;
     font-family: "gesta", Helvetica, Arial, sans-serif !important;
@@ -3354,8 +3379,6 @@ button.more {
   background-size: 137px 76px; }
 .site-wrapper.global-color-info .header.header-off nav a {
   color: #454848; }
-  .site-wrapper.global-color-info .header.header-off nav a:hover {
-    text-decoration: underline; }
   .site-wrapper.global-color-info .header.header-off nav a.active {
     color: #47AAE0;
     font-family: "gesta", Helvetica, Arial, sans-serif !important;
@@ -3376,8 +3399,6 @@ button.more {
   background-size: 137px 76px; }
 .site-wrapper.global-color-warning .header.header-off nav a {
   color: #454848; }
-  .site-wrapper.global-color-warning .header.header-off nav a:hover {
-    text-decoration: underline; }
   .site-wrapper.global-color-warning .header.header-off nav a.active {
     color: #ea5e31;
     font-family: "gesta", Helvetica, Arial, sans-serif !important;
@@ -3398,8 +3419,6 @@ button.more {
   background-size: 137px 76px; }
 .site-wrapper.global-color-danger .header.header-off nav a {
   color: #454848; }
-  .site-wrapper.global-color-danger .header.header-off nav a:hover {
-    text-decoration: underline; }
   .site-wrapper.global-color-danger .header.header-off nav a.active {
     color: #ec008b;
     font-family: "gesta", Helvetica, Arial, sans-serif !important;
@@ -3420,8 +3439,6 @@ button.more {
   background-size: 137px 76px; }
 .site-wrapper.global-color-home .header.header-off nav a {
   color: #454848; }
-  .site-wrapper.global-color-home .header.header-off nav a:hover {
-    text-decoration: underline; }
   .site-wrapper.global-color-home .header.header-off nav a.active {
     color: #47AAE0;
     font-family: "gesta", Helvetica, Arial, sans-serif !important;
@@ -3430,7 +3447,9 @@ button.more {
     text-decoration: underline; }
 
 .header.header-off {
-  background: rgba(255, 255, 255, 0.9);
+  padding: 14px 0;
+  padding: 1rem 0;
+  background: white;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out; }
@@ -3537,5 +3556,10 @@ button.more {
     -mox-text-decoration-color: #fff;
     text-decoration-color: #fff;
     margin-bottom: 0; }
+
+.grid-list .post-item:nth-child(even) {
+  padding-right: 0; }
+.grid-list .post-item:nth-child(odd) {
+  padding-left: 0; }
 
 /*# sourceMappingURL=main.css.map */

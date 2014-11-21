@@ -39,7 +39,7 @@ onScroll = (e) ->
 		$currLinkParent = $currLink.parent()
 		$refElement = $($currLink.attr('href'))
 		$selector = $refElement.selector
-		$top = $refElement.position().top
+		$top = $refElement.position().top - 140
 		$refCalc = ($top <= $scrollPos && $top + $refElement.height() > $scrollPos)
 		if $refCalc
 			$currLink.addClass 'active'
@@ -53,10 +53,11 @@ onScroll = (e) ->
 		else
 			$currLink.removeClass 'active'
 		return
-	if $headerOff.hasClass 'active'
+	if $scrollPos <= 0
 		$header.removeClass 'header-off'
-	else
-		console.log 'should header-off'
+	else if $headerOff.hasClass 'active'
+		$header.removeClass 'header-off'
+	else 
 		$header.addClass 'header-off'
 	return
 

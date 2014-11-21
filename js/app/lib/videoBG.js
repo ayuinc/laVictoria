@@ -18,10 +18,22 @@ $(document).ready(function(){
 			});
 		}
 	}
-});
 
-var videoExists = document.getElementById("example_video_1");
-if (videoExists) {
-	var myPlayer = videojs('example_video_1');
-	myPlayer.controls(false);
-}
+
+	var videoExists = document.getElementById("example_video_1");
+	if (videoExists) {
+		var myPlayer = videojs('example_video_1');
+		myPlayer.controls(false);
+	}
+
+	var foldVideo = document.getElementById("fold_video");
+	if (foldVideo) {
+		var myPlayer = videojs('fold_video');
+		myPlayer.controls(false);
+		$('.play-video').click(function(e){
+			e.preventDefault();
+			myPlayer.play();
+		});
+	}
+
+});

@@ -22,8 +22,10 @@ body {
 	z-index: 900;
 	margin-top: 56%;
 	background: $gray-lighter;
+	padding-top: 77px;
 	&.no-video {
 		margin-top: 0;
+		padding-top: 0;
 	}
 }
 
@@ -36,7 +38,8 @@ button.more {
 	content: "\2192";
 }
 
-.video-wrapper {
+.video-wrapper,
+.video-wrapper-fold {
 	height: 100%;
 	// background: $gray-darker;
 	position: fixed;
@@ -45,6 +48,7 @@ button.more {
 	top: 0;
 	.overlay {
 		height: 100%;
+		@include position(absolute, 0 0 0 0);
 		@include display(flex);
 		@include justify-content(center);
 		@include flex-direction(column);
@@ -169,6 +173,11 @@ button.more {
 	}
 }
 
+// ON SCROLL TEXT
+.on-scroll {
+	padding-top: 12%;
+}
+
 // SCROLL DETECT
 // .scroll-detect {
 // 	.header {
@@ -220,4 +229,22 @@ button.more {
 
 .no-bg-1 {
 	background: url(../assets/img/bg-pattern-1.png);
+}
+
+// MAKE GRID LIST ITEMS MATCH BOTTOM MARGIN: 
+
+.grid-list {
+	&.match-margin {
+		margin-left: -$container-fluid !important;
+		margin-right: -$container-fluid !important;
+	}
+}
+
+// BACK ARROW
+.back-arrow {
+	@include position(absolute, 18px null null -21%);
+	// position: absolute;
+	// left: -21%;
+	// top: 18px;
+	font-size: 35px;
 }

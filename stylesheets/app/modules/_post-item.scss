@@ -99,3 +99,14 @@
 		}
 	}
 }
+
+.grid-list {
+	.post-item {
+		&:nth-child(even) {
+			padding-right: 0;
+		}
+		&:nth-child(odd) {
+			padding-left: 0;
+		}
+	}
+}

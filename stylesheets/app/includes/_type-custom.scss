@@ -94,11 +94,11 @@ h6, .h6 { &.lead {font-size: rem($font-size-h6 + 14) !important;} }
 @for $i from 1 through length($brand-colors-list) {
   .hover-#{nth($brand-colors-sufix-list, $i)} {
     &:hover {
-      color: #{darken(nth($brand-colors-list, $i), 12%)};
+      color: #{darken(nth($brand-colors-list, $i), 12%)} !important;
     }
     a {
       &:hover {
-        color: #{darken(nth($brand-colors-list, $i), 12%)};
+        color: #{darken(nth($brand-colors-list, $i), 12%)} !important;
       }
     }
   }
@@ -107,11 +107,11 @@ h6, .h6 { &.lead {font-size: rem($font-size-h6 + 14) !important;} }
 @for $i from 1 through length($grayscale-list) {
   .hover-#{nth($grayscale-sufix-list, $i)} {
     &:hover {
-      color: #{darken(nth($grayscale-list, $i), 12%)};
+      color: #{darken(nth($grayscale-list, $i), 12%)} !important;
     }
     a {
       &:hover {
-        color: #{darken(nth($grayscale-list, $i), 12%)};
+        color: #{darken(nth($grayscale-list, $i), 12%)} !important;
       }
     }
   }
