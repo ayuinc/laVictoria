@@ -1,4 +1,4 @@
-      <div class="header">
+<!--       <div class="header">
         <div class="container-fluid">
           <div class="row">
             <div class="col-xs-3">
@@ -7,7 +7,6 @@
               {if:else}
               <a href="{site_url}" class="logo">
               {/if}
-                <!-- <img src="assets/img/logo_lavictorialabs-pink-white.png" alt=""> -->
               </a>
             </div>
             <div class="col-xs-9 pt-28">
@@ -28,4 +27,49 @@
             </div>
           </div>
         </div>
+      </div> -->
+<div class="header">
+  <div class="container-fluid">
+    <div class="nav-bar">
+      <div class="left">
+        {if segment_1==''}
+        <a class="logo to-top"></a>
+        {if:else}
+        <a href="{site_url}" class="logo"></a>
+        {/if}
       </div>
+      <div class="right pt-28">
+        <ul class="nav-items">
+          <li class="us">
+            {if segment_1=='aboutus'}
+            <a href="{site_url}aboutus" class="active">
+              Us
+              <span></span>
+            </a>
+            <span class="header-scroll"><a href="#video-wrapper-team" class="hidden"></a></span>
+            {if:else}
+            <a href="{site_url}aboutus">
+              Us
+              <span></span>
+            </a>
+            {/if}
+          </li>
+          <li class="work">
+            {if segment_1=='projects'}
+            <a href="{site_url}projects" class="active">
+              Work
+              <span></span>
+            </a>
+            {if:else}
+            <a href="{site_url}projects">
+              Work
+              <span></span>
+            </a>
+            {/if}
+            <span class="header-scroll"><a href="#main" id="header-off" class="hidden"> HEader</a></span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

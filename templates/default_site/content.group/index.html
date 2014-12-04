@@ -1,19 +1,33 @@
 {embed="includes/header"}
 {embed="includes/head"}
 {embed="includes/menu"}
-      <div class="video-wrapper" id="fold">
+      <div class="video-wrapper video-wrapper-autoplay bg-gray-lighter mhp-100" id="fold">
+        <video 
+          id="autoplay" 
+          class="video-js vjs-default-skin"
+          controls preload="auto" width="100%" height="100%"
+          data-setup='{}'>
+          <source src="{site_url}assets/video/lab-opening.mp4" type='video/mp4' />
+          <source src="{site_url}assets/video/lab-opening.webm" type='video/webm' />
+          <source src="{site_url}assets/video/lab-opening.ogg" type='video/ogg' />
+          <p class="vjs-no-js">Para ver este video necesitas un navegador más moderno, actualiza aquí: <a href="http://videojs.com/html5-video-support/" target="_blank"></a></p>
+        </video>
         <div class="overlay text-center">
-          <div class="container-sm text-white overlay-trigger overlay-us on-scroll">
-            <h1 class="mb-21 lead">Improving the lives of Peruvian people through human centered innovation.</h1>
-            <a href="#" class="more">Learn more</a><span> &#8594;</span>
+          <div class="container-sm text-white overlay-trigger overlay-us relative">
+            <div class="on-scroll p-0" style="position: absolute; width: 100%;">
+              <h1 class="mb-21 lead">Improving the lives of Peruvian people through human centered innovation.</h1>
+              <a href="{site_url}projects" class="more">Learn more</a><span> &#8594;</span>
+            </div>
+          </div>
+          <div class="scroll-down smooth-scroll text-danger">
+            <a href="#main">&#8595;</a>
           </div>
         </div>
-        <div class="scroll-down smooth-scroll text-danger">
-          <a href="#main">&#8595;</a>
-        </div>
       </div>
+      <!-- <div class="video-wrapper" id="fold">
+      </div> -->
       <div class="site-content" id="main">
-        <div class="mhp-100 bg-gradient-feo flex flex-center flex-column flex-middle">
+        <div class="mhp-100 bg-gradient-feo flex flex-center flex-column flex-middle relative">
           <div class="container-sm text-white text-center">
             <h1 class="lead mb-21">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
             <a href="#" class="more">Learn more</a><span> &#8594;</span>
@@ -35,7 +49,7 @@
           </div>
         </div>
         <div id="sec-2" class="mhp-100 bg-gray-lighter">
-          <div class="container pt-21">
+          <div class="container ptp-7">
             <ul class="grid-list grid-list-2 grid-list-anchors isotope-container match-margin">
               <li class="post-item post-item-img">
                 <a href="#">

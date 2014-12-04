@@ -31,8 +31,7 @@
         translateY: -reset + 'px',
         opacity: opacity
       }, {
-        duration: 0,
-        easing: 'ease-in'
+        duration: 0
       });
     }
   };

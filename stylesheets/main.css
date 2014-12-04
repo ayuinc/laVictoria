@@ -1,6 +1,6 @@
 /*
 
-  Ayu C onsulting Frontend Boilerplate - @MadeByGus
+  Ayu Consulting Frontend Boilerplate - @MadeByGus
   ultima actualizacion: 26 de Septiembre 2014
   Author: @MadeByGus - G. Andres Ibarra yo@soygus.com
   Desde la consola navega hasta el directorio "stylesheets" y ejecuta: 
@@ -2435,7 +2435,7 @@ html {
 html {
   -webkit-font-smoothing: antialiased; }
 
-a:hover {
+a:hover, a:focus {
   text-decoration: none !important; }
 
 h1, .h1 {
@@ -2733,20 +2733,74 @@ a.not-underline:hover {
 .flaticon-facebook48:before {
   content: "\e000"; }
 
-.flaticon-instagram15:before {
+.flaticon-google113:before {
   content: "\e001"; }
 
-.flaticon-packet:before {
+.flaticon-instagram15:before {
   content: "\e002"; }
 
-.flaticon-play43:before {
+.flaticon-key9:before {
   content: "\e003"; }
 
-.flaticon-twitter42:before {
+.flaticon-linkedin23:before {
   content: "\e004"; }
 
-.flaticon-youtube34:before {
+.flaticon-packet:before {
   content: "\e005"; }
+
+.flaticon-pause31:before {
+  content: "\e006"; }
+
+.flaticon-share26:before {
+  content: "\e007"; }
+
+.flaticon-twitter42:before {
+  content: "\e008"; }
+
+.flaticon-youtube34:before {
+  content: "\e009"; }
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../assets/icons/icomoon.eot?-yzm3vg");
+  src: url("../assets/icons/icomoon.eot?#iefix-yzm3vg") format("embedded-opentype"), url("../assets/icons/icomoon.woff?-yzm3vg") format("woff"), url("../assets/icons/icomoon.ttf?-yzm3vg") format("truetype"), url("../assets/icons/icomoon.svg?-yzm3vg#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-down:before {
+  content: "\e600"; }
+
+.icon-right:before {
+  content: "\e601"; }
+
+.icon-left:before {
+  content: "\e602"; }
+
+.icon-play:before {
+  content: "\e603"; }
+
+.icon-icon_68394:before {
+  content: "\e604"; }
+
+.icon-icon_70729:before {
+  content: "\e605"; }
+
+.icon-icon_72580:before {
+  content: "\e606"; }
+
+.icon-icon_72585:before {
+  content: "\e607"; }
 
 a.btn.form-control,
 button.btn.form-control,
@@ -2937,7 +2991,8 @@ body {
 body {
   font-family: "gesta", Helvetica, Arial, sans-serif !important;
   font-weight: 300;
-  font-style: normal; }
+  font-style: normal;
+  overflow-x: hidden; }
 
 .site-wrapper,
 .site-content {
@@ -2948,8 +3003,7 @@ body {
   position: relative;
   z-index: 900;
   margin-top: 56%;
-  background: #e7e8e8;
-  padding-top: 77px; }
+  background: #e7e8e8; }
   .site-content.no-video {
     margin-top: 0;
     padding-top: 0; }
@@ -2963,9 +3017,11 @@ button.more {
 .video-wrapper-fold {
   height: 100%;
   position: fixed;
-  width: 100%;
-  zoom: 1;
-  top: 0; }
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%; }
   .video-wrapper .overlay,
   .video-wrapper-fold .overlay {
     height: 100%;
@@ -3053,13 +3109,18 @@ button.more {
 
 .scroll-down {
   position: absolute;
+  right: 0;
   bottom: 0;
+  left: 0;
   text-align: center;
   width: 100%;
   padding: 7px 0; }
   .scroll-down a {
     font-size: 70px;
-    font-size: 5rem; }
+    font-size: 5rem;
+    text-decoration: none; }
+    .scroll-down a:hover {
+      text-decoration: none; }
 
 .bg-gradient-feo {
   background: -webkit-linear-gradient( top , #47AAE0, #00a75c, #ea5e31, #ec008b);
@@ -3298,6 +3359,11 @@ button.more {
   left: -21%;
   font-size: 35px; }
 
+.play-video {
+  text-decoration: none !important; }
+  .play-video:hover, .play-video:active {
+    text-decoration: none !important; }
+
 .header {
   min-height: 70px;
   position: fixed;
@@ -3308,148 +3374,177 @@ button.more {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out; }
+  .header .nav-bar:before, .header .nav-bar:after {
+    content: " ";
+    display: table; }
+  .header .nav-bar:after {
+    clear: both; }
+  .header .nav-bar .left {
+    float: left; }
+  .header .nav-bar .right {
+    float: right; }
+  .header .nav-items {
+    padding-left: 0;
+    list-style: none;
+    margin: 0; }
+    .header .nav-items:before, .header .nav-items:after {
+      content: " ";
+      display: table; }
+    .header .nav-items:after {
+      clear: both; }
+    .header .nav-items li {
+      float: right;
+      margin-left: 14px; }
+      .header .nav-items li a {
+        display: block;
+        text-transform: uppercase;
+        color: white;
+        font-family: "gesta", Helvetica, Arial, sans-serif !important;
+        font-weight: 400;
+        font-style: normal; }
+        .header .nav-items li a span {
+          display: none;
+          height: 2px; }
+        .header .nav-items li a:hover, .header .nav-items li a.active {
+          text-decoration: none; }
+          .header .nav-items li a:hover span, .header .nav-items li a.active span {
+            display: block; }
+      .header .nav-items li.work a:hover, .header .nav-items li.work a.active {
+        color: #00a75c; }
+        .header .nav-items li.work a:hover span, .header .nav-items li.work a.active span {
+          background-color: #00a75c; }
+      .header .nav-items li.us a:hover, .header .nav-items li.us a.active {
+        color: #47AAE0; }
+        .header .nav-items li.us a:hover span, .header .nav-items li.us a.active span {
+          background-color: #47AAE0; }
   .header .logo {
     display: block;
     width: 137px;
     height: 76px; }
-  .header nav {
-    text-align: right; }
-    .header nav span a {
-      text-transform: uppercase;
-      color: white;
-      font-family: "gesta", Helvetica, Arial, sans-serif !important;
-      font-weight: 400;
-      font-style: normal; }
-      .header nav span a:hover {
-        text-decoration: underline !important; }
-    .header nav span:nth-child(n+2) {
-      margin-left: 14px; }
+  .header.header-off .nav-items li a {
+    color: #454848; }
+  .header.header-off .nav-items li.work a:hover, .header.header-off .nav-items li.work a.active {
+    color: #00a75c; }
+    .header.header-off .nav-items li.work a:hover span, .header.header-off .nav-items li.work a.active span {
+      background-color: #00a75c; }
+  .header.header-off .nav-items li.us a:hover, .header.header-off .nav-items li.us a.active {
+    color: #47AAE0; }
+    .header.header-off .nav-items li.us a:hover span, .header.header-off .nav-items li.us a.active span {
+      background-color: #47AAE0; }
 
 .site-wrapper.global-color-primary .header .logo {
   background: url("../assets/img/logo_lavictorialabs-primary.png") no-repeat center center;
   background-size: 137px 76px; }
-.site-wrapper.global-color-primary .header nav a.active {
+.site-wrapper.global-color-primary .header .nav-items a.active {
   color: #47AAE0;
   font-family: "gesta", Helvetica, Arial, sans-serif !important;
   font-weight: 500;
-  font-style: normal;
-  text-decoration: underline; }
+  font-style: normal; }
 .site-wrapper.global-color-primary .header.header-off .logo {
   background: url("../assets/img/logo_lavictorialabs-primary-black.png") no-repeat center center;
   background-size: 137px 76px; }
-.site-wrapper.global-color-primary .header.header-off nav a {
+.site-wrapper.global-color-primary .header.header-off .nav-items a {
   color: #454848; }
-  .site-wrapper.global-color-primary .header.header-off nav a.active {
+  .site-wrapper.global-color-primary .header.header-off .nav-items a.active {
     color: #47AAE0;
     font-family: "gesta", Helvetica, Arial, sans-serif !important;
     font-weight: 500;
-    font-style: normal;
-    text-decoration: underline; }
+    font-style: normal; }
 .site-wrapper.global-color-success .header .logo {
   background: url("../assets/img/logo_lavictorialabs-success.png") no-repeat center center;
   background-size: 137px 76px; }
-.site-wrapper.global-color-success .header nav a.active {
+.site-wrapper.global-color-success .header .nav-items a.active {
   color: #00a75c;
   font-family: "gesta", Helvetica, Arial, sans-serif !important;
   font-weight: 500;
-  font-style: normal;
-  text-decoration: underline; }
+  font-style: normal; }
 .site-wrapper.global-color-success .header.header-off .logo {
   background: url("../assets/img/logo_lavictorialabs-success-black.png") no-repeat center center;
   background-size: 137px 76px; }
-.site-wrapper.global-color-success .header.header-off nav a {
+.site-wrapper.global-color-success .header.header-off .nav-items a {
   color: #454848; }
-  .site-wrapper.global-color-success .header.header-off nav a.active {
+  .site-wrapper.global-color-success .header.header-off .nav-items a.active {
     color: #00a75c;
     font-family: "gesta", Helvetica, Arial, sans-serif !important;
     font-weight: 500;
-    font-style: normal;
-    text-decoration: underline; }
+    font-style: normal; }
 .site-wrapper.global-color-info .header .logo {
   background: url("../assets/img/logo_lavictorialabs-info.png") no-repeat center center;
   background-size: 137px 76px; }
-.site-wrapper.global-color-info .header nav a.active {
+.site-wrapper.global-color-info .header .nav-items a.active {
   color: #47AAE0;
   font-family: "gesta", Helvetica, Arial, sans-serif !important;
   font-weight: 500;
-  font-style: normal;
-  text-decoration: underline; }
+  font-style: normal; }
 .site-wrapper.global-color-info .header.header-off .logo {
   background: url("../assets/img/logo_lavictorialabs-info-black.png") no-repeat center center;
   background-size: 137px 76px; }
-.site-wrapper.global-color-info .header.header-off nav a {
+.site-wrapper.global-color-info .header.header-off .nav-items a {
   color: #454848; }
-  .site-wrapper.global-color-info .header.header-off nav a.active {
+  .site-wrapper.global-color-info .header.header-off .nav-items a.active {
     color: #47AAE0;
     font-family: "gesta", Helvetica, Arial, sans-serif !important;
     font-weight: 500;
-    font-style: normal;
-    text-decoration: underline; }
+    font-style: normal; }
 .site-wrapper.global-color-warning .header .logo {
   background: url("../assets/img/logo_lavictorialabs-warning.png") no-repeat center center;
   background-size: 137px 76px; }
-.site-wrapper.global-color-warning .header nav a.active {
+.site-wrapper.global-color-warning .header .nav-items a.active {
   color: #ea5e31;
   font-family: "gesta", Helvetica, Arial, sans-serif !important;
   font-weight: 500;
-  font-style: normal;
-  text-decoration: underline; }
+  font-style: normal; }
 .site-wrapper.global-color-warning .header.header-off .logo {
   background: url("../assets/img/logo_lavictorialabs-warning-black.png") no-repeat center center;
   background-size: 137px 76px; }
-.site-wrapper.global-color-warning .header.header-off nav a {
+.site-wrapper.global-color-warning .header.header-off .nav-items a {
   color: #454848; }
-  .site-wrapper.global-color-warning .header.header-off nav a.active {
+  .site-wrapper.global-color-warning .header.header-off .nav-items a.active {
     color: #ea5e31;
     font-family: "gesta", Helvetica, Arial, sans-serif !important;
     font-weight: 500;
-    font-style: normal;
-    text-decoration: underline; }
+    font-style: normal; }
 .site-wrapper.global-color-danger .header .logo {
   background: url("../assets/img/logo_lavictorialabs-danger.png") no-repeat center center;
   background-size: 137px 76px; }
-.site-wrapper.global-color-danger .header nav a.active {
+.site-wrapper.global-color-danger .header .nav-items a.active {
   color: #ec008b;
   font-family: "gesta", Helvetica, Arial, sans-serif !important;
   font-weight: 500;
-  font-style: normal;
-  text-decoration: underline; }
+  font-style: normal; }
 .site-wrapper.global-color-danger .header.header-off .logo {
   background: url("../assets/img/logo_lavictorialabs-danger-black.png") no-repeat center center;
   background-size: 137px 76px; }
-.site-wrapper.global-color-danger .header.header-off nav a {
+.site-wrapper.global-color-danger .header.header-off .nav-items a {
   color: #454848; }
-  .site-wrapper.global-color-danger .header.header-off nav a.active {
+  .site-wrapper.global-color-danger .header.header-off .nav-items a.active {
     color: #ec008b;
     font-family: "gesta", Helvetica, Arial, sans-serif !important;
     font-weight: 500;
-    font-style: normal;
-    text-decoration: underline; }
+    font-style: normal; }
 .site-wrapper.global-color-home .header .logo {
   background: url("../assets/img/logo_lavictorialabs-home.png") no-repeat center center;
   background-size: 137px 76px; }
-.site-wrapper.global-color-home .header nav a.active {
+.site-wrapper.global-color-home .header .nav-items a.active {
   color: #47AAE0;
   font-family: "gesta", Helvetica, Arial, sans-serif !important;
   font-weight: 500;
-  font-style: normal;
-  text-decoration: underline; }
+  font-style: normal; }
 .site-wrapper.global-color-home .header.header-off .logo {
   background: url("../assets/img/logo_lavictorialabs-home-black.png") no-repeat center center;
   background-size: 137px 76px; }
-.site-wrapper.global-color-home .header.header-off nav a {
+.site-wrapper.global-color-home .header.header-off .nav-items a {
   color: #454848; }
-  .site-wrapper.global-color-home .header.header-off nav a.active {
+  .site-wrapper.global-color-home .header.header-off .nav-items a.active {
     color: #47AAE0;
     font-family: "gesta", Helvetica, Arial, sans-serif !important;
     font-weight: 500;
-    font-style: normal;
-    text-decoration: underline; }
+    font-style: normal; }
 
 .header.header-off {
   padding: 14px 0;
   padding: 1rem 0;
-  background: white;
+  background: rgba(255, 255, 255, 0.9);
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out; }
@@ -3561,5 +3656,45 @@ button.more {
   padding-right: 0; }
 .grid-list .post-item:nth-child(odd) {
   padding-left: 0; }
+
+.bio-grid {
+  margin-right: -21px;
+  margin-left: -21px; }
+  .bio-grid .bio-item {
+    width: 33.28%;
+    padding-right: 14px;
+    padding-left: 14px;
+    margin-bottom: 21px; }
+    .bio-grid .bio-item a {
+      color: #454848;
+      display: block; }
+      .bio-grid .bio-item a:hover {
+        text-decoration: none; }
+        .bio-grid .bio-item a:hover .pic .overlay {
+          display: block; }
+      .bio-grid .bio-item a .pic {
+        position: relative; }
+        .bio-grid .bio-item a .pic .overlay {
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          padding: 28px;
+          background: rgba(71, 170, 224, 0.7);
+          display: none; }
+          .bio-grid .bio-item a .pic .overlay h1, .bio-grid .bio-item a .pic .overlay h2, .bio-grid .bio-item a .pic .overlay h3, .bio-grid .bio-item a .pic .overlay h4, .bio-grid .bio-item a .pic .overlay h5, .bio-grid .bio-item a .pic .overlay h6,
+          .bio-grid .bio-item a .pic .overlay .h1, .bio-grid .bio-item a .pic .overlay .h2, .bio-grid .bio-item a .pic .overlay .h3, .bio-grid .bio-item a .pic .overlay .h4, .bio-grid .bio-item a .pic .overlay .h5, .bio-grid .bio-item a .pic .overlay .h6,
+          .bio-grid .bio-item a .pic .overlay p, .bio-grid .bio-item a .pic .overlay .p {
+            margin: 0; }
+
+@media only screen and (max-width: 768px) {
+  .bio-grid {
+    margin-right: 0;
+    margin-left: 0; }
+    .bio-grid .bio-item {
+      width: 49.95%; } }
+.grid-sizer {
+  width: 33.28%; }
 
 /*# sourceMappingURL=main.css.map */

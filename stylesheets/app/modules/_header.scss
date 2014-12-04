@@ -6,24 +6,111 @@
 	top: 0;
 	padding-top: 42px;
 	@include transition(all 0.2s ease-in-out);
+	.nav-bar {
+		@include clearfix;
+		.left {
+			float: left;
+		}
+		.right {
+			float: right;
+		}
+	}
+	.nav-items {
+		@include list-unstyled;
+		@include clearfix;
+		li {
+			float: right;
+			margin-left: 14px;
+			a {
+				display: block;
+				text-transform: uppercase;
+				color: white;
+				@include book;
+				span {
+					display: none;
+					height: 2px;
+				}
+				&:hover, 
+				&.active {
+					text-decoration: none;
+					span {
+						display: block;
+					}
+				}
+			}
+			&.work {
+				a {
+					&:hover,
+					&.active {
+						color: $brand-success;
+						span {
+							background-color: $brand-success;
+						}
+					}
+				}
+			}
+			&.us {
+				a {
+					&:hover,
+					&.active {
+						color: $brand-info;
+						span {
+							background-color: $brand-info;
+						}
+					}
+				}
+			}
+		}
+	}
 	.logo {
 		display: block;
 		width: 137px;
 		height: 76px;
 	}
-	nav {
-		text-align: right;
-		span {
-			a {
-				text-transform: uppercase;
-				color: white;
-				@include book;
-				&:hover {
-					text-decoration: underline !important;
-				}			
-			}
-			&:nth-child(n+2) {
-				margin-left: 14px;
+	// nav {
+	// 	text-align: right;
+	// 	span {
+	// 		a {
+	// 			text-transform: uppercase;
+	// 			color: white;
+	// 			@include book;
+	// 			&:hover {
+	// 				text-decoration: underline !important;
+	// 			}			
+	// 		}
+	// 		&:nth-child(n+2) {
+	// 			margin-left: 14px;
+	// 		}
+	// 	}
+	// }
+	&.header-off {
+		.nav-items {
+			li {
+				a {
+					color: $gray-dark;
+				}
+				&.work {
+					a {
+						&:hover,
+						&.active {
+							color: $brand-success;
+							span {
+								background-color: $brand-success;
+							}
+						}
+					}
+				}
+				&.us {
+					a {
+						&:hover,
+						&.active {
+							color: $brand-info;
+							span {
+								background-color: $brand-info;
+							}
+						}
+					}
+				}
 			}
 		}
 	}
@@ -38,12 +125,12 @@
 					background: url('../assets/img/logo_lavictorialabs-' + '#{nth($brand-colors-sufix-list, $i)}' + '.png') no-repeat center center;
 					background-size: 137px 76px;
 				}
-				nav {
+				.nav-items {
 					a {
 						&.active {
 							color: #{nth($brand-colors-list, $i)};
 							@include medium;
-							text-decoration: underline;
+							// text-decoration: underline;
 						}
 					}
 				}
@@ -52,7 +139,7 @@
 						background: url('../assets/img/logo_lavictorialabs-' + '#{nth($brand-colors-sufix-list, $i)}' + '-black.png') no-repeat center center;
 						background-size: 137px 76px;
 					}
-					nav {
+					.nav-items {
 						a {
 							color: $gray-dark;
 							&:hover {
@@ -61,7 +148,7 @@
 							&.active {
 								color: #{nth($brand-colors-list, $i)};
 								@include medium;
-								text-decoration: underline;
+								// text-decoration: underline;
 							}
 						}
 					}
@@ -75,7 +162,7 @@
 	&.header-off {
 		padding: 14px 0;
 		padding: rem(14px) 0;
-		background: white;
+		background: rgba(white, 0.9);
 		@include transition(all 0.2s ease-in-out);
 	}
 }

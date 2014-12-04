@@ -16,7 +16,8 @@ html {
 }
 
 a {
-  &:hover {
+  &:hover,
+  &:focus {
     text-decoration: none !important;
   }
 }

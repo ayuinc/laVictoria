@@ -9,6 +9,7 @@ body {
 
 body {
 	@include light;
+	overflow-x: hidden;
 }
 
 .site-wrapper,
@@ -22,7 +23,7 @@ body {
 	z-index: 900;
 	margin-top: 56%;
 	background: $gray-lighter;
-	padding-top: 77px;
+	// padding-top: 77px;
 	&.no-video {
 		margin-top: 0;
 		padding-top: 0;
@@ -42,10 +43,11 @@ button.more {
 .video-wrapper-fold {
 	height: 100%;
 	// background: $gray-darker;
-	position: fixed;
+	@include position(fixed, 0 0 0 0);
+	// position: fixed;
 	width: 100%;
-	zoom: 1;
-	top: 0;
+	// zoom: 1;
+	// top: 0;
 	.overlay {
 		height: 100%;
 		@include position(absolute, 0 0 0 0);
@@ -71,14 +73,17 @@ button.more {
 }
 
 .scroll-down {
-	position: absolute;
-	bottom: 0;
+	@include position(absolute, null 0 0 0);
 	text-align: center;
 	width: 100%;
 	padding: 7px 0;
 	a {
 		font-size: 70px;
 		font-size: rem(70);
+		text-decoration: none;
+		&:hover {
+			text-decoration: none;
+		}
 		// color: $brand-danger;
 	}
 }
@@ -178,55 +183,6 @@ button.more {
 	padding-top: 12%;
 }
 
-// SCROLL DETECT
-// .scroll-detect {
-// 	.header {
-// 		@include transition(all 0.2s ease-in-out);
-// 		// position: fixed;
-// 	}
-// 	&.scroll-detect--not-top {
-// 		.header {
-// 		}
-// 	}
-// 	&.scroll-detect--top {
-// 		.header	{
-// 			position: absolute;
-			
-// 		}
-// 	}
-// 	&.scroll-detect--down {
-// 		.header {
-// 			// nav {
-// 			// 	a {
-// 			// 		color: $gray-dark !important;
-// 			// 		&:hover {
-// 			// 			text-decoration: underline !important;
-// 			// 		}
-// 			// 	}
-// 			// }
-// 			// opacity: 0;
-// 			// display: none;
-// 			// position: fixed;
-// 			@include transform(translateY(-100%));
-// 		}
-// 	}
-// 	&.scroll-detect--up {
-// 		.header {
-// 			position: fixed;
-// 			@include transform(translateY(0%));
-// 			background: rgba(#fff, 0.7);
-// 			nav {
-// 				a {
-// 					color: $gray-dark !important;
-// 					&:hover {
-// 						text-decoration: underline !important;
-// 					}
-// 				}
-// 			}
-// 		}
-// 	}
-// }
-
 .no-bg-1 {
 	background: url(../assets/img/bg-pattern-1.png);
 }
@@ -247,4 +203,13 @@ button.more {
 	// left: -21%;
 	// top: 18px;
 	font-size: 35px;
+}
+
+// PLAY VIDEO 
+.play-video {
+	text-decoration: none !important;
+	&:hover, 
+	&:active {
+		text-decoration: none !important;
+	}
 }
