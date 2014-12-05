@@ -44,6 +44,7 @@ button.more {
 	height: 100%;
 	// background: $gray-darker;
 	@include position(fixed, 0 0 0 0);
+	// z-index: -1;
 	// position: fixed;
 	width: 100%;
 	// zoom: 1;
@@ -78,9 +79,10 @@ button.more {
 	width: 100%;
 	padding: 7px 0;
 	a {
-		font-size: 70px;
-		font-size: rem(70);
+		font-size: 56px;
+		font-size: rem(56);
 		text-decoration: none;
+		padding-left: 32px;
 		&:hover {
 			text-decoration: none;
 		}
@@ -180,7 +182,13 @@ button.more {
 
 // ON SCROLL TEXT
 .on-scroll {
-	padding-top: 12%;
+	padding-top: 7%;
+	@media only screen and (max-height: 700px) {
+		.lead {
+			font-size: $font-size-h1 !important;
+			font-size: rem($font-size-h1) !important;
+		}
+	}
 }
 
 .no-bg-1 {
@@ -213,3 +221,16 @@ button.more {
 		text-decoration: none !important;
 	}
 }
+
+// VIDEO FULL width
+// .videocover {
+// 	position: absolute;
+// 	bottom: 0px;
+// 	right: 0px;
+// 	min-width: 100%;
+// 	min-height: 100%;
+// 	width: auto;
+// 	height: auto;
+// 	z-index: -1000;
+// 	overflow: hidden;
+// }

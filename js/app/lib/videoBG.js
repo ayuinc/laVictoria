@@ -18,6 +18,9 @@ $(document).ready(function(){
 	// 		});
 	// 	}
 	// }
+	if (bowser.chrome) {
+		$('.videocover').videocover();
+	}
 
 
 	var videoExists = document.getElementById("example_video_1");
@@ -40,6 +43,9 @@ var playing = false;
 				myPlayer.play();
 				playing = true;
 				$('.play-video i').removeClass('flaticon-key9').addClass('flaticon-pause31');
+				$(this).closest('.overlay').css({
+					background: 0
+				});
 			} else {
 				myPlayer.pause();
 				$('.play-video i').removeClass('flaticon-pause31').addClass('flaticon-key9');

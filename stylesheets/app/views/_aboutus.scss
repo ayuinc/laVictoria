@@ -4,17 +4,17 @@
 		width: 33.28%;
 		@include padding(null $container-fluid null $container-fluid);
 		margin-bottom: 21px;
-		a {
-			color: $gray-dark;
-			display: block;
-			&:hover {
-				text-decoration: none;
-				.pic {
-					.overlay {
-						display: block;
-					}
+		&:hover {
+			text-decoration: none;
+			.pic {
+				.overlay {
+					display: block;
 				}
 			}
+		}
+		div {
+			color: $gray-dark;
+			display: block;
 			.pic {
 				position: relative;
 				img {

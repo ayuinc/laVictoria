@@ -1,6 +1,6 @@
 /*
 
-  Ayu Consulting Frontend Boilerplate - @MadeByGus
+  Ayu Consul ting Frontend Boilerplate - @MadeByGus
   ultima actualizacion: 26 de Septiembre 2014
   Author: @MadeByGus - G. Andres Ibarra yo@soygus.com
   Desde la consola navega hasta el directorio "stylesheets" y ejecuta: 
@@ -3020,8 +3020,7 @@ button.more {
   top: 0;
   right: 0;
   bottom: 0;
-  left: 0;
-  width: 100%; }
+  left: 0; }
   .video-wrapper .overlay,
   .video-wrapper-fold .overlay {
     height: 100%;
@@ -3116,9 +3115,10 @@ button.more {
   width: 100%;
   padding: 7px 0; }
   .scroll-down a {
-    font-size: 70px;
-    font-size: 5rem;
-    text-decoration: none; }
+    font-size: 56px;
+    font-size: 4rem;
+    text-decoration: none;
+    padding-left: 32px; }
     .scroll-down a:hover {
       text-decoration: none; }
 
@@ -3344,7 +3344,11 @@ button.more {
   background: #47AAE0 !important; }
 
 .on-scroll {
-  padding-top: 12%; }
+  padding-top: 7%; }
+  @media only screen and (max-height: 700px) {
+    .on-scroll .lead {
+      font-size: 36px !important;
+      font-size: 2.57143rem !important; } }
 
 .no-bg-1 {
   background: url(../assets/img/bg-pattern-1.png); }
@@ -3665,16 +3669,16 @@ button.more {
     padding-right: 14px;
     padding-left: 14px;
     margin-bottom: 21px; }
-    .bio-grid .bio-item a {
+    .bio-grid .bio-item:hover {
+      text-decoration: none; }
+      .bio-grid .bio-item:hover .pic .overlay {
+        display: block; }
+    .bio-grid .bio-item div {
       color: #454848;
       display: block; }
-      .bio-grid .bio-item a:hover {
-        text-decoration: none; }
-        .bio-grid .bio-item a:hover .pic .overlay {
-          display: block; }
-      .bio-grid .bio-item a .pic {
+      .bio-grid .bio-item div .pic {
         position: relative; }
-        .bio-grid .bio-item a .pic .overlay {
+        .bio-grid .bio-item div .pic .overlay {
           position: absolute;
           top: 0;
           right: 0;
@@ -3683,9 +3687,9 @@ button.more {
           padding: 28px;
           background: rgba(71, 170, 224, 0.7);
           display: none; }
-          .bio-grid .bio-item a .pic .overlay h1, .bio-grid .bio-item a .pic .overlay h2, .bio-grid .bio-item a .pic .overlay h3, .bio-grid .bio-item a .pic .overlay h4, .bio-grid .bio-item a .pic .overlay h5, .bio-grid .bio-item a .pic .overlay h6,
-          .bio-grid .bio-item a .pic .overlay .h1, .bio-grid .bio-item a .pic .overlay .h2, .bio-grid .bio-item a .pic .overlay .h3, .bio-grid .bio-item a .pic .overlay .h4, .bio-grid .bio-item a .pic .overlay .h5, .bio-grid .bio-item a .pic .overlay .h6,
-          .bio-grid .bio-item a .pic .overlay p, .bio-grid .bio-item a .pic .overlay .p {
+          .bio-grid .bio-item div .pic .overlay h1, .bio-grid .bio-item div .pic .overlay h2, .bio-grid .bio-item div .pic .overlay h3, .bio-grid .bio-item div .pic .overlay h4, .bio-grid .bio-item div .pic .overlay h5, .bio-grid .bio-item div .pic .overlay h6,
+          .bio-grid .bio-item div .pic .overlay .h1, .bio-grid .bio-item div .pic .overlay .h2, .bio-grid .bio-item div .pic .overlay .h3, .bio-grid .bio-item div .pic .overlay .h4, .bio-grid .bio-item div .pic .overlay .h5, .bio-grid .bio-item div .pic .overlay .h6,
+          .bio-grid .bio-item div .pic .overlay p, .bio-grid .bio-item div .pic .overlay .p {
             margin: 0; }
 
 @media only screen and (max-width: 768px) {
