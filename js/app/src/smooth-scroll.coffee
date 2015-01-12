@@ -1,8 +1,8 @@
 $(document).ready ->
 	$sectionNav = $('.header')
 	$navSectionRef = $('.smooth-scroll a')
-	$toTop = $('.to-top')
 
+	# FUNCIONES ON SCROLL
 	$(document).on 'scroll', onScroll
 
 	# SMOOTH SCROLL CON VELOCITY JS
@@ -11,55 +11,45 @@ $(document).ready ->
 		target = this.hash
 		$target = $(target)
 		$(target).velocity 'scroll', {
-			duration: 700,
+			duration: 300,
 			offset: 7
 		}
 		return
 
-	# SCROLL TO DOM TOP FOR FIXED DIV
-	$toTop.click (e)->
-		e.preventDefault()
-		$('html').velocity 'scroll', {
-			duration: 700,
-			offset: 0
-		}
-		return
+  # OCULTAR NAVEGACION CUANDO USUARIO EN FOOTER
+	# getDocHeight = ->
+ #    D = document
+ #    return Math.max(
+ #      D.body.scrollHeight, D.documentElement.scrollHeight,
+ #      D.body.offsetHeight, D.documentElement.offsetHeight,
+ #      D.body.clientHeight, D.documentElement.clientHeight)
+
+	# DETECTAR SCROLL
+	# $(window).scroll ->
+	#   if($(window).scrollTop() > ($(window).height() / 2))
+ #      $sectionNav.addClass 'on-scroll'
+ #    else
+ #    	$sectionNav.removeClass 'on-scroll'
+	# 		return		
 
 	return
-
-$headerScrollRef = $('.header-scroll a')
-$header = $('.header')
-$headerOff = $('#header-off')
-
 
 onScroll = (e) ->	
+	$navSectionRef = $('.smooth-scroll a')
 	$scrollPos = $(document).scrollTop()
-	$headerScrollRef.each ->
-		$currLink = $(this)
-		$currLinkParent = $currLink.parent()
-		$refElement = $($currLink.attr('href'))
-		$selector = $refElement.selector
-		$top = $refElement.position().top - 140
-		$refCalc = ($top <= $scrollPos && $top + $refElement.height() > $scrollPos)
-		if $refCalc
-			$currLink.addClass 'active'
-			if $selector is '#video-wrapper-team'
-				setTimeout(
-					->
-						player = videojs('example_video_1')
-						player.play()
-					3000
-					)
-		else
-			$currLink.removeClass 'active'
-		return
-	if $scrollPos <= 0
-		$header.removeClass 'header-off'
-	else if $headerOff.hasClass 'active'
-		$header.removeClass 'header-off'
-	else 
-		$header.addClass 'header-off'
+
+	$navSectionRef.each ->
+    $currLink = $(this)
+    $currLinkParent = $currLink.parent()
+    $refElement = $($currLink.attr('href'))
+    if ($refElement.position().top <= $scrollPos && $refElement.position().top + $refElement.height() > $scrollPos)
+      $currLink.addClass 'active'
+    else
+      $currLink.removeClass 'active'
+    return
 	return
+
+
 
 
 

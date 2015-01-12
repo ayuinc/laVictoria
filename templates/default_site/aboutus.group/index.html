@@ -1,31 +1,32 @@
 {embed="includes/header"}
 {embed="includes/head"}
 {embed="includes/menu"}
-      <div class="video-wrapper-fold bg-gray-lighter mhp-100" id="video-wrapper-fold">
-        <video 
-          id="fold_video"
-          class="video-js vjs-default-skin videocover"
-          controls preload="auto" width="100%" height="100%"
-          data-setup='{}'
-          poster="">
-          <source src="{site_url}assets/video/lab-construction.mp4" type='video/mp4' />
-          <source src="{site_url}assets/video/lab-construction.webm" type='video/webm' />
-          <source src="{site_url}assets/video/lab-construction.ogg" type='video/ogg' />
+      <div class="fold fold-fixed mhp-100">
+        <video
+          id="videocover"
+          class="video-js videocover vjs-default-skin"
+          controls
+          preload="auto">
+          <source src="assets/video/lab-construction.webm" type='video/webm' />
+          <source src="assets/video/lab-construction.mp4" type='video/mp4' />
+          <source src="assets/video/lab-construction.ogg" type='video/ogg' />
           <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
         </video>
-        <div class="overlay text-center" style="background: url({site_url}assets/img/bg-project-1.jpg) no-repeat center top;">
-          <div class="container-sm text-white overlay-trigger overlay-us relative">
-            <div class="on-scroll p-0" style="position: absolute; width: 100%;">
+        <div class="video-placeholder" style="background: url({site_url}assets/img/project-bg-2.jpg) no-repeat center top;"></div>
+        <div class="overlay on-scroll text-center flex-middle-center">
+          <div class="container-sm text-white relative">
+            <div class="" style="position: absolute; width: 100%;">
               <h1 class="mb-14 lead mt-0">Improving the lives of Peruvian people through human centered innovation.</h1>
               <a href="#" class="h2 lead play-video"><i class="flaticon-key9"></i></a>
             </div>
           </div>
-          <div class="scroll-down smooth-scroll text-danger">
+          <div class="scroll-down text-global-color">
             <a href="#main">&#8595;</a>
           </div>
         </div>
       </div>
       <div class="site-content" id="main">
+        <div class="header-trigger"></div>
         <div class="bg-gray-lighter ptp-7">
           <div class="container pv-35">
             <h1 class="underline text-global-color">Our Process</h1>
@@ -66,20 +67,20 @@
             </ul>
           </div>
         </div>
-        <div class="video-wrapper-team bg-gray-lighter mhp-100" id="video-wrapper-team">
-          <video 
-            id="example_video_1" 
-            class="video-js vjs-default-skin"
-            controls preload="auto" width="100%" height="100%"
-            data-setup='{}'>
-            <source src="{site_url}assets/video/TeamPicture.mp4" type='video/mp4' />
-            <source src="{site_url}assets/video/TeamPicture.webm" type='video/webm' />
-            <source src="{site_url}assets/video/TeamPicture.ogg" type='video/ogg' />
+        <div class="mhp-100 relative">
+          <video
+            id="video-on-scroll"
+            loop
+            class="video-js video-on-scroll vjs-default-skin"
+            preload="auto">
+            <source src="assets/video/TeamPicture.webm" type='video/webm' />
+            <source src="assets/video/TeamPicture.mp4" type='video/mp4' />
+            <source src="assets/video/TeamPicture.ogg" type='video/ogg' />
             <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
           </video>
-          <div class="overlay text-center">
-            <div class="container-sm text-white overlay-trigger overlay-us">
-              <h1 class="mb-21 lead">Our Team</h1>
+          <div class="overlay flex-middle-center">
+            <div class="container-sm text-white text-center">
+              <h1 class="lead">Our team</h1>
             </div>
           </div>
         </div>

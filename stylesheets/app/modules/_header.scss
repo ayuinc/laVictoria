@@ -1,9 +1,10 @@
 .header {
 	min-height: 70px;
-	position: fixed;
+	@include position(fixed, 0 null null null);
 	width: 100%;
 	z-index: 1000;
-	top: 0;
+	-webkit-backface-visibility: hidden; 
+	-webkit-transform: translateZ(0);
 	padding-top: 42px;
 	@include transition(all 0.2s ease-in-out);
 	.nav-bar {
@@ -164,5 +165,19 @@
 		padding: rem(14px) 0;
 		background: rgba(white, 0.9);
 		@include transition(all 0.2s ease-in-out);
+	}
+}
+
+.header-trigger {
+	@include position(absolute, -70px 0 null 0);
+	// z-index: 1000;
+	// width: 100%;
+	// background: rgba(blue, 0.9);
+	// min-height: 3px;
+}
+
+.no-video {
+	.header-trigger {
+		@include position(absolute, 0 0 null 0);
 	}
 }
