@@ -44,3 +44,14 @@
 .grid-sizer {
 	width: 33.28%;
 }
+
+.list-about-us {
+	li {
+		.pic {
+			@include bg-img-control;
+			width: 163px;
+			height: 163px;
+			border-radius: 50%;
+		}
+	}
+}

@@ -1,0 +1,9 @@
+.project-collaborators {
+	> ul {
+		@include list-unstyled;
+		li {
+			float: left;
+			margin-right: 9px;
+		}
+	}
+}

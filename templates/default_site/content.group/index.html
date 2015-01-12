@@ -18,8 +18,9 @@
         <div class="overlay on-scroll text-center flex-middle-center">
           <div class="container-sm text-white relative">
             <div class="" style="position: absolute; width: 100%;">
-              <h1 class="mb-21 lead mt-0">Improving the lives of Peruvian people through human centered innovation.</h1>
-              <a href="{site_url}projects" class="more">Learn more</a><span> &#8594;</span>
+              <h1 class="mb-21 lead mt-0">How might we improve the lives of Peruvian people?</h1>
+              <!-- <a href="{site_url}projects" class="more">Learn more</a><span> &#8594;</span> -->
+              <a href="#" class="h2 lead play-video-full-screen"><i class="flaticon-key9"></i></a> 
             </div>
           </div>
           <div class="scroll-down text-danger">
@@ -31,25 +32,30 @@
         <div class="header-trigger"></div>
         <div class="mhp-100 bg-gradient-feo flex flex-center flex-column flex-middle relative">
           <div class="container-sm text-white text-center">
-            <h1 class="lead mb-21">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
-            <a href="#" class="more">Learn more</a><span> &#8594;</span>
+            <h1 class="lead mb-21">We exist to create new experiences for Peruvian families by reimagining Intercorp businesses.</h1>
+            <h2 class="mb-35">Working closely with IDEO, the world’s leading design consultancy, we’ve set up a small studio in the La Victoria neighborhood in Lima, where we’re bringing innovation closer to dozens of companies in the Intercorp portfolio.</h2>
+            <a href="{site_url}aboutus" class="more">Learn more</a><span> &#8594;</span>
           </div>
           <div class="scroll-down smooth-scroll text-white">
             <a href="#sec-1">&#8595;</a>
           </div>
         </div>
-        <div id="sec-1" class="mhp-100 bg-img-block" style="background: url(assets/img/project-bg-1.jpg);">
+        {exp:channel:entries channel="projects" limit="1" dynamic="off" orderby="date" sort="asc"}
+          {project-image-main limit="1"}
+          <div id="sec-1" class="mhp-100 bg-img-block bg-img-cover" style="background-image: url({image:url:large})">
+          {/project-image-main}
           <div class="overlay text-center flex flex-column flex-middle flex-center">
             <div class="container-sm text-white overlay-trigger overlay-work">
-              <h1 class="lead">Project Title</h1>
-              <h2 class="mb-35">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
-              <a href="#" class="more">View Project</a><span> &#8594;</span>
+              <h1 class="lead">{project-featured}</h1>
+              <h2 class="mb-35">{project-intro}</h2>
+              <a href="{site_url}projects/project-show/{url_title}" class="more">View Project</a><span> &#8594;</span>
             </div>
           </div>
           <div class="scroll-down smooth-scroll text-danger">
             <a href="#sec-2">&#8595;</a>
           </div>
         </div>
+        {/exp:channel:entries}
         <div id="sec-2" class="mhp-100 bg-gray-lighter">
           <div class="container ptp-7">
             <ul class="grid-list grid-list-2 grid-list-anchors isotope-container match-margin">

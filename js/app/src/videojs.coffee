@@ -2,7 +2,9 @@ $(document).ready ->
 
 	videocover = document.getElementById 'videocover'
 	playBtn = $('.play-video')
+	playFullScreen = $('.play-video-full-screen')
 	videoPlaying = false
+	videoIsFullscreen = false
 
 	if videocover 
 		myPlayer = videojs 'videocover'
@@ -21,6 +23,32 @@ $(document).ready ->
 				videoPlaying = true
 			return
 			)
-
+		playFullScreen.click (e) ->
+			e.preventDefault()
+			# videoIsFullscreen = true
+			myPlayer.requestFullscreen()
+			myPlayer.isFullscreen(true)
+			myPlayer.controls true
+			myPlayer.muted false
+			myPlayer.play()
+			myPlayer.currentTime 0
+			return
+		myPlayer.on 'fullscreenchange', ->
+			if !myPlayer.isFullscreen()
+				myPlayer.isFullscreen(false)
+				myPlayer.controls false
+				myPlayer.muted true
+			return
 
 	return
+
+
+
+
+
+
+
+
+
+
+

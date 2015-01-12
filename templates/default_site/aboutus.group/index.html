@@ -1,7 +1,7 @@
 {embed="includes/header"}
 {embed="includes/head"}
 {embed="includes/menu"}
-      <div class="fold fold-fixed mhp-100">
+      <!-- <div class="fold fold-fixed mhp-100">
         <video
           id="videocover"
           class="video-js videocover vjs-default-skin"
@@ -12,11 +12,11 @@
           <source src="assets/video/lab-construction.ogg" type='video/ogg' />
           <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
         </video>
-        <div class="video-placeholder" style="background: url({site_url}assets/img/project-bg-2.jpg) no-repeat center top;"></div>
+        <div class="video-placeholder" style="background-image: url({site_url}assets/img/project-bg-2.jpg) no-repeat center top;"></div>
         <div class="overlay on-scroll text-center flex-middle-center">
           <div class="container-sm text-white relative">
             <div class="" style="position: absolute; width: 100%;">
-              <h1 class="mb-14 lead mt-0">Improving the lives of Peruvian people through human centered innovation.</h1>
+              <h1 class="mb-14 lead mt-0">We improve the lives of Peruvian people by using human-centered innovation to reimagine the future of <a href="http://www.intercorp.com.pe/en" target="_blank">Intercorp</a> businesses.</h1>
               <a href="#" class="h2 lead play-video"><i class="flaticon-key9"></i></a>
             </div>
           </div>
@@ -24,180 +24,231 @@
             <a href="#main">&#8595;</a>
           </div>
         </div>
-      </div>
-      <div class="site-content" id="main">
-        <div class="header-trigger"></div>
-        <div class="bg-gray-lighter ptp-7">
-          <div class="container pv-35">
-            <h1 class="underline text-global-color">Our Process</h1>
-            <div class="row pv-21">
-              <div class="col-sm-8">
-                <p class="text-global-color medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta totam eaque blanditiis, recusandae, facilis incidunt iusto eos, non officia consectetur est aliquid optio corporis molestias magnam a iste quas suscipit.</p>
+      </div> -->
+      <div class="site-content no-video" id="main">
+        {exp:channel:entries channel="aboutus" limit="1"}
+          {aboutus_image_main limit="1"}
+          <div class="mhp-100 bg-img-block bg-img-cover" style="background-image: url({image:url:large})">
+          {/aboutus_image_main}
+            <div class="overlay text-center flex flex-column flex-middle flex-center">
+              <div class="container-sm text-white overlay-trigger overlay-work">
+                <h1 class="lead">{aboutus_featured}</h1> 
+                <!-- <h2 class="mb-35"></h2> -->
+                <!-- <a href="{site_url}projects/project-show" class="more">View Project</a><span> &#8594;</span> -->
               </div>
             </div>
-            <ul class="grid-list grid-list-4">
-              <li>
-                <div class="mb-28">
-                  <img src="{site_url}assets/img/img-sq.png" alt="" class="img-circle" width="163px" height="auto">
-                </div>
-                <h5 class="text-global-color medium uppercase">Understand</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit tempore vel dolores voluptatum ex adipisci numquam minima laboriosam.</p>
-              </li>
-              <li>
-                <div class="mb-28">
-                  <img src="{site_url}assets/img/img-sq.png" alt="" class="img-circle" width="163px" height="auto">
-                </div>
-                <h5 class="text-global-color medium uppercase">Understand</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit tempore vel dolores voluptatum ex adipisci numquam minima laboriosam.</p>
-              </li>
-              <li>
-                <div class="mb-28">
-                  <img src="{site_url}assets/img/img-sq.png" alt="" class="img-circle" width="163px" height="auto">
-                </div>
-                <h5 class="text-global-color medium uppercase">Understand</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit tempore vel dolores voluptatum ex adipisci numquam minima laboriosam.</p>
-              </li>
-              <li>
-                <div class="mb-28">
-                  <img src="{site_url}assets/img/img-sq.png" alt="" class="img-circle" width="163px" height="auto">
-                </div>
-                <h5 class="text-global-color medium uppercase">Understand</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit tempore vel dolores voluptatum ex adipisci numquam minima laboriosam.</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="mhp-100 relative">
-          <video
-            id="video-on-scroll"
-            loop
-            class="video-js video-on-scroll vjs-default-skin"
-            preload="auto">
-            <source src="assets/video/TeamPicture.webm" type='video/webm' />
-            <source src="assets/video/TeamPicture.mp4" type='video/mp4' />
-            <source src="assets/video/TeamPicture.ogg" type='video/ogg' />
-            <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
-          </video>
-          <div class="overlay flex-middle-center">
-            <div class="container-sm text-white text-center">
-              <h1 class="lead">Our team</h1>
+            <div class="scroll-down smooth-scroll text-global-color">
+              <a href="#sec-1">&#8595;</a>
             </div>
           </div>
-        </div>
-        <div class="bg-gray-lighter pv-56">
-          <div class="container ph-0-sm">
-            <ul class="bio-grid list-unstyled">
-              <li class="bio-item">
-                <div>
-                  <div class="pic">
-                    <img src="{site_url}assets/img/bio-1.jpeg" alt="" class="img-responsive">
-                    <div class="overlay text-white">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore repellendus molestiae id maxime possimus magnam, quos quod fuga iure ut eligendi quisquam soluta, odit pariatur, rem, eveniet alias quas nihil?</p>
-                      <nav class="h3 mt-21">
-                        <a href="#"><i class="flaticon-packet"></i></a>
-                        <a href="#"><i class="flaticon-twitter42"></i></a>
-                      </nav>
-                    </div>
-                  </div>
-                  <div class="details normalize-text pv-7">
-                    <h3 class="name text-global-color medium">First Last</h3>
-                    <span>Title</span>
-                  </div>
+          <div id="sec-1" class="bg-gray-lighter ptp-7 relative">
+            <div class="header-trigger"></div>
+            <div class="container pv-35">
+              <h1 class="underline text-global-color">Our Process</h1>
+              <div class="row pv-21">
+                <div class="col-sm-8">
+                  <p class="text-global-color medium">{our_process}</p>
                 </div>
-              </li>
-              <li class="bio-item">
-                <div>
-                  <div class="pic">
-                    <img src="{site_url}assets/img/bio-1.jpeg" alt="" class="img-responsive">
-                    <div class="overlay text-white">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore repellendus molestiae id maxime possimus magnam, quos quod fuga iure ut eligendi quisquam soluta, odit pariatur, rem, eveniet alias quas nihil?</p>
-                      <nav class="h3 mt-21">
-                        <a href="#"><i class="flaticon-packet"></i></a>
-                        <a href="#"><i class="flaticon-twitter42"></i></a>
-                      </nav>
-                    </div>
+              </div>
+              <ul class="grid-list grid-list-4 list-about-us">
+                <li>
+                  <div class="mb-28">
+                    {titulo1_about_image limit="1"}
+                    <div class="pic" style="background-image: url({image:url:medium})"></div>
+                    {/titulo1_about_image}
                   </div>
-                  <div class="details normalize-text pv-7">
-                    <h3 class="name text-global-color medium">First Last</h3>
-                    <span>Title</span>
+                  <h5 class="text-global-color medium uppercase">{ttulo1_about}</h5>
+                  <p>{descripcin1-about}</p>
+                </li>
+                <li>
+                  <div class="mb-28">
+                    {titulo2_about_image limit="1"}
+                    <div class="pic" style="background-image: url({image:url:medium})"></div>
+                    {/titulo2_about_image}
                   </div>
-                </div>
-              </li>
-              <li class="bio-item">
-                <div>
-                  <div class="pic">
-                    <img src="{site_url}assets/img/bio-1.jpeg" alt="" class="img-responsive">
-                    <div class="overlay text-white">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore repellendus molestiae id maxime possimus magnam, quos quod fuga iure ut eligendi quisquam soluta, odit pariatur, rem, eveniet alias quas nihil?</p>
-                      <nav class="h3 mt-21">
-                        <a href="#"><i class="flaticon-packet"></i></a>
-                        <a href="#"><i class="flaticon-twitter42"></i></a>
-                      </nav>
-                    </div>
+                  <h5 class="text-global-color medium uppercase">{titulo2-about}</h5>
+                  <p>{descripcin2-about}</p>
+                </li>
+                <li>
+                  <div class="mb-28">
+                    {titulo3_about_image limit="1"}
+                    <div class="pic" style="background-image: url({image:url:medium})"></div>
+                    {/titulo3_about_image}
                   </div>
-                  <div class="details normalize-text pv-7">
-                    <h3 class="name text-global-color medium">First Last</h3>
-                    <span>Title</span>
-                  </div>
-                </div>
-              </li>
-              <li class="bio-item">
-                <div>
-                  <div class="pic">
-                    <img src="{site_url}assets/img/bio-1.jpeg" alt="" class="img-responsive">
-                    <div class="overlay text-white">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore repellendus molestiae id maxime possimus magnam, quos quod fuga iure ut eligendi quisquam soluta, odit pariatur, rem, eveniet alias quas nihil?</p>
-                      <nav class="h3 mt-21">
-                        <a href="#"><i class="flaticon-packet"></i></a>
-                        <a href="#"><i class="flaticon-twitter42"></i></a>
-                      </nav>
-                    </div>
-                  </div>
-                  <div class="details normalize-text pv-7">
-                    <h3 class="name text-global-color medium">First Last</h3>
-                    <span>Title</span>
-                  </div>
-                </div>
-              </li>
-              <li class="bio-item">
-                <div>
-                  <div class="pic">
-                    <img src="{site_url}assets/img/bio-1.jpeg" alt="" class="img-responsive">
-                    <div class="overlay text-white">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore repellendus molestiae id maxime possimus magnam, quos quod fuga iure ut eligendi quisquam soluta, odit pariatur, rem, eveniet alias quas nihil?</p>
-                      <nav class="h3 mt-21">
-                        <a href="#"><i class="flaticon-packet"></i></a>
-                        <a href="#"><i class="flaticon-twitter42"></i></a>
-                      </nav>
-                    </div>
-                  </div>
-                  <div class="details normalize-text pv-7">
-                    <h3 class="name text-global-color medium">First Last</h3>
-                    <span>Title</span>
-                  </div>
-                </div>
-              </li>
-              <li class="bio-item">
-                <div>
-                  <div class="pic">
-                    <img src="{site_url}assets/img/bio-1.jpeg" alt="" class="img-responsive">
-                    <div class="overlay text-white">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore repellendus molestiae id maxime possimus magnam, quos quod fuga iure ut eligendi quisquam soluta, odit pariatur, rem, eveniet alias quas nihil?</p>
-                      <nav class="h3 mt-21">
-                        <a href="#"><i class="flaticon-packet"></i></a>
-                        <a href="#"><i class="flaticon-twitter42"></i></a>
-                      </nav>
-                    </div>
-                  </div>
-                  <div class="details normalize-text pv-7">
-                    <h3 class="name text-global-color medium">First Last</h3>
-                    <span>Title</span>
-                  </div>
-                </div>
-              </li>
-            </ul>
+                  <h5 class="text-global-color medium uppercase">{titulo3-about}</h5>
+                  <p>{descripcin3-about}</p>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
+          <div class="mhp-100 relative">
+            <video
+              id="video-on-scroll"
+              loop
+              class="video-js video-on-scroll vjs-default-skin"
+              preload="auto">
+              <source src="assets/video/TeamPicture.webm" type='video/webm' />
+              <source src="assets/video/TeamPicture.mp4" type='video/mp4' />
+              <source src="assets/video/TeamPicture.ogg" type='video/ogg' />
+              <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+            </video>
+            <div class="overlay flex-middle-center">
+              <div class="container-sm text-white text-center">
+                <h1 class="lead">Our team</h1>
+              </div>
+            </div>
+          </div>
+          <div class="bg-gray-lighter pv-56">
+            <div class="container ph-0-sm">
+              <ul class="bio-grid list-unstyled">
+                <li class="bio-item">
+                  <div>
+                    <div class="pic">
+                      <img src="{site_url}assets/img/lavictoria-team_fiorella-belli.JPG" alt="" class="img-responsive">
+                      <div class="overlay text-white">
+                        <p>Design Researcher at La Victoria Lab. Fiorella holds a B.A. in Anthropology from the Catholic University of Peru, and has led interdisciplinary research efforts on developing innovations for the Peruvian Amazon and indigenous populations. </p>
+                        <nav class="h3 mt-21">
+                          <a href="mailto:fiorella@lavictoria.pe"><i class="flaticon-packet"></i></a>
+                          <a href="http://twitter.com/FiorellaBelli"><i class="flaticon-twitter42"></i></a>
+                        </nav>
+                      </div>
+                    </div>
+                    <div class="details normalize-text pv-7">
+                      <h3 class="name text-global-color medium">Fiorella Belli</h3>
+                      <span>Design Research</span>
+                    </div>
+                  </div>
+                </li>
+                <li class="bio-item">
+                  <div>
+                    <div class="pic">
+                      <img src="{site_url}assets/img/lavictoria-team_hernan-carranza.JPG" alt="" class="img-responsive">
+                      <div class="overlay text-white">
+                        <p>Founder and Head of La Victoria Lab. Hernan holds a Masters in Interactive Strategy from New York University. Previously, Hernan has worked as Adjunct Professor at Universidad del Pacífico, and as Marketing Director of Casa Andina, Intercorp’s hotel network.</p>
+                        <nav class="h3 mt-21">
+                          <a href="mailto:hernan@lavictoria.pe"><i class="flaticon-packet"></i></a>
+                          <a href="http://twitter.com/hernancarranza"><i class="flaticon-twitter42"></i></a>
+                        </nav>
+                      </div>
+                    </div>
+                    <div class="details normalize-text pv-7">
+                      <h3 class="name text-global-color medium">Hernán Carranza</h3>
+                      <span>Director</span>
+                    </div>
+                  </div>
+                </li>
+                <li class="bio-item">
+                  <div>
+                    <div class="pic">
+                      <img src="{site_url}assets/img/lavictoria-team_luis-cilimingras.JPG" alt="" class="img-responsive">
+                      <div class="overlay text-white">
+                        <p>Works for IDEO's London office where he is a director focusing on digital and service design. Since January he has been living in Lima to launch La Victoria Lab, supporting the setup of the studio and has led its first project, aimed at providing insight into Peru's new middle class.</p>
+                        <nav class="h3 mt-21">
+                          <a href="mailto:luis@lavictoria.pe"><i class="flaticon-packet"></i></a>
+                          <!-- <a href="http://twitter.com/hernancarranza"><i class="flaticon-twitter42"></i></a> -->
+                        </nav>
+                      </div>
+                    </div>
+                    <div class="details normalize-text pv-7">
+                      <h3 class="name text-global-color medium">Luis Cilimingras</h3>
+                      <span>IDEO London</span>
+                    </div>
+                  </div>
+                </li>
+                <li class="bio-item">
+                  <div>
+                    <div class="pic">
+                      <img src="{site_url}assets/img/lavictoria-team_oscar-malaspina.JPG" alt="" class="img-responsive">
+                      <div class="overlay text-white">
+                        <p>Environment designer and founding member of La Victoria Lab. Oscar also works as adjunct professor at Pontificia Universidad Católica del Perú. He holds a Master of Architecture in Urban Design from Harvard. Previously, Oscar has worked as an architect at Barclay&Crousse, as a consultant for the World Bank and as part of the MIT Urban Risk Lab.</p>
+                        <nav class="h3 mt-21">
+                          <a href="mailto:oscar@lavictoria.pe"><i class="flaticon-packet"></i></a>
+                          <!-- <a href="#"><i class="flaticon-twitter42"></i></a> -->
+                        </nav>
+                      </div>
+                    </div>
+                    <div class="details normalize-text pv-7">
+                      <h3 class="name text-global-color medium">Oscar Malaspina</h3>
+                      <span>Environmental Design</span>
+                    </div>
+                  </div>
+                </li>
+                <li class="bio-item">
+                  <div>
+                    <div class="pic">
+                      <img src="{site_url}assets/img/lavictoria-team_eduardo-marisca.JPG" alt="" class="img-responsive">
+                      <div class="overlay text-white">
+                        <p>Digital Innovator at La Victoria Lab. Eduardo holds a B.A. in Philosophy from the Catholic University of Peru and an M.S. in Comparative Media Studies from MIT.</p>
+                        <nav class="h3 mt-21">
+                          <a href="mailto:eduardo@lavictoria.pe"><i class="flaticon-packet"></i></a>
+                          <a href="http://twitter.com/piscosour"><i class="flaticon-twitter42"></i></a>
+                        </nav>
+                      </div>
+                    </div>
+                    <div class="details normalize-text pv-7">
+                      <h3 class="name text-global-color medium">Eduardo Marisca</h3>
+                      <span>Digital Innovation</span>
+                    </div>
+                  </div>
+                </li>
+                <!-- <li class="bio-item">
+                  <div>
+                    <div class="pic">
+                      <img src="{site_url}assets/img/lavictoria-team_sina-.JPG" alt="" class="img-responsive">
+                      <div class="overlay text-white">
+                        <p>Design lead and system thinker at IDEO’s San Francisco office, focusing much of his work on complex and organizational design. Sina has a background in social movements and education, and has a Ph.D in Comparative and International Education from Columbia University. He has been living in Lima since February 2014.</p>
+                        <nav class="h3 mt-21">
+                          <a href="mailto:sina@lavictoria.pe"><i class="flaticon-packet"></i></a>
+                          <a href="http://twitter.com/sinamossayeb"><i class="flaticon-twitter42"></i></a>
+                        </nav>
+                      </div>
+                    </div>
+                    <div class="details normalize-text pv-7">
+                      <h3 class="name text-global-color medium">Sina Mossayeb</h3>
+                      <span>IDEO San Francisco</span>
+                    </div>
+                  </div>
+                </li> -->
+                <li class="bio-item">
+                  <div>
+                    <div class="pic">
+                      <img src="{site_url}assets/img/lavictoria-team_gonzalo-perez.JPG" alt="" class="img-responsive">
+                      <div class="overlay text-white">
+                        <p>Gonzalo has advised corporate and social leaders on how to tell their stories and has outlined the communication strategy for Enseña Perú and Perú Champs, both non-profits. He holds a Bachelor of Communications (University of Lima) and a specialization in Design for Social Change (School of Visual Arts).</p>
+                        <nav class="h3 mt-21">
+                          <a href="mailto:gonzalo@lavictoria.pe"><i class="flaticon-packet"></i></a>
+                          <!-- <a href="http://twitter.com/sinamossayeb"><i class="flaticon-twitter42"></i></a> -->
+                        </nav>
+                      </div>
+                    </div>
+                    <div class="details normalize-text pv-7">
+                      <h3 class="name text-global-color medium">Gonzalo Pérez Paredes</h3>
+                      <span>Communications Design</span>
+                    </div>
+                  </div>
+                </li>
+                <li class="bio-item">
+                  <div>
+                    <div class="pic">
+                      <img src="{site_url}assets/img/lavictoria-team_lucia-valencia.JPG" alt="" class="img-responsive">
+                      <div class="overlay text-white">
+                        <p>Business Innovator at La Victoria Lab. Lucía is the first Peruvian to be recognized by the MIT Technology Review as an Innovators Under 35 and Social Innovator. She is the co-founder of DUHEM.co, the first Latin American e-commerce for cause-oriented brands; and Wayra winner.  Lucía holds a B.A. in Business Administration from Universidad del Pacífico.</p>
+                        <nav class="h3 mt-21">
+                          <a href="mailto:lucia@lavictoria.pe"><i class="flaticon-packet"></i></a>
+                          <a href="http://twitter.com/luciavdq"><i class="flaticon-twitter42"></i></a>
+                        </nav>
+                      </div>
+                    </div>
+                    <div class="details normalize-text pv-7">
+                      <h3 class="name text-global-color medium">Lucía Valencia-Dongo</h3>
+                      <span>Business Design</span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        {/exp:channel:entries}
         {embed="includes/pie-de-pagina"}
       </div>
 {embed="includes/footer"}      

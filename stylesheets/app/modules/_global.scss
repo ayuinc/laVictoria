@@ -7,6 +7,14 @@ body {
 	}
 }
 
+// EBM:REF
+// CONTROL FULL WIDTH BG IMAGES
+@mixin bg-img-control {
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
 body {
 	@include light;
 	overflow-x: hidden;
@@ -62,6 +70,13 @@ body {
 .overlay {
 	@include position(absolute, 0 0 0 0);
 	z-index: 10;
+	h1 {
+		font-size: $font-size-h2 + 9 !important;
+		font-size: rem($font-size-h2 + 9) !important;
+	}
+	.lead {
+		line-height: 1.2;
+	}
 }
 
 // .site-content {
@@ -138,6 +153,13 @@ button.more {
 
 .bg-gradient-feo {
 	@include background(linear-gradient(to bottom, $brand-info, $brand-success, $brand-warning, $brand-danger));
+	h1 { 
+		font-size: $font-size-h2 + 9 !important;
+		font-size: rem($font-size-h2 + 9) !important;
+	}
+	.lead {
+		line-height: 1.2;
+	}
 }
 
 .bg-img-block {
@@ -153,7 +175,11 @@ button.more {
 		left: 0;
 		background: rgba($gray-darker, 0.3);
 	}
+	&.bg-img-cover {
+		background-size: cover;
+	}
 }
+
 
 .site-wrapper {
 

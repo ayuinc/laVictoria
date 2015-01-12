@@ -8,7 +8,7 @@
   Version: 0.5
   GitHub: https://github.com/netpoe/EBM.git
 
-  sass --watch ebm-loops.scss:ebm-loops.css -t compressed
+  sass --watch ebm-loops.sc ss:ebm-loops.css -t compressed
 
 */
 /*========================================
@@ -12084,7 +12084,7 @@ ul.grid-list {
     margin: 0 auto; }
 
   .container-sm {
-    width: 748px;
+    width: 888px;
     padding-left: 14px;
     padding-right: 14px;
     margin: 0 auto; } }
