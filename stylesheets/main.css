@@ -2,7 +2,7 @@
 
   Ayu Consulting Frontend Boilerplate - @MadeByGus
   ultima actualizacion: 26 de Septiembre 2014
-  Author: @MadeByGus - G.  Andres Ibarra yo@soygus.com
+  Author: @MadeByGus - G. Andres Ibarra yo@soygus.com
   Desde la consola navega hasta el directorio "stylesheets" y ejecuta: 
 
   sass --watch main.scss:main.css
@@ -3641,7 +3641,7 @@ button.more {
   margin-right: -21px;
   margin-left: -21px; }
   .bio-grid .bio-item {
-    width: 33.28%;
+    width: 24.70%;
     padding-right: 14px;
     padding-left: 14px;
     margin-bottom: 21px; }

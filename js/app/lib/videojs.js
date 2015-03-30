@@ -10,7 +10,7 @@
     if (videocover) {
       myPlayer = videojs('videocover');
       myPlayer.controls(false);
-      myPlayer.currentTime(3);
+      myPlayer.currentTime(6);
       playBtn.click(function(e) {
         e.preventDefault();
         if (videoPlaying) {
@@ -37,7 +37,7 @@
         if (!myPlayer.isFullscreen()) {
           myPlayer.isFullscreen(false);
           myPlayer.controls(false);
-          myPlayer.muted(true); 
+          myPlayer.muted(true);
         }
       });
     }

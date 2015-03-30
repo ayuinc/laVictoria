@@ -9,7 +9,7 @@ $(document).ready ->
 	if videocover 
 		myPlayer = videojs 'videocover'
 		myPlayer.controls false
-		myPlayer.currentTime 3
+		myPlayer.currentTime 6
 		playBtn.click((e)->
 			e.preventDefault()
 			if videoPlaying

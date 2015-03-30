@@ -1,0 +1,53 @@
+// SECTION SCROLL
+$section-scroll-anchors-width-control: 9px;
+#section-scroll {
+	@include position(fixed, 63% 0 null null);
+	-webkit-backface-visibility: hidden; 
+	-webkit-transform: translateZ(0);
+	z-index: 10000;
+	ul {
+		@include list-unstyled;
+		min-height: 91px;
+		padding: $container-fluid;
+		li {
+			padding: $section-scroll-anchors-width-control 0;
+			a {
+				position: relative;
+				z-index: 2;
+				background-color: rgba(white, 0.6);
+				display: block;
+				width: 9px;
+				height: 9px;
+				border-radius: 50%;
+				&:hover,
+				&.active {
+					background-color: rgba(white, 0.9);
+					&:before {
+						background-color: rgba(white, 0.3);
+					}
+				}
+				&:before,
+				&:after {
+					@include position(absolute, 7px 0 null null);
+					// background-color: $gray;
+					content: "";
+					border-radius: 50%;					
+				}
+				&:before {
+					width: $section-scroll-anchors-width-control * 2;
+					height: $section-scroll-anchors-width-control * 2;
+				  z-index: 1;
+				  top: -49%;
+				  left: -51%;
+				  background-color: transparent;
+				  border: 1px dashed rgba(white, 0.7);
+				}
+				// &:after {
+				// 	width: $section-scroll-anchors-width-control;
+				// 	height: $section-scroll-anchors-width-control;
+				// 	z-index: 3;
+				// }
+			}
+		}
+	}
+}
