@@ -3036,6 +3036,11 @@ body {
   bottom: 0;
   left: 0;
   z-index: 10; }
+  .overlay h1 {
+    font-size: 39px !important;
+    font-size: 2.78571rem !important; }
+  .overlay .lead {
+    line-height: 1.2; }
 
 a.more,
 button.more {
@@ -3061,6 +3066,11 @@ button.more {
 .bg-gradient-feo {
   background: -webkit-linear-gradient( top , #47AAE0, #00a75c, #ea5e31, #ec008b);
   background: linear-gradient(to bottom, #47AAE0, #00a75c, #ea5e31, #ec008b); }
+  .bg-gradient-feo h1 {
+    font-size: 39px !important;
+    font-size: 2.78571rem !important; }
+  .bg-gradient-feo .lead {
+    line-height: 1.2; }
 
 .bg-img-block {
   position: relative;
@@ -3073,6 +3083,8 @@ button.more {
     bottom: 0;
     left: 0;
     background: rgba(34, 36, 36, 0.3); }
+  .bg-img-block.bg-img-cover {
+    background-size: cover; }
 
 .site-wrapper.global-color-primary .text-global-color {
   color: #47AAE0 !important; }
@@ -3617,11 +3629,19 @@ button.more {
 .grid-list .post-item:nth-child(odd) {
   padding-left: 0; }
 
+.project-collaborators > ul {
+  padding-left: 0;
+  list-style: none;
+  margin: 0; }
+  .project-collaborators > ul li {
+    float: left;
+    margin-right: 9px; }
+
 .bio-grid {
   margin-right: -21px;
   margin-left: -21px; }
   .bio-grid .bio-item {
-    width: 33.28%;
+    width: 24.70%;
     padding-right: 14px;
     padding-left: 14px;
     margin-bottom: 21px; }
@@ -3656,5 +3676,13 @@ button.more {
       width: 49.95%; } }
 .grid-sizer {
   width: 33.28%; }
+
+.list-about-us li .pic {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 163px;
+  height: 163px;
+  border-radius: 50%; }
 
 /*# sourceMappingURL=main.css.map */
