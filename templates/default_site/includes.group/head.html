@@ -1,45 +1,55 @@
-<div class="header">
-  <div class="container-fluid">
-    <div class="nav-bar">
-      <div class="left">
-        {if segment_1==''}
-        <a class="logo to-top"></a>
-        {if:else}
-        <a href="{site_url}" class="logo"></a>
-        {/if}
+<!doctype html>
+<html lang="en">
+  <meta charset="utf-8">
+  <title>La Victoria Labs</title>
+  <meta name="description" content="">
+  <meta name="keywords" content=""> 
+  <meta name="author" content="@MadeByGus">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <link rel="shortcut icon" href="{site_url}app/assets/icons/favicon.ico">
+  <script src="//use.typekit.net/lge1mxm.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
+  <link href="{site_url}app/assets/css/style.css" rel="stylesheet"> <!-- App styles -->
+  <link href="{site_url}app/assets/css/ebm.css" rel="stylesheet">
+
+	<div class="site-wrapper"> <!-- Body -->
+		<header class="header">
+      <div class="container">
+        <div class="left logo">
+          <a href="{site_url}"><img src="assets/img/logo_LVL.white.png" class="ignore-srcset" alt="La Victoria Labs" style="width: 112px; height: auto;"></a>
+        </div>      
+        <div class="right">
+          <nav class="text-shadow">
+            <a href="{site_url}projects">Work</a>
+            <a href="{site_url}aboutus">Us</a>
+          </nav>
+        </div>
       </div>
-      <div class="right pt-28">
-        <ul class="nav-items">
-          <li class="us">
-            {if segment_1=='aboutus'}
-            <a href="{site_url}aboutus" class="active">
-              Us
-              <span></span>
-            </a>
-            <span class="header-scroll"><a href="#video-wrapper-team" class="hidden"></a></span>
-            {if:else}
-            <a href="{site_url}aboutus">
-              Us
-              <span></span>
-            </a>
-            {/if}
-          </li>
-          <li class="work">
-            {if segment_1=='projects'}
-            <a href="{site_url}projects" class="active">
-              Work
-              <span></span>
-            </a>
-            {if:else}
-            <a href="{site_url}projects">
-              Work
-              <span></span>
-            </a>
-            {/if}
-            <span class="header-scroll"><a href="#main" id="header-off" class="hidden"> HEader</a></span>
-          </li>
-        </ul>
+    </header>
+    <header class="header-fixed">
+      <div class="container">
+        <div class="left logo">
+          <a href="{site_url}"><img src="assets/img/logo_LVL.black.png" class="ignore-srcset" alt="La Victoria Labs" style="width: 91px; height: auto;"></a>
+        </div>      
+        <div class="right">
+          <nav>
+            <a href="{site_url}projects">Work</a>
+            <a href="{site_url}aboutus">Us</a>
+          </nav>
+        </div>
       </div>
-    </div>
+    </header>
   </div>
-</div>
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,210 @@
+// SIZE CONTROL VARS
+$size-control-placeholder: 530px;
+$banner-height: 350px; // Banners
+$site-menu-width-control: 101px; // Site menu
+$menu-list-icons-width: 35px;
+$header-height-control: 70px; // Header
+$mobile-navbar-height: 56px; // Mobile header
+$video-bg-height: 490px; // Hero Unit and Videocover
+$user-card-height: 42px; // User cards
+$user-card-width: 70px;
+
+html,
+body {
+	background-color: $body-bg;	
+	&::-webkit-scrollbar { 
+    display: none; 
+	}
+}
+
+.site-wrapper,
+.site-content {
+	position: relative;
+}
+
+// HERO UNIT
+.hero-unit {
+	position: relative;
+	height: $video-bg-height;
+	@include bg-img-control;
+	&.video-bg {
+		overflow: hidden;
+		height: $video-bg-height;
+	}
+	.overlay,
+	.hero-unit-pic {
+		@include position(absolute, 0 0 0 0);
+		// height: $video-bg-height;
+		overflow: hidden;
+	}
+	.hero-unit-pic {
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+	&.full-height {
+		height: 100%;
+		// height: 100%;
+		// width: 100%;
+		.video-bg {
+			height: 100%;
+		}
+		.overlay,
+		.hero-unit-pic {
+			@include position(absolute, 0 0 0 0);
+			height: 100%;
+		}
+	}
+}
+
+// CLICKABLE DIV
+[data-href]{
+	cursor: pointer;
+}
+
+// ON SCROLL
+.on-scroll {
+	position: relative;
+}
+
+// BG GRADIENT CULERO
+.bg-gradient-culero {
+	@include background(linear-gradient(to bottom, $brand-info, $brand-success, $brand-warning, $brand-danger));
+}
+
+// ONEPAGESCROLL
+.onepage-wrapper .section {
+	overflow: hidden;
+	.overlay {
+		@include position(absolute, 0 0 0 0);
+		height: 100%;
+	}
+	&.section-last {
+		footer {
+			@include position(absolute, null 0 0 0);
+			width: 100%;
+			background: $body-bg;
+			min-height: 70px;
+			padding: ($container-fluid * 2) 0;
+			.container {
+				@include flex-space-between;
+				border-top: 1px solid $gray-light;
+			}
+			.left,
+			.right {
+				@include flex-middle;
+				width: 50%;
+				min-height: 70px;
+			}
+			.right {
+				text-align: right;
+			}
+		}
+	}
+}
+
+// BG PIC for full height sections
+.bg-pic {
+	@include position(absolute, 0 0 0 0);
+	height: 100%;
+	width: 100%;
+	img {
+		width: 100%;
+		height: auto;
+	}
+}
+
+// CUSTOM QUOTES
+.custom-quotes {
+	@include serif-light-italic;
+	margin-top: $container-fluid + 7;
+	margin-bottom: $container-fluid + 14;
+	position: relative;
+	&:before,
+	&:after {
+		font-family: 'icomoon';
+		position: absolute;
+		font-size: $font-size-h4;
+		width: 35px;
+	}
+	&:before {
+		content: "\e7e5";
+		left: -32px;
+  	top: -4px;
+	}
+	// &:after {
+	// 	content: "\e7e6";
+	// 	right: -24px;
+ //  	bottom: -4px;
+	// }
+}
+
+// BG GALLERY WRAPPER 
+.bg-gallery-wrapper {
+	@include position(absolute, 0 0 0 0);
+	height: 100%;
+	width: 100%;
+	.js-flickity,
+	.gallery-cell {
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+	}
+	.js-flickity {}
+	.gallery-cell {
+		opacity: 0;
+		@include transition(opacity 0.7s ease-in-out);
+		&.is-selected {
+			opacity: 1;
+			@include transition(opacity 1.2s ease-in-out);
+		}
+	}
+	.gallery-cell-wrapper {
+		.gallery-cell-pic,
+		.gallery-cell-content {
+			@include position(absolute, 0 0 0 0);
+			height: 100%;
+			width: 100%;
+		}
+		.gallery-cell-pic {
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+		.gallery-cell-content {}
+	}
+}
+
+// FLICKITY VIEWPORT
+.flickity-viewport {
+	@media #{$sm-down} {
+		height: 100%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
