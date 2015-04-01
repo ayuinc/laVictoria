@@ -57,7 +57,7 @@
 (function() {
   'use-strict';
   $(document).ready(function() {
-    var headerDisplayController, headerScrollScene, scrollToController;
+    var headerDisplayController, headerScrollScene, myPlayer, scrollToController, videoOnScroll, videoOnScrollController, videoOnScrollScene;
     scrollToController = new ScrollMagic.Controller();
     scrollToController.scrollTo(function(newpos) {
       TweenMax.to(window, 0.5, {
@@ -92,6 +92,22 @@
       responsiveFallback: false,
       direction: "vertical"
     });
+    videoOnScrollController = new ScrollMagic.Controller();
+    videoOnScroll = document.getElementById('video-on-scroll');
+    if (videoOnScroll) {
+      myPlayer = videojs('video-on-scroll');
+      myPlayer.controls(false);
+      videoOnScrollScene = new ScrollMagic.Scene({
+        triggerElement: '.video-on-scroll',
+        duration: $(window).height()
+      }).addTo(videoOnScrollController);
+      videoOnScrollScene.on('enter', function(e) {
+        myPlayer.play();
+      });
+      videoOnScrollScene.on('leave', function(e) {
+        myPlayer.pause();
+      });
+    }
   });
 
 }).call(this);

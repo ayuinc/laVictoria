@@ -5771,12 +5771,16 @@ body::-webkit-scrollbar {
   width: 33.28%;
 }
 
+.list-about-us li {
+  text-align: justify;
+}
 .list-about-us li .pic {
   background-repeat: no-repeat;
   background-size: cover;
   width: 163px;
   height: 163px;
   border-radius: 50%;
+  margin: 0 auto;
 }
 
 a.btn.form-control,

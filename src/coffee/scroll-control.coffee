@@ -28,28 +28,6 @@ $(document).ready ->
 		.addTo(headerDisplayController)
 	# headerScrollScene.addIndicators({zindex: 1000, suffix: 1})
 
-	# SCROLL TO AUTOMATIC ANCHORS
-	# sectionScrollAnchor = $('.section-scroll-anchor-block')
-	# sectionScrollAnchors = []
-	# $.each(sectionScrollAnchor, (index, item)->
-	# 	sectionScrollAnchors.push(item)
-	# 	return
-	# 	)
-	# console.log sectionScrollAnchors
-	# window['anchorScrollIndex']
-	# $.each(sectionScrollAnchors, (index, item)->
-	# 	window['anchorScrollIndex'] = 'section-scroll-anchor-block-' + index
-	# 	$(item).attr('id', anchorScrollIndex)
-	# 	scrollDownAnchor = '<div class="scroll-down-anchor">' + 
-	# 										'<a class="icon-chevron-down"' +
-	# 										'href="#section-scroll-anchor-block-' + (index + 1) + '"' +
-	# 										'rel="nofollow"></a></div>'
-	# 	$(item).append scrollDownAnchor
-	# 	return
-	# 	)
-	# console.log window['anchorScrollIndex']
-	# $('.section-scroll-anchor-block-last .scroll-down-anchor').remove() 
-
 	$(".onepage-scroll-content").onepage_scroll({
 		sectionContainer: "section"
 		easing: "ease"
@@ -61,6 +39,28 @@ $(document).ready ->
 		responsiveFallback: false
 		direction: "vertical"
 		})
+
+	# PLAY VIDEO ON SCROLL
+	videoOnScrollController = new ScrollMagic.Controller()
+	videoOnScroll = document.getElementById 'video-on-scroll'
+	if videoOnScroll
+		myPlayer = videojs 'video-on-scroll'
+		myPlayer.controls false
+		videoOnScrollScene = new ScrollMagic.Scene({
+			triggerElement: '.video-on-scroll'
+			duration: $(window).height()
+			# triggerHook: 0.3
+			})
+			.addTo(videoOnScrollController)
+		videoOnScrollScene.on('enter', (e)->
+			myPlayer.play()
+			return
+			)
+		videoOnScrollScene.on('leave', (e)->
+			myPlayer.pause()
+			return
+			)
+		# videoOnScrollScene.addIndicators({zindex: 1000, suffix: "3"})
 
 
 	return
