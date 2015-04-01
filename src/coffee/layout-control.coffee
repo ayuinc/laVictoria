@@ -26,7 +26,7 @@ $(document).ready ->
 		screenDesktop: 960
 		screenLargeDesktop: 1140
 	}
-	console.log windowWidth
+	# console.log windowWidth
 	addBgImg = (item, img) ->
 		$(item).addClass('bg-img-block').css({
 			'background-image': 'url(' + img + ')'

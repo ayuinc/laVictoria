@@ -1,22 +1,43 @@
 {embed="includes/head"}
-  <div class="site-content no-video" id="main">
-    {exp:channel:entries channel="projects" limit="5" dynamic="off" orderby="date" sort="asc"}
-      {project-image-main limit="1"}
-      <div class="mhp-100 bg-img-block bg-img-cover" style="background-image: url({image:url:large})">
-      {/project-image-main}
-      {if count=="2"}
-        <div class="header-trigger"></div>
-      {/if}
-        <div class="overlay text-center flex flex-column flex-middle flex-center">
-          <div class="container-sm text-white overlay-trigger overlay-work">
-            <h1 class="lead">{project-intro}</h1>
-            <!-- <h2 class="mb-35"></h2> -->
-            <a href="{site_url}projects/project-show/{url_title}" class="more">View Project</a><span> &#8594;</span>
-          </div>
-        </div>
-        <div class="scroll-down smooth-scroll text-global-color">
-          <a href="#sec-1">&#8595;</a>
+  <main class="site-content onepage-scroll-content" role="main">
+  {exp:channel:entries channel="projects" limit="5" dynamic="off" orderby="date" sort="asc"}
+    <section class="minhp-100 {if count=="5"}section-last{/if}"
+            {project-image-main limit="1"}
+            data-responsive-bg-img='{
+                "vw-phone": "{image:url:small}",
+                "vw-tablet": "{image:url:medium}",
+                "vw-desktop": "{image:url:large}",
+                "vw-lg-desktop": "{image:url}"
+              }'
+            {/project-image-main}>
+      <div class="overlay flex-middle-center text-center">
+        <div class="container-sm lead-ch">
+          <h3>{project-intro}</h3>
+          <div class="separator separator-gray-dark separator-centered"></div>
+          <a href="{site_url}projects/project-show/{url_title}" class="btn btn-icon-outline btn-gray-dark unlead">
+            <span>Learn more</span>
+            <i class="icon-chevron-right"></i>
+          </a>
         </div>
       </div>
-    {/exp:channel:entries}
-{embed="includes/footer"}
+      {if count=="5"}
+      <footer class="minh-70 bg-gray-darker">
+        <div class="container">
+          <div class="left">
+            <nav>
+              <a href="#"></a>
+            </nav>
+          </div>
+          <div class="right">
+            <nav class="ml-ch-14">
+              <a href="#">Contact Us</a>
+              <a href="#" class="language-dropdown">EN <i class="icon-chevron-down small"></i></a>
+            </nav>
+          </div>
+        </div>
+      </footer>
+      {/if}
+    </section>
+  {/exp:channel:entries}
+  </main>
+{embed="includes/footer"}      
