@@ -49,7 +49,6 @@ $(document).ready ->
 		videoOnScrollScene = new ScrollMagic.Scene({
 			triggerElement: '.video-on-scroll'
 			duration: $(window).height()
-			# triggerHook: 0.3
 			})
 			.addTo(videoOnScrollController)
 		videoOnScrollScene.on('enter', (e)->

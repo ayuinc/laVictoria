@@ -163,6 +163,7 @@ module.exports = function (grunt) {
         files: {
           // '<%= project.assets %>/js/scripts.min.js': '<%= project.js %>', 
           '<%= project.assets %>/js/scripts.min.js': [
+            '<%= project.src %>/js/lib/video.js',
             '<%= project.src %>/js/lib/TweenMax.min.js',
             '<%= project.src %>/js/lib/ScrollToPlugin.min.js',
             '<%= project.src %>/js/lib/ScrollMagic.js',
