@@ -188,11 +188,10 @@ body {
 	About US
 */
 .bio-grid {
-	@include margin(null -21px null -21px);
 	.bio-item {		
-		width: 19.70%;
-		@include padding(null $container-fluid null $container-fluid);
+		@include padding(null ($container-fluid / 2) null ($container-fluid / 2));
 		margin-bottom: 21px;
+		width: 19.70%;
 		&:hover {
 			text-decoration: none;
 			.pic {

@@ -5719,15 +5719,11 @@ body::-webkit-scrollbar {
 /*
 	About US
 */
-.bio-grid {
-  margin-right: -21px;
-  margin-left: -21px;
-}
 .bio-grid .bio-item {
-  width: 19.70%;
-  padding-right: 14px;
-  padding-left: 14px;
+  padding-right: 7px;
+  padding-left: 7px;
   margin-bottom: 21px;
+  width: 19.70%;
 }
 .bio-grid .bio-item:hover {
   text-decoration: none;
