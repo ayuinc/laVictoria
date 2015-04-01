@@ -50,7 +50,7 @@ $(document).ready ->
 
 	$bioGrid.imagesLoaded ->
 		$bioGrid.isotope({
-			itemSelector: '.bio-item'
+			itemSelector: '.bio-item' 
 		})
 		return
 
