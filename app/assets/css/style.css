@@ -5763,6 +5763,17 @@ body::-webkit-scrollbar {
   font-size: 12px;
   font-size: 0.85714rem;
 }
+.bio-grid .name {
+  font-family: "gesta", Helvetica, Arial, sans-serif !important;
+  font-weight: 500;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.bio-grid .details span {
+  font-size: 12px;
+  font-size: 0.85714rem;
+}
 
 @media only screen and (max-width: 768px) {
   .bio-grid {

@@ -205,9 +205,7 @@ body {
 			display: block;
 			.pic {
 				position: relative;
-				img {
-
-				}
+				img {}
 				.overlay {
 					@include position(absolute, 0 0 0 0);
 					@include normalize-text;
@@ -224,6 +222,17 @@ body {
 					}
 				}
 			}
+		}
+	}
+	.name {
+		@include medium;
+		text-transform: uppercase;
+		font-size: $font-size-h4;
+	}
+	.details {
+		span {
+			font-size: 12px;
+			font-size: rem(12px);
 		}
 	}
 }
