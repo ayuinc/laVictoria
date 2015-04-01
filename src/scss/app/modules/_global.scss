@@ -184,7 +184,66 @@ body {
 	}
 }
 
+/*
+	About US
+*/
+.bio-grid {
+	@include margin(null -21px null -21px);
+	.bio-item {		
+		width: 24.70%;
+		@include padding(null $container-fluid null $container-fluid);
+		margin-bottom: 21px;
+		&:hover {
+			text-decoration: none;
+			.pic {
+				.overlay {
+					display: block;
+				}
+			}
+		}
+		div {
+			color: $gray-dark;
+			display: block;
+			.pic {
+				position: relative;
+				img {
 
+				}
+				.overlay {
+					@include position(absolute, 0 0 0 0);
+					@include normalize-text;
+					padding: $container-fluid * 2;
+					background: rgba($brand-info, 0.7);
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+@media #{$sm-down} {
+	.bio-grid {
+		@include margin(null 0px null 0px);
+		.bio-item {
+			width: 49.95%;
+		}
+	}
+}
+
+.grid-sizer {
+	width: 33.28%;
+}
+
+.list-about-us {
+	li {
+		.pic {
+			@include bg-img-control;
+			width: 163px;
+			height: 163px;
+			border-radius: 50%;
+		}
+	}
+}
 
 
 

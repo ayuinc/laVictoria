@@ -5716,6 +5716,69 @@ body::-webkit-scrollbar {
   }
 }
 
+/*
+	About US
+*/
+.bio-grid {
+  margin-right: -21px;
+  margin-left: -21px;
+}
+.bio-grid .bio-item {
+  width: 24.70%;
+  padding-right: 14px;
+  padding-left: 14px;
+  margin-bottom: 21px;
+}
+.bio-grid .bio-item:hover {
+  text-decoration: none;
+}
+.bio-grid .bio-item:hover .pic .overlay {
+  display: block;
+}
+.bio-grid .bio-item div {
+  color: #707274;
+  display: block;
+}
+.bio-grid .bio-item div .pic {
+  position: relative;
+}
+.bio-grid .bio-item div .pic .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 28px;
+  background: rgba(71, 170, 224, 0.7);
+  display: none;
+}
+.bio-grid .bio-item div .pic .overlay h1, .bio-grid .bio-item div .pic .overlay h2, .bio-grid .bio-item div .pic .overlay h3, .bio-grid .bio-item div .pic .overlay h4, .bio-grid .bio-item div .pic .overlay h5, .bio-grid .bio-item div .pic .overlay h6,
+.bio-grid .bio-item div .pic .overlay .h1, .bio-grid .bio-item div .pic .overlay .h2, .bio-grid .bio-item div .pic .overlay .h3, .bio-grid .bio-item div .pic .overlay .h4, .bio-grid .bio-item div .pic .overlay .h5, .bio-grid .bio-item div .pic .overlay .h6,
+.bio-grid .bio-item div .pic .overlay p, .bio-grid .bio-item div .pic .overlay .p, .bio-grid .bio-item div .pic .overlay span, .bio-grid .bio-item div .pic .overlay em, .bio-grid .bio-item div .pic .overlay strong, .bio-grid .bio-item div .pic .overlay label, .bio-grid .bio-item div .pic .overlay a, .bio-grid .bio-item div .pic .overlay i, .bio-grid .bio-item div .pic .overlay ul, .bio-grid .bio-item div .pic .overlay ol, .bio-grid .bio-item div .pic .overlay li {
+  margin: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .bio-grid {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .bio-grid .bio-item {
+    width: 49.95%;
+  }
+}
+.grid-sizer {
+  width: 33.28%;
+}
+
+.list-about-us li .pic {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 163px;
+  height: 163px;
+  border-radius: 50%;
+}
+
 a.btn.form-control,
 button.btn.form-control,
 input[type="submit"].btn.form-control,
