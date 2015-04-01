@@ -1,7 +1,7 @@
 (function() {
   'use-strict';
   $(document).ready(function() {
-    var RBGIMG, addBgImg, screenSizes, windowWidth;
+    var $bioGrid, RBGIMG, addBgImg, screenSizes, windowWidth;
     $('.disable-anchors a').click(function(e) {
       e.preventDefault();
     });
@@ -49,6 +49,12 @@
         default:
           null;
       }
+    });
+    $bioGrid = $('.bio-grid');
+    $bioGrid.imagesLoaded(function() {
+      $bioGrid.isotope({
+        itemSelector: '.bio-item'
+      });
     });
   });
 

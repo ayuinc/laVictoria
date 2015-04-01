@@ -46,5 +46,12 @@ $(document).ready ->
 	
 	# TRANSFORM ICONS INITIALIZE
 	# transformicons.add('.tcon')
+	$bioGrid = $('.bio-grid')
+
+	$bioGrid.imagesLoaded ->
+		$bioGrid.isotope({
+			itemSelector: '.bio-item'
+		})
+		return
 
 	return # END ON READY
