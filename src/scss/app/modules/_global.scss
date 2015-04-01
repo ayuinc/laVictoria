@@ -190,7 +190,7 @@ body {
 .bio-grid {
 	@include margin(null -21px null -21px);
 	.bio-item {		
-		width: 24.70%;
+		width: 19.70%;
 		@include padding(null $container-fluid null $container-fluid);
 		margin-bottom: 21px;
 		&:hover {
