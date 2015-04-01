@@ -211,9 +211,17 @@ body {
 				.overlay {
 					@include position(absolute, 0 0 0 0);
 					@include normalize-text;
-					padding: $container-fluid * 2;
+					padding: $container-fluid + 4;
 					background: rgba($brand-info, 0.7);
 					display: none;
+					color: white;
+					overflow: hidden;
+					p {
+						@include serif-light;
+						text-align: justify;
+						font-size: 12px;
+						font-size: rem(12px);
+					}
 				}
 			}
 		}

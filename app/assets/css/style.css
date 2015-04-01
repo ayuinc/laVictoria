@@ -5744,14 +5744,24 @@ body::-webkit-scrollbar {
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 28px;
+  padding: 18px;
   background: rgba(71, 170, 224, 0.7);
   display: none;
+  color: white;
+  overflow: hidden;
 }
 .bio-grid .bio-item div .pic .overlay h1, .bio-grid .bio-item div .pic .overlay h2, .bio-grid .bio-item div .pic .overlay h3, .bio-grid .bio-item div .pic .overlay h4, .bio-grid .bio-item div .pic .overlay h5, .bio-grid .bio-item div .pic .overlay h6,
 .bio-grid .bio-item div .pic .overlay .h1, .bio-grid .bio-item div .pic .overlay .h2, .bio-grid .bio-item div .pic .overlay .h3, .bio-grid .bio-item div .pic .overlay .h4, .bio-grid .bio-item div .pic .overlay .h5, .bio-grid .bio-item div .pic .overlay .h6,
 .bio-grid .bio-item div .pic .overlay p, .bio-grid .bio-item div .pic .overlay .p, .bio-grid .bio-item div .pic .overlay span, .bio-grid .bio-item div .pic .overlay em, .bio-grid .bio-item div .pic .overlay strong, .bio-grid .bio-item div .pic .overlay label, .bio-grid .bio-item div .pic .overlay a, .bio-grid .bio-item div .pic .overlay i, .bio-grid .bio-item div .pic .overlay ul, .bio-grid .bio-item div .pic .overlay ol, .bio-grid .bio-item div .pic .overlay li {
   margin: 0;
+}
+.bio-grid .bio-item div .pic .overlay p {
+  font-family: "clavo", "Times New Roman", Times, serif !important;
+  font-weight: 300;
+  font-style: normal;
+  text-align: justify;
+  font-size: 12px;
+  font-size: 0.85714rem;
 }
 
 @media only screen and (max-width: 768px) {
