@@ -426,15 +426,15 @@ module.exports = function (grunt) {
    */
   grunt.registerTask('default', [
     'coffee:dev',
-    // 'sass:ebm',
+    'sass:ebm',
     // 'sass:dev',
     // 'bower:dev',
     // 'autoprefixer:dev',
     // 'cssmin:dev',
     // 'jshint',
     // 'concat:dev',
-    'responsive_images:dev',
-    'responsive_images_extender:dev',
+    // 'responsive_images:dev',
+    // 'responsive_images_extender:dev',
     'connect:livereload',
     'uglify',
     // 'open',

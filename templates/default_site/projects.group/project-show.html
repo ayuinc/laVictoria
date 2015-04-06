@@ -1,184 +1,66 @@
 {embed="includes/head"}
-      <!-- <div class="fold fold-fixed mhp-100">
-        <video
-          id="videocover"
-          class="video-js videocover vjs-default-skin"
-          controls
-          preload="auto">
-          <source src="assets/video/lab-construction.webm" type='video/webm' />
-          <source src="assets/video/lab-construction.mp4" type='video/mp4' />
-          <source src="assets/video/lab-construction.ogg" type='video/ogg' />
-          <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
-        </video>
-        <div class="video-placeholder" style="background: url({site_url}assets/img/project-bg-2.jpg) no-repeat center top;"></div>
-        <div class="overlay on-scroll text-center flex-middle-center">
-          <div class="container-sm text-white relative">
-            <div class="" style="position: absolute; width: 100%;">
-              <h1 class="mb-14 lead mt-0">How might we improve the experience of frontline staff?</h1>
-              <a href="#" class="h2 lead play-video"><i class="flaticon-key9"></i></a>
-            </div>
-          </div>
-          <div class="scroll-down text-global-color">
-            <a href="#main">&#8595;</a>
-          </div>
-        </div>
-      </div> -->
-      <div class="site-content no-video" id="main">
-        {exp:channel:entries channel="projects" limit="1"}
-          {project-image-main limit="1"}
-          <div class="mhp-100 bg-img-block bg-img-cover" style="background-image: url({image:url:large})">
-          {/project-image-main}
-            <div class="overlay text-center flex flex-column flex-middle flex-center">
-              <div class="container-sm text-white overlay-trigger overlay-work">
-                <h1 class="lead">{project-intro}</h1>
-                <!-- <h2 class="mb-35"></h2> -->
-                <!-- <a href="{site_url}projects/project-show" class="more">View Project</a><span> &#8594;</span> -->
+  <main class="site-content onepage-scroll-content" role="main">
+    {exp:channel:entries channel="projects" limit="1"}
+    <section class="minhp-100">
+      <div class="bg-gallery-wrapper">
+        <div class="gallery js-flickity" data-flickity-options='{ "cellAlign": "left", "contain": true, "pageDots": false, "prevNextButtons": false, "autoPlay": 7000, "wrapAround": true }'>
+          <div class="gallery-cell" 
+              {project-image-main}
+              data-responsive-bg-img='{ 
+                "vw-phone": "{image:url:small}",
+                "vw-tablet": "{image:url:medium}",
+                "vw-desktop": "{image:url:large}",
+                "vw-lg-desktop": "{image:url}"
+              }' {/project-image-main}>
+            <div class="gallery-cell-wrapper">
+              <div class="gallery-cell-content flex-middle-center">
+                <div class="container-sm text-white lead-ch text-shadow text-center">
+                  <h3>{project-intro}</h3>
+                  <div class="separator separator-white separator-centered"></div>
+                  <p class="custom-quotes">{project_quote}</p>
+                </div>
               </div>
             </div>
-            <div class="scroll-down smooth-scroll text-global-color">
-              <a href="#sec-1">&#8595;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="minhp-100">
+      <div class="container">
+        <div class="row minh-ch-70 flex-middle-ch">
+          <div class="col-sm-3">
+            <div>
+              <a href="{site_url}projects" class="icon-arrow-left"></a>
             </div>
           </div>
-        <div class="mhp-100 pv-42 bg-gray-lighter relative">
-          <div class="header-trigger"></div>
-          <div class="container-sm relative">
-            <div class="back-arrow text-global-color">
-              <a href="{site_url}projects">&#8592;</a>
-            </div>
-            <ul class="grid-list grid-list-3 underline text-gray-dark pl-ch-0-sm">
-              <li>
+          <div class="col-sm-6">
+            <div class="minh-70 flex-row">
+              <div>
                 <h5 class="uppercase medium">Client</h5>
                 <a href="#">{project-client}</a>
-              </li>
-              <li>
-                <h5 class="uppercase medium">DATE</h5>
+              </div>
+              <div>
+                <h5 class="uppercase medium">Date</h5>
                 <span>{project-date}</span>
-              </li>
-              <li class="project-collaborators">
+              </div>
+              <div class="project-collaborators">
                 <h5 class="uppercase medium">Team</h5>
                 <ul>
                 </ul>
-              </li>
-            </ul>
-            <div class="pt-ch-35 normalize-text">
-              <p>{project-description}</p>
-              {if "{categories show_group="2"}{category_url_title}{/categories}" != ""}
-                <div>
-                  <h5 class="uppercase medium">Outputs</h5>
-                  <ul class="grid-list text-success">
-                    {categories show_group="2"}
-                      <li class="{if count=='1'}pl-0{/if}">
-                        <span>{category_name}</span>
-                      </li>
-                    {/categories}
-  <!--                   <li class="pl-0">
-                      <div class="h1">
-                        <i class="icon-icon_68394"></i>
-                      </div>
-                      <span>Design<br>Principles</span>
-                    </li>
-                    <li>
-                      <div class="h1">
-                        <i class="icon-icon_70729"></i>
-                      </div>
-                      <span>Prototype</span>
-                    </li>
-                    <li>
-                      <div class="h1">
-                        <i class="icon-icon_72585"></i>
-                      </div>
-                      <span>Workshop</span>
-                    </li>
-                    <li>
-                      <div class="h1">
-                        <i class="icon-icon_72580"></i>
-                      </div>
-                      <span>Video</span>
-                    </li> -->
-                  </ul>
-                </div>
-              {/if}
-              {project-content}
-            </div>
-          </div>
-          <!-- <div class="container-fluid pt-42">
-            <img src="{site_url}assets/img/bg-project-1.jpg" alt="" class="img-responsive">
-          </div>
-          <div class="container-sm pt-21">
-            <div class="row small">
-              <div class="col-sm-6">
-                <small><strong>Lorem ipsum dolor sit amet, consectetur</strong>. Reiciendis accusamus fugiat itaque. Minima, quod, officiis. Alias quae iste ipsam non ea, dolore laborum asperiores omnis numquam praesentium corporis? Voluptates, ea! Lorem ipsum dolor sit amet.</small>
-              </div>
-              <div class="col-sm-6">
-                <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis accusamus fugiat itaque. Minima, quod, officiis. Alias quae iste ipsam non ea, dolore laborum asperiores omnis numquam praesentium corporis?</small>
               </div>
             </div>
-            <div class="pt-ch-35 normalize-text">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis accusamus fugiat itaque. Minima, quod, officiis. Alias quae iste ipsam non ea, dolore laborum asperiores omnis numquam praesentium corporis? Voluptates, ea! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, quod assumenda reiciendis maiores blanditiis a aliquam quasi fugiat. Adipisci quasi voluptatum, quisquam debitis vel, ab perspiciatis obcaecati? Laborum, voluptatibus accusamus.</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis accusamus fugiat itaque. Minima, quod, officiis. Alias quae iste ipsam non ea, dolore laborum asperiores omnis numquam praesentium corporis? Voluptates, ea! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, quod assumenda reiciendis maiores blanditiis a aliquam quasi fugiat. Adipisci quasi voluptatum, quisquam debitis vel, ab perspiciatis obcaecati? Laborum, voluptatibus accusamus.</p>
-            </div>
           </div>
-          <div class="container pv-35">
-            <ul class="grid-list grid-list-centered grid-list-2">
-              <li><img src="{site_url}assets/img/ph-project-1.jpg" alt="" class="img-responsive"></li>
-              <li><img src="{site_url}assets/img/ph-project-1.jpg" alt="" class="img-responsive"></li>
-              <li><img src="{site_url}assets/img/ph-project-1.jpg" alt="" class="img-responsive"></li>
-              <li><img src="{site_url}assets/img/ph-project-1.jpg" alt="" class="img-responsive"></li>
-            </ul>
-          </div>
-          <div class="container-sm pt-ch-21">
-            <h5 class="medium uppercase">Additional information</h5>
-            <p>To learn more about this project, contact <a href="#" class="underline">Gonzalo Pérez Paredes</a></p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt optio, earum officiis similique doloremque beatae quisquam, fuga pariatur quasi expedita quas eveniet culpa sed excepturi perferendis alias quod sint, dolore?</p>
-          </div> -->
-            <div class="row">
-              <hr class="hr-gray-light">
-            </div>
-            <ul class="grid-list grid-list-2 grid-list-anchors isotope-container match-margin">
-              <li class="post-item post-item-img">
-                <a href="{site_url}blog/post">
-                  <div class="pic">
-                    <div class="overlay overlay-work"></div>
-                    <img src="{site_url}assets/img/bg-personales-2.jpg" alt="">
-                    <div class="info"></div>
-                  </div>
-                  <div class="body">
-                    <div class="info">
-                      <span class="type">WORK</span>
-                    </div>
-                    <div class="title">
-                      <h1 class="text-color-work">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
-                    </div>
-                    <div class="excerpt">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic omnis alias quidem ipsa pariatur explicabo nemo reiciendis illum unde, et eum neque veritatis eligendi adipisci est, deleniti at repudiandae odit.</p>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li class="post-item post-item-img">
-                <a href="#">
-                  <div class="pic">
-                    <div class="overlay overlay-work"></div>
-                    <img src="{site_url}assets/img/bg-personales-2.jpg" alt="">
-                    <div class="info"></div>
-                  </div>
-                  <div class="body">
-                    <div class="info">
-                      <span class="type">WORK</span>
-                    </div>
-                    <div class="title">
-                      <h1 class="text-color-work">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
-                    </div>
-                    <div class="excerpt">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic omnis alias quidem ipsa pariatur explicabo nemo reiciendis illum unde, et eum neque veritatis eligendi adipisci est, deleniti at repudiandae odit.</p>
-                    </div>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </div>-->
+          <div class="col-sm-3"></div>
         </div>
-        {/exp:channel:entries}
-        {embed="includes/pie-de-pagina"}
+        <div class="row">
+          <div class="col-sm-3"></div>
+          <div class="col-sm-6">
+            {project-content}
+          </div>
+          <div class="col-sm-3"></div>
+        </div>
       </div>
-{embed="includes/footer"}      
+    </section>
+    {/exp:channel:entries}
+  </main>
+{embed="includes/footer"} 
