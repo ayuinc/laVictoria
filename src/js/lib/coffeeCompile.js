@@ -67,7 +67,7 @@
 (function() {
   'use-strict';
   $(document).ready(function() {
-    var headerDisplayController, headerScrollScene, myPlayer, scrollToController, videoOnScroll, videoOnScrollController, videoOnScrollScene, wasFirstPlayed;
+    var headerDisplayController, headerScrollScene, myPlayer, playerCurrentTime, scrollToController, videoOnScroll, videoOnScrollController, videoOnScrollScene, wasFirstPlayed;
     scrollToController = new ScrollMagic.Controller();
     scrollToController.scrollTo(function(newpos) {
       TweenMax.to(window, 0.5, {
@@ -94,6 +94,7 @@
     videoOnScrollController = new ScrollMagic.Controller();
     videoOnScroll = document.getElementById('video-on-scroll');
     wasFirstPlayed = false;
+    playerCurrentTime = 0;
     if (videoOnScroll) {
       myPlayer = videojs('video-on-scroll');
       myPlayer.controls(false);
@@ -105,11 +106,15 @@
       videoOnScrollScene.on('enter', function(e) {
         if (!wasFirstPlayed) {
           myPlayer.currentTime(240);
+          myPlayer.play();
           wasFirstPlayed = true;
+        } else {
+          myPlayer.currentTime(playerCurrentTime);
+          myPlayer.play();
         }
-        myPlayer.play();
       });
       videoOnScrollScene.on('leave', function(e) {
+        playerCurrentTime = myPlayer.currentTime();
         myPlayer.pause();
       });
     }

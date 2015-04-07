@@ -32,6 +32,7 @@ $(document).ready ->
 	videoOnScrollController = new ScrollMagic.Controller()
 	videoOnScroll = document.getElementById 'video-on-scroll'
 	wasFirstPlayed = false
+	playerCurrentTime = 0
 	if videoOnScroll
 		myPlayer = videojs 'video-on-scroll'
 		myPlayer.controls false
@@ -44,11 +45,15 @@ $(document).ready ->
 		videoOnScrollScene.on('enter', (e)->
 			if !wasFirstPlayed
 				myPlayer.currentTime 240
+				myPlayer.play()
 				wasFirstPlayed = true
-			myPlayer.play()
+			else
+				myPlayer.currentTime(playerCurrentTime)
+				myPlayer.play()
 			return
 			)
 		videoOnScrollScene.on('leave', (e)->
+			playerCurrentTime = myPlayer.currentTime()
 			myPlayer.pause()
 			return
 			)
