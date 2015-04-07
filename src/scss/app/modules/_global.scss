@@ -34,7 +34,6 @@ body {
 	.overlay,
 	.hero-unit-pic {
 		@include position(absolute, 0 0 0 0);
-		// height: $video-bg-height;
 		overflow: hidden;
 	}
 	.hero-unit-pic {
@@ -45,8 +44,7 @@ body {
 	}
 	&.full-height {
 		height: 100%;
-		// height: 100%;
-		// width: 100%;
+		height: 100vh;
 		.video-bg {
 			height: 100%;
 			height: 100vh;
@@ -123,18 +121,18 @@ body {
 	margin-top: $container-fluid + 7;
 	margin-bottom: $container-fluid + 14;
 	position: relative;
-	&:before,
-	&:after {
-		font-family: 'icomoon';
-		position: absolute;
-		font-size: $font-size-h4;
-		width: 35px;
-	}
-	&:before {
-		content: "\e7e5";
-		left: -32px;
-  	top: -4px;
-	}
+	// &:before,
+	// &:after {
+	// 	font-family: 'icomoon';
+	// 	position: absolute;
+	// 	font-size: $font-size-h4;
+	// 	width: 35px;
+	// }
+	// &:before {
+	// 	content: "\e7e5";
+	// 	left: -32px;
+ //  	top: -4px;
+	// }
 	// &:after {
 	// 	content: "\e7e6";
 	// 	right: -24px;

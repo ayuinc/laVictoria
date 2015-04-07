@@ -1,9 +1,14 @@
 {embed="includes/head"}
   <main class="site-content onepage-scroll-content" role="main">
   {exp:channel:entries channel="projects" limit="5" dynamic="off" orderby="date" sort="asc"}
-    <section class="{if count=='1'} hero-unit full-height {if:else} minhp-100 {/if} onepage-scroll-section"
+    <section 
+            {if count=="1"}
+            class="hero-unit full-height"
+            {if:else}
+            class="minhp-100 onepage-scroll-section"
+            {/if}
             {project-image-main limit="1"}
-            data-responsive-bg-img='{
+              data-responsive-bg-img='{
                 "vw-phone": "{image:url:small}",
                 "vw-tablet": "{image:url:medium}",
                 "vw-desktop": "{image:url:large}",

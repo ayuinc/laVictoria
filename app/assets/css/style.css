@@ -5855,6 +5855,7 @@ body::-webkit-scrollbar {
 }
 .hero-unit.full-height {
   height: 100%;
+  height: 100vh;
 }
 .hero-unit.full-height .video-bg {
   height: 100%;
@@ -5984,17 +5985,6 @@ body::-webkit-scrollbar {
   margin-top: 21px;
   margin-bottom: 28px;
   position: relative;
-}
-.custom-quotes:before, .custom-quotes:after {
-  font-family: 'icomoon';
-  position: absolute;
-  font-size: 18px;
-  width: 35px;
-}
-.custom-quotes:before {
-  content: "\e7e5";
-  left: -32px;
-  top: -4px;
 }
 
 .bg-gallery-wrapper {
