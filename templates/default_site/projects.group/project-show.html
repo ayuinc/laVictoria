@@ -4,14 +4,15 @@
     <section class="hero-unit full-height">
       <div class="bg-gallery-wrapper">
         <div class="gallery js-flickity" data-flickity-options='{ "cellAlign": "left", "contain": true, "pageDots": false, "prevNextButtons": false, "autoPlay": 7000, "wrapAround": true }'>
+          {project-image-main}
           <div class="gallery-cell" 
-              {project-image-main}
               data-responsive-bg-img='{ 
                 "vw-phone": "{image:url:small}",
                 "vw-tablet": "{image:url:medium}",
                 "vw-desktop": "{image:url:large}",
                 "vw-lg-desktop": "{image:url}"
-              }' {/project-image-main}>
+              }'>
+          {/project-image-main}
             <div class="gallery-cell-wrapper">
               <div class="gallery-cell-content flex-middle-center">
                 <div class="container-sm text-white lead-ch text-shadow text-center">
