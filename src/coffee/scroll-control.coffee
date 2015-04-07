@@ -35,15 +35,15 @@ $(document).ready ->
 	if videoOnScroll
 		myPlayer = videojs 'video-on-scroll'
 		myPlayer.controls false
+		if !wasFirstPlayed
+			myPlayer.currentTime 240
+			wasFirstPlayed = true
 		videoOnScrollScene = new ScrollMagic.Scene({
 			triggerElement: '.video-on-scroll'
 			duration: $(window).height()
 			})
 			.addTo(videoOnScrollController)
 		videoOnScrollScene.on('enter', (e)->
-			if !wasFirstPlayed
-				myPlayer.currentTime(120)
-				wasFirstPlayed = true
 			myPlayer.play()
 			return
 			)
