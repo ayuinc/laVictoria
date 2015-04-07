@@ -29,7 +29,7 @@ $(document).ready ->
 	# headerScrollScene.addIndicators({zindex: 1000, suffix: 1})
 
 	$(".onepage-scroll-content").onepage_scroll({
-		sectionContainer: "section"
+		sectionContainer: ".onepage-scroll-section"
 		easing: "ease"
 		animationTime: 1000
 		pagination: true

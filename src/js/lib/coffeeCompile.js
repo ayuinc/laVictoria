@@ -87,7 +87,7 @@
       offset: 70
     }).setClassToggle('.site-wrapper', 'header-fixed').addTo(headerDisplayController);
     $(".onepage-scroll-content").onepage_scroll({
-      sectionContainer: "section",
+      sectionContainer: ".onepage-scroll-section",
       easing: "ease",
       animationTime: 1000,
       pagination: true,
