@@ -191,7 +191,13 @@ body {
 	.bio-item {		
 		@include padding(null ($container-fluid / 2) null ($container-fluid / 2));
 		margin-bottom: 21px;
-		width: 19.70%;
+		width: 33.33%;
+		@media #{$sm-only} {
+			width: 24.70%;
+		}
+		@media #{$xs-only} {
+			width: 100%;
+		}
 		&:hover {
 			text-decoration: none;
 			.pic {
@@ -210,7 +216,7 @@ body {
 					@include position(absolute, 0 0 0 0);
 					@include normalize-text;
 					padding: $container-fluid + 4;
-					background: rgba($brand-info, 0.7);
+					background: rgba($gray-darker, 0.7);
 					display: none;
 					color: white;
 					overflow: hidden;
