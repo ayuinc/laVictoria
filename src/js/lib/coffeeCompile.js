@@ -99,22 +99,15 @@
       myPlayer = videojs('video-on-scroll');
       myPlayer.controls(false);
       myPlayer.load();
+      myPlayer.currentTime(300);
       videoOnScrollScene = new ScrollMagic.Scene({
         triggerElement: '.video-on-scroll',
         duration: $(window).height()
       }).addTo(videoOnScrollController);
       videoOnScrollScene.on('enter', function(e) {
-        if (!wasFirstPlayed) {
-          myPlayer.currentTime(240);
-          myPlayer.play();
-          wasFirstPlayed = true;
-        } else {
-          myPlayer.currentTime(playerCurrentTime);
-          myPlayer.play();
-        }
+        myPlayer.play();
       });
       videoOnScrollScene.on('leave', function(e) {
-        playerCurrentTime = myPlayer.currentTime();
         myPlayer.pause();
       });
     }
