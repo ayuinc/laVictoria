@@ -1,6 +1,6 @@
 {embed="includes/head"}
   <main class="site-content" role="main">
-    <section class="hero-unit">
+    <section class="hero-unit full-height video-bg">
       <video
         id="videocover"
         autoplay
@@ -21,9 +21,8 @@
       </div>
     </section>
     <section class="minhp-100 bg-white">
-      <div class="overlay flex-middle-center text-center">
       {exp:channel:entries channel="aboutus" limit="1"}
-        <div class="container-sm pv-35">
+        <div class="container-sm pv-35 text-center">
           <h1 class="underline text-global-color">Our Process</h1>
           <p class="text-global-color medium">{our_process}</p>
           <ul class="grid-list grid-list-3 list-about-us">
@@ -57,7 +56,6 @@
           </ul>
         </div>
       {/exp:channel:entries}
-      </div>
     </section>
     <section class="minhp-100">
       <video

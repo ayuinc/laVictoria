@@ -31,6 +31,7 @@ $(document).ready ->
 	# PLAY VIDEO ON SCROLL
 	videoOnScrollController = new ScrollMagic.Controller()
 	videoOnScroll = document.getElementById 'video-on-scroll'
+	wasFirstPlayed = false
 	if videoOnScroll
 		myPlayer = videojs 'video-on-scroll'
 		myPlayer.controls false
@@ -40,7 +41,9 @@ $(document).ready ->
 			})
 			.addTo(videoOnScrollController)
 		videoOnScrollScene.on('enter', (e)->
-			myPlayer.currentTime(120)
+			if !wasFirstPlayed
+				myPlayer.currentTime(120)
+				wasFirstPlayed = true
 			myPlayer.play()
 			return
 			)

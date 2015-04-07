@@ -67,7 +67,7 @@
 (function() {
   'use-strict';
   $(document).ready(function() {
-    var headerDisplayController, headerScrollScene, myPlayer, scrollToController, videoOnScroll, videoOnScrollController, videoOnScrollScene;
+    var headerDisplayController, headerScrollScene, myPlayer, scrollToController, videoOnScroll, videoOnScrollController, videoOnScrollScene, wasFirstPlayed;
     scrollToController = new ScrollMagic.Controller();
     scrollToController.scrollTo(function(newpos) {
       TweenMax.to(window, 0.5, {
@@ -93,6 +93,7 @@
     }).setClassToggle('.site-wrapper', 'header-fixed').addTo(headerDisplayController);
     videoOnScrollController = new ScrollMagic.Controller();
     videoOnScroll = document.getElementById('video-on-scroll');
+    wasFirstPlayed = false;
     if (videoOnScroll) {
       myPlayer = videojs('video-on-scroll');
       myPlayer.controls(false);
@@ -101,7 +102,10 @@
         duration: $(window).height()
       }).addTo(videoOnScrollController);
       videoOnScrollScene.on('enter', function(e) {
-        myPlayer.currentTime(120);
+        if (!wasFirstPlayed) {
+          myPlayer.currentTime(120);
+          wasFirstPlayed = true;
+        }
         myPlayer.play();
       });
       videoOnScrollScene.on('leave', function(e) {
