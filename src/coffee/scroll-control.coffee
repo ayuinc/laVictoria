@@ -40,6 +40,7 @@ $(document).ready ->
 			})
 			.addTo(videoOnScrollController)
 		videoOnScrollScene.on('enter', (e)->
+			myPlayer.currentTime(120)
 			myPlayer.play()
 			return
 			)

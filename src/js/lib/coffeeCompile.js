@@ -1,7 +1,12 @@
 (function() {
   'use-strict';
   $(document).ready(function() {
-    var $bioGrid, RBGIMG, addBgImg, screenSizes, windowWidth;
+    var $bioGrid, RBGIMG, addBgImg, myPlayer, screenSizes, videoCover, windowWidth;
+    videoCover = document.getElementById('videocover');
+    if (videoCover) {
+      myPlayer = videojs('video-js');
+      myPlayer.controls(false);
+    }
     $('.disable-anchors a').click(function(e) {
       e.preventDefault();
     });
@@ -96,6 +101,7 @@
         duration: $(window).height()
       }).addTo(videoOnScrollController);
       videoOnScrollScene.on('enter', function(e) {
+        myPlayer.currentTime(120);
         myPlayer.play();
       });
       videoOnScrollScene.on('leave', function(e) {

@@ -1,5 +1,12 @@
 'use-strict'
 $(document).ready ->
+
+	# VIDEO JS Hide Controls
+	videoCover = document.getElementById 'videocover'
+	if videoCover
+		myPlayer = videojs 'video-js'
+		myPlayer.controls false
+
 	# DISABLE ANCHORS
 	$('.disable-anchors a').click (e)->
 		e.preventDefault()
