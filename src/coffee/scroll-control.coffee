@@ -28,17 +28,17 @@ $(document).ready ->
 		.addTo(headerDisplayController)
 	# headerScrollScene.addIndicators({zindex: 1000, suffix: 1})
 
-	$(".onepage-scroll-content").onepage_scroll({
-		sectionContainer: ".onepage-scroll-section"
-		easing: "ease"
-		animationTime: 1000
-		pagination: true
-		updateURL: false
-		loop: false
-		keyboard: true
-		responsiveFallback: false
-		direction: "vertical"
-		})
+	# $(".onepage-scroll-content").onepage_scroll({
+	# 	sectionContainer: ".onepage-scroll-section"
+	# 	easing: "ease"
+	# 	animationTime: 1000
+	# 	pagination: true
+	# 	updateURL: false
+	# 	loop: false
+	# 	keyboard: true
+	# 	responsiveFallback: false
+	# 	direction: "vertical"
+	# 	})
 
 	# PLAY VIDEO ON SCROLL
 	videoOnScrollController = new ScrollMagic.Controller()

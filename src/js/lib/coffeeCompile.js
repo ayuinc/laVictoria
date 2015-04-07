@@ -86,17 +86,6 @@
       duration: $('.site-content').height(),
       offset: 70
     }).setClassToggle('.site-wrapper', 'header-fixed').addTo(headerDisplayController);
-    $(".onepage-scroll-content").onepage_scroll({
-      sectionContainer: ".onepage-scroll-section",
-      easing: "ease",
-      animationTime: 1000,
-      pagination: true,
-      updateURL: false,
-      loop: false,
-      keyboard: true,
-      responsiveFallback: false,
-      direction: "vertical"
-    });
     videoOnScrollController = new ScrollMagic.Controller();
     videoOnScroll = document.getElementById('video-on-scroll');
     if (videoOnScroll) {
