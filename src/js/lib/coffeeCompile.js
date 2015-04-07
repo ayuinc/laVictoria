@@ -4,7 +4,7 @@
     var $bioGrid, RBGIMG, addBgImg, myPlayer, screenSizes, videoCover, windowWidth;
     videoCover = document.getElementById('videocover');
     if (videoCover) {
-      myPlayer = videojs('.video-js');
+      myPlayer = videojs('videocover');
       myPlayer.controls(false);
     }
     $('.disable-anchors a').click(function(e) {
