@@ -1,27 +1,40 @@
 {embed="includes/head"}
+  {exp:channel:entries channel="contact" limit="1"}
   <main class="site-content" role="main">
-    <section class="hero-unit">
+    <section class="hero-unit bg-img-block" 
+            {contact_image limit="1"}
+            data-responsive-bg-img='{ 
+              "vw-phone": "{image:url:small}",
+              "vw-tablet": "{image:url:medium}",
+              "vw-desktop": "{image:url:large}",
+              "vw-lg-desktop": "{image:url:large}"
+            }'{/contact_image}>
       <div class="overlay flex-middle-center">
         <div class="container-sm text-white lead-ch text-shadow text-center"></div>
       </div>
     </section>
     <section class="minhp-100 pv-70">
       <div class="container-sm">
-        <h1 class="underline text-danger">Contact Us</h1>
+        <div class="row">
+          <h1 class="underline text-danger">Contact Us</h1>
+        </div>
         <div class="row">
           <div class="col-sm-4 pl-0-sm">
             <strong class="uppercase block">Address</strong>
-            <p>Jr. Manuel Arrisueño 607<br>Urb. Santa Catalina<br>La Victoria<br>Lima, Perú.</p>
+            {contact_address}
             <strong class="uppercase block">Email</strong>
-            <p>hello@lavictoria.pe</p>
+            {contact_email}
             <strong class="uppercase block">Telephone</strong>
-            <p>+(51)(1)605-8113</p>
+            {contact_phone}
           </div>
           <div class="col-sm-8">
-            <img src="{site_url}assets/img/map.png" alt="" class="img-responsive">
+            {contact_map_image limit="1"}
+            <img src="{image:url:medium}" alt="{image:title}" class="img-responsive">
+            {/contact_map_image}
           </div>
         </div>
       </div>
     </section>
   </main>
+  {/exp:channel:entries}
 {embed="includes/footer"} 
