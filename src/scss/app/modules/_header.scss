@@ -12,7 +12,7 @@ header.header {
 	min-height: $header-height-control + 21;
 	background-color: transparent;
 	.container {
-		@include flex-space-between;
+		@include flex-row-space-between;
 	}
 	.left,
 	.right {
@@ -22,7 +22,7 @@ header.header {
 	.center,
 	.right {
 		min-height: $header-height-control + 21;
-		@include flex-middle;
+		@include flex-column-center;
 	}
 	.left {
 
