@@ -345,7 +345,7 @@ html {
 }
 
 body {
-  font-family: "gesta", Helvetica, Arial, sans-serif;
+  font-family: "DINRegular", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857;
   color: #707274;
@@ -2917,210 +2917,6 @@ input[type="button"].btn-block {
 	EBM:Ref
 	Flexbox
 */
-.flex-middle {
-  display: -webkit-box;
-  display: -moz-box;
-  display: box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -moz-box-orient: vertical;
-  box-orient: vertical;
-  -webkit-flex-direction: column;
-  -moz-flex-direction: column;
-  flex-direction: column;
-  -ms-flex-direction: column;
-  -webkit-box-pack: center;
-  -moz-box-pack: center;
-  box-pack: center;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  -ms-justify-content: center;
-  -o-justify-content: center;
-  justify-content: center;
-  -ms-flex-pack: center;
-}
-
-.flex-middle-ch > div, .flex-middle-ch > section, .flex-middle-ch > header, .flex-middle-ch > footer, .flex-middle-ch > main, .flex-middle-ch > aside,
-.flex-middle-ch > a, .flex-middle-ch > span, .flex-middle-ch > li, .flex-middle-ch > p, .flex-middle-ch > i, .flex-middle-ch > em, .flex-middle-ch > small, .flex-middle-ch > blockquote, .flex-middle-ch > pre, .flex-middle-ch > code
-> h1, .flex-middle-ch > h2, .flex-middle-ch > h3, .flex-middle-ch > h4, .flex-middle-ch > h5, .flex-middle-ch > h6,
-.flex-middle-ch > .h1, .flex-middle-ch > .h2, .flex-middle-ch > .h3, .flex-middle-ch > .h4, .flex-middle-ch > .h5, .flex-middle-ch > .h6, .flex-middle-ch > .p,
-.flex-middle-ch > ul, .flex-middle-ch > ol, .flex-middle-ch > button {
-  display: -webkit-box;
-  display: -moz-box;
-  display: box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -moz-box-orient: vertical;
-  box-orient: vertical;
-  -webkit-flex-direction: column;
-  -moz-flex-direction: column;
-  flex-direction: column;
-  -ms-flex-direction: column;
-  -webkit-box-pack: center;
-  -moz-box-pack: center;
-  box-pack: center;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  -ms-justify-content: center;
-  -o-justify-content: center;
-  justify-content: center;
-  -ms-flex-pack: center;
-}
-
-.flex-middle-center {
-  display: -webkit-box;
-  display: -moz-box;
-  display: box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -moz-box-orient: vertical;
-  box-orient: vertical;
-  -webkit-flex-direction: column;
-  -moz-flex-direction: column;
-  flex-direction: column;
-  -ms-flex-direction: column;
-  -webkit-box-pack: center;
-  -moz-box-pack: center;
-  box-pack: center;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  -ms-justify-content: center;
-  -o-justify-content: center;
-  justify-content: center;
-  -ms-flex-pack: center;
-  -webkit-box-align: center;
-  -moz-box-align: center;
-  box-align: center;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  -ms-align-items: center;
-  -o-align-items: center;
-  align-items: center;
-  -ms-flex-align: center;
-}
-
-.flex-middle-center-ch > div, .flex-middle-center-ch > section, .flex-middle-center-ch > header, .flex-middle-center-ch > footer, .flex-middle-center-ch > main, .flex-middle-center-ch > aside,
-.flex-middle-center-ch > a, .flex-middle-center-ch > span, .flex-middle-center-ch > li, .flex-middle-center-ch > p, .flex-middle-center-ch > i, .flex-middle-center-ch > em, .flex-middle-center-ch > small, .flex-middle-center-ch > blockquote, .flex-middle-center-ch > pre, .flex-middle-center-ch > code
-> h1, .flex-middle-center-ch > h2, .flex-middle-center-ch > h3, .flex-middle-center-ch > h4, .flex-middle-center-ch > h5, .flex-middle-center-ch > h6,
-.flex-middle-center-ch > .h1, .flex-middle-center-ch > .h2, .flex-middle-center-ch > .h3, .flex-middle-center-ch > .h4, .flex-middle-center-ch > .h5, .flex-middle-center-ch > .h6, .flex-middle-center-ch > .p,
-.flex-middle-center-ch > ul, .flex-middle-center-ch > ol, .flex-middle-center-ch > button {
-  display: -webkit-box;
-  display: -moz-box;
-  display: box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -moz-box-orient: vertical;
-  box-orient: vertical;
-  -webkit-flex-direction: column;
-  -moz-flex-direction: column;
-  flex-direction: column;
-  -ms-flex-direction: column;
-  -webkit-box-pack: center;
-  -moz-box-pack: center;
-  box-pack: center;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  -ms-justify-content: center;
-  -o-justify-content: center;
-  justify-content: center;
-  -ms-flex-pack: center;
-  -webkit-box-align: center;
-  -moz-box-align: center;
-  box-align: center;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  -ms-align-items: center;
-  -o-align-items: center;
-  align-items: center;
-  -ms-flex-align: center;
-}
-
-.flex-middle-end {
-  display: -webkit-box;
-  display: -moz-box;
-  display: box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -moz-box-orient: vertical;
-  box-orient: vertical;
-  -webkit-flex-direction: column;
-  -moz-flex-direction: column;
-  flex-direction: column;
-  -ms-flex-direction: column;
-  -webkit-box-pack: end;
-  -moz-box-pack: end;
-  box-pack: end;
-  -webkit-justify-content: flex-end;
-  -moz-justify-content: flex-end;
-  -ms-justify-content: flex-end;
-  -o-justify-content: flex-end;
-  justify-content: flex-end;
-  -ms-flex-pack: end;
-  -webkit-box-align: center;
-  -moz-box-align: center;
-  box-align: center;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  -ms-align-items: center;
-  -o-align-items: center;
-  align-items: center;
-  -ms-flex-align: center;
-}
-
-.flex-middle-end-ch > div, .flex-middle-end-ch > section, .flex-middle-end-ch > header, .flex-middle-end-ch > footer, .flex-middle-end-ch > main, .flex-middle-end-ch > aside,
-.flex-middle-end-ch > a, .flex-middle-end-ch > span, .flex-middle-end-ch > li, .flex-middle-end-ch > p, .flex-middle-end-ch > i, .flex-middle-end-ch > em, .flex-middle-end-ch > small, .flex-middle-end-ch > blockquote, .flex-middle-end-ch > pre, .flex-middle-end-ch > code
-> h1, .flex-middle-end-ch > h2, .flex-middle-end-ch > h3, .flex-middle-end-ch > h4, .flex-middle-end-ch > h5, .flex-middle-end-ch > h6,
-.flex-middle-end-ch > .h1, .flex-middle-end-ch > .h2, .flex-middle-end-ch > .h3, .flex-middle-end-ch > .h4, .flex-middle-end-ch > .h5, .flex-middle-end-ch > .h6, .flex-middle-end-ch > .p,
-.flex-middle-end-ch > ul, .flex-middle-end-ch > ol, .flex-middle-end-ch > button {
-  display: -webkit-box;
-  display: -moz-box;
-  display: box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -moz-box-orient: vertical;
-  box-orient: vertical;
-  -webkit-flex-direction: column;
-  -moz-flex-direction: column;
-  flex-direction: column;
-  -ms-flex-direction: column;
-  -webkit-box-pack: end;
-  -moz-box-pack: end;
-  box-pack: end;
-  -webkit-justify-content: flex-end;
-  -moz-justify-content: flex-end;
-  -ms-justify-content: flex-end;
-  -o-justify-content: flex-end;
-  justify-content: flex-end;
-  -ms-flex-pack: end;
-  -webkit-box-align: center;
-  -moz-box-align: center;
-  box-align: center;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  -ms-align-items: center;
-  -o-align-items: center;
-  align-items: center;
-  -ms-flex-align: center;
-}
-
 .flex-row {
   display: -webkit-box;
   display: -moz-box;
@@ -3159,7 +2955,119 @@ input[type="button"].btn-block {
   -ms-flex-direction: row;
 }
 
-.flex-space-between {
+.flex-row-center {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-direction: row;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+}
+
+.flex-row-center-ch > div, .flex-row-center-ch > section, .flex-row-center-ch > header, .flex-row-center-ch > footer, .flex-row-center-ch > main, .flex-row-center-ch > aside,
+.flex-row-center-ch > a, .flex-row-center-ch > span, .flex-row-center-ch > li, .flex-row-center-ch > p, .flex-row-center-ch > i, .flex-row-center-ch > em, .flex-row-center-ch > small, .flex-row-center-ch > blockquote, .flex-row-center-ch > pre, .flex-row-center-ch > code
+> h1, .flex-row-center-ch > h2, .flex-row-center-ch > h3, .flex-row-center-ch > h4, .flex-row-center-ch > h5, .flex-row-center-ch > h6,
+.flex-row-center-ch > .h1, .flex-row-center-ch > .h2, .flex-row-center-ch > .h3, .flex-row-center-ch > .h4, .flex-row-center-ch > .h5, .flex-row-center-ch > .h6, .flex-row-center-ch > .p,
+.flex-row-center-ch > ul, .flex-row-center-ch > ol, .flex-row-center-ch > button {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-direction: row;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+}
+
+.flex-row-end {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-direction: row;
+  -webkit-box-pack: end;
+  -moz-box-pack: end;
+  box-pack: end;
+  -webkit-justify-content: flex-end;
+  -moz-justify-content: flex-end;
+  -ms-justify-content: flex-end;
+  -o-justify-content: flex-end;
+  justify-content: flex-end;
+  -ms-flex-pack: end;
+}
+
+.flex-row-end-ch > div, .flex-row-end-ch > section, .flex-row-end-ch > header, .flex-row-end-ch > footer, .flex-row-end-ch > main, .flex-row-end-ch > aside,
+.flex-row-end-ch > a, .flex-row-end-ch > span, .flex-row-end-ch > li, .flex-row-end-ch > p, .flex-row-end-ch > i, .flex-row-end-ch > em, .flex-row-end-ch > small, .flex-row-end-ch > blockquote, .flex-row-end-ch > pre, .flex-row-end-ch > code
+> h1, .flex-row-end-ch > h2, .flex-row-end-ch > h3, .flex-row-end-ch > h4, .flex-row-end-ch > h5, .flex-row-end-ch > h6,
+.flex-row-end-ch > .h1, .flex-row-end-ch > .h2, .flex-row-end-ch > .h3, .flex-row-end-ch > .h4, .flex-row-end-ch > .h5, .flex-row-end-ch > .h6, .flex-row-end-ch > .p,
+.flex-row-end-ch > ul, .flex-row-end-ch > ol, .flex-row-end-ch > button {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-direction: row;
+  -webkit-box-pack: end;
+  -moz-box-pack: end;
+  box-pack: end;
+  -webkit-justify-content: flex-end;
+  -moz-justify-content: flex-end;
+  -ms-justify-content: flex-end;
+  -o-justify-content: flex-end;
+  justify-content: flex-end;
+  -ms-flex-pack: end;
+}
+
+.flex-row-space-between {
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -3185,11 +3093,11 @@ input[type="button"].btn-block {
   -ms-flex-pack: justify;
 }
 
-.flex-space-between-ch > div, .flex-space-between-ch > section, .flex-space-between-ch > header, .flex-space-between-ch > footer, .flex-space-between-ch > main, .flex-space-between-ch > aside,
-.flex-space-between-ch > a, .flex-space-between-ch > span, .flex-space-between-ch > li, .flex-space-between-ch > p, .flex-space-between-ch > i, .flex-space-between-ch > em, .flex-space-between-ch > small, .flex-space-between-ch > blockquote, .flex-space-between-ch > pre, .flex-space-between-ch > code
-> h1, .flex-space-between-ch > h2, .flex-space-between-ch > h3, .flex-space-between-ch > h4, .flex-space-between-ch > h5, .flex-space-between-ch > h6,
-.flex-space-between-ch > .h1, .flex-space-between-ch > .h2, .flex-space-between-ch > .h3, .flex-space-between-ch > .h4, .flex-space-between-ch > .h5, .flex-space-between-ch > .h6, .flex-space-between-ch > .p,
-.flex-space-between-ch > ul, .flex-space-between-ch > ol, .flex-space-between-ch > button {
+.flex-row-space-between-ch > div, .flex-row-space-between-ch > section, .flex-row-space-between-ch > header, .flex-row-space-between-ch > footer, .flex-row-space-between-ch > main, .flex-row-space-between-ch > aside,
+.flex-row-space-between-ch > a, .flex-row-space-between-ch > span, .flex-row-space-between-ch > li, .flex-row-space-between-ch > p, .flex-row-space-between-ch > i, .flex-row-space-between-ch > em, .flex-row-space-between-ch > small, .flex-row-space-between-ch > blockquote, .flex-row-space-between-ch > pre, .flex-row-space-between-ch > code
+> h1, .flex-row-space-between-ch > h2, .flex-row-space-between-ch > h3, .flex-row-space-between-ch > h4, .flex-row-space-between-ch > h5, .flex-row-space-between-ch > h6,
+.flex-row-space-between-ch > .h1, .flex-row-space-between-ch > .h2, .flex-row-space-between-ch > .h3, .flex-row-space-between-ch > .h4, .flex-row-space-between-ch > .h5, .flex-row-space-between-ch > .h6, .flex-row-space-between-ch > .p,
+.flex-row-space-between-ch > ul, .flex-row-space-between-ch > ol, .flex-row-space-between-ch > button {
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -3213,30 +3121,412 @@ input[type="button"].btn-block {
   -o-justify-content: space-between;
   justify-content: space-between;
   -ms-flex-pack: justify;
+}
+
+.flex-row-space-around {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-direction: row;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -ms-justify-content: space-around;
+  -o-justify-content: space-around;
+  justify-content: space-around;
+  -ms-flex-pack: center;
+}
+
+.flex-row-space-around-ch > div, .flex-row-space-around-ch > section, .flex-row-space-around-ch > header, .flex-row-space-around-ch > footer, .flex-row-space-around-ch > main, .flex-row-space-around-ch > aside,
+.flex-row-space-around-ch > a, .flex-row-space-around-ch > span, .flex-row-space-around-ch > li, .flex-row-space-around-ch > p, .flex-row-space-around-ch > i, .flex-row-space-around-ch > em, .flex-row-space-around-ch > small, .flex-row-space-around-ch > blockquote, .flex-row-space-around-ch > pre, .flex-row-space-around-ch > code
+> h1, .flex-row-space-around-ch > h2, .flex-row-space-around-ch > h3, .flex-row-space-around-ch > h4, .flex-row-space-around-ch > h5, .flex-row-space-around-ch > h6,
+.flex-row-space-around-ch > .h1, .flex-row-space-around-ch > .h2, .flex-row-space-around-ch > .h3, .flex-row-space-around-ch > .h4, .flex-row-space-around-ch > .h5, .flex-row-space-around-ch > .h6, .flex-row-space-around-ch > .p,
+.flex-row-space-around-ch > ul, .flex-row-space-around-ch > ol, .flex-row-space-around-ch > button {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-direction: row;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -ms-justify-content: space-around;
+  -o-justify-content: space-around;
+  justify-content: space-around;
+  -ms-flex-pack: center;
+}
+
+.flex-column {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-direction: column;
+}
+
+.flex-column-ch > div, .flex-column-ch > section, .flex-column-ch > header, .flex-column-ch > footer, .flex-column-ch > main, .flex-column-ch > aside,
+.flex-column-ch > a, .flex-column-ch > span, .flex-column-ch > li, .flex-column-ch > p, .flex-column-ch > i, .flex-column-ch > em, .flex-column-ch > small, .flex-column-ch > blockquote, .flex-column-ch > pre, .flex-column-ch > code
+> h1, .flex-column-ch > h2, .flex-column-ch > h3, .flex-column-ch > h4, .flex-column-ch > h5, .flex-column-ch > h6,
+.flex-column-ch > .h1, .flex-column-ch > .h2, .flex-column-ch > .h3, .flex-column-ch > .h4, .flex-column-ch > .h5, .flex-column-ch > .h6, .flex-column-ch > .p,
+.flex-column-ch > ul, .flex-column-ch > ol, .flex-column-ch > button {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-direction: column;
+}
+
+.flex-column-center {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+}
+
+.flex-column-center-ch > div, .flex-column-center-ch > section, .flex-column-center-ch > header, .flex-column-center-ch > footer, .flex-column-center-ch > main, .flex-column-center-ch > aside,
+.flex-column-center-ch > a, .flex-column-center-ch > span, .flex-column-center-ch > li, .flex-column-center-ch > p, .flex-column-center-ch > i, .flex-column-center-ch > em, .flex-column-center-ch > small, .flex-column-center-ch > blockquote, .flex-column-center-ch > pre, .flex-column-center-ch > code
+> h1, .flex-column-center-ch > h2, .flex-column-center-ch > h3, .flex-column-center-ch > h4, .flex-column-center-ch > h5, .flex-column-center-ch > h6,
+.flex-column-center-ch > .h1, .flex-column-center-ch > .h2, .flex-column-center-ch > .h3, .flex-column-center-ch > .h4, .flex-column-center-ch > .h5, .flex-column-center-ch > .h6, .flex-column-center-ch > .p,
+.flex-column-center-ch > ul, .flex-column-center-ch > ol, .flex-column-center-ch > button {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+}
+
+.flex-column-end {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-box-pack: end;
+  -moz-box-pack: end;
+  box-pack: end;
+  -webkit-justify-content: flex-end;
+  -moz-justify-content: flex-end;
+  -ms-justify-content: flex-end;
+  -o-justify-content: flex-end;
+  justify-content: flex-end;
+  -ms-flex-pack: end;
+}
+
+.flex-column-end-ch > div, .flex-column-end-ch > section, .flex-column-end-ch > header, .flex-column-end-ch > footer, .flex-column-end-ch > main, .flex-column-end-ch > aside,
+.flex-column-end-ch > a, .flex-column-end-ch > span, .flex-column-end-ch > li, .flex-column-end-ch > p, .flex-column-end-ch > i, .flex-column-end-ch > em, .flex-column-end-ch > small, .flex-column-end-ch > blockquote, .flex-column-end-ch > pre, .flex-column-end-ch > code
+> h1, .flex-column-end-ch > h2, .flex-column-end-ch > h3, .flex-column-end-ch > h4, .flex-column-end-ch > h5, .flex-column-end-ch > h6,
+.flex-column-end-ch > .h1, .flex-column-end-ch > .h2, .flex-column-end-ch > .h3, .flex-column-end-ch > .h4, .flex-column-end-ch > .h5, .flex-column-end-ch > .h6, .flex-column-end-ch > .p,
+.flex-column-end-ch > ul, .flex-column-end-ch > ol, .flex-column-end-ch > button {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-box-pack: end;
+  -moz-box-pack: end;
+  box-pack: end;
+  -webkit-justify-content: flex-end;
+  -moz-justify-content: flex-end;
+  -ms-justify-content: flex-end;
+  -o-justify-content: flex-end;
+  justify-content: flex-end;
+  -ms-flex-pack: end;
+}
+
+.flex-column-space-between {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
+}
+
+.flex-column-space-between-ch > div, .flex-column-space-between-ch > section, .flex-column-space-between-ch > header, .flex-column-space-between-ch > footer, .flex-column-space-between-ch > main, .flex-column-space-between-ch > aside,
+.flex-column-space-between-ch > a, .flex-column-space-between-ch > span, .flex-column-space-between-ch > li, .flex-column-space-between-ch > p, .flex-column-space-between-ch > i, .flex-column-space-between-ch > em, .flex-column-space-between-ch > small, .flex-column-space-between-ch > blockquote, .flex-column-space-between-ch > pre, .flex-column-space-between-ch > code
+> h1, .flex-column-space-between-ch > h2, .flex-column-space-between-ch > h3, .flex-column-space-between-ch > h4, .flex-column-space-between-ch > h5, .flex-column-space-between-ch > h6,
+.flex-column-space-between-ch > .h1, .flex-column-space-between-ch > .h2, .flex-column-space-between-ch > .h3, .flex-column-space-between-ch > .h4, .flex-column-space-between-ch > .h5, .flex-column-space-between-ch > .h6, .flex-column-space-between-ch > .p,
+.flex-column-space-between-ch > ul, .flex-column-space-between-ch > ol, .flex-column-space-between-ch > button {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
+}
+
+.flex-column-space-around {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -ms-justify-content: space-around;
+  -o-justify-content: space-around;
+  justify-content: space-around;
+  -ms-flex-pack: center;
+}
+
+.flex-column-space-around-ch > div, .flex-column-space-around-ch > section, .flex-column-space-around-ch > header, .flex-column-space-around-ch > footer, .flex-column-space-around-ch > main, .flex-column-space-around-ch > aside,
+.flex-column-space-around-ch > a, .flex-column-space-around-ch > span, .flex-column-space-around-ch > li, .flex-column-space-around-ch > p, .flex-column-space-around-ch > i, .flex-column-space-around-ch > em, .flex-column-space-around-ch > small, .flex-column-space-around-ch > blockquote, .flex-column-space-around-ch > pre, .flex-column-space-around-ch > code
+> h1, .flex-column-space-around-ch > h2, .flex-column-space-around-ch > h3, .flex-column-space-around-ch > h4, .flex-column-space-around-ch > h5, .flex-column-space-around-ch > h6,
+.flex-column-space-around-ch > .h1, .flex-column-space-around-ch > .h2, .flex-column-space-around-ch > .h3, .flex-column-space-around-ch > .h4, .flex-column-space-around-ch > .h5, .flex-column-space-around-ch > .h6, .flex-column-space-around-ch > .p,
+.flex-column-space-around-ch > ul, .flex-column-space-around-ch > ol, .flex-column-space-around-ch > button {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -ms-justify-content: space-around;
+  -o-justify-content: space-around;
+  justify-content: space-around;
+  -ms-flex-pack: center;
+}
+
+.flex-align-center {
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+}
+
+.flex-align-center-ch > div, .flex-align-center-ch > section, .flex-align-center-ch > header, .flex-align-center-ch > footer, .flex-align-center-ch > main, .flex-align-center-ch > aside,
+.flex-align-center-ch > a, .flex-align-center-ch > span, .flex-align-center-ch > li, .flex-align-center-ch > p, .flex-align-center-ch > i, .flex-align-center-ch > em, .flex-align-center-ch > small, .flex-align-center-ch > blockquote, .flex-align-center-ch > pre, .flex-align-center-ch > code
+> h1, .flex-align-center-ch > h2, .flex-align-center-ch > h3, .flex-align-center-ch > h4, .flex-align-center-ch > h5, .flex-align-center-ch > h6,
+.flex-align-center-ch > .h1, .flex-align-center-ch > .h2, .flex-align-center-ch > .h3, .flex-align-center-ch > .h4, .flex-align-center-ch > .h5, .flex-align-center-ch > .h6, .flex-align-center-ch > .p,
+.flex-align-center-ch > ul, .flex-align-center-ch > ol, .flex-align-center-ch > button {
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+}
+
+.flex-align-end {
+  -webkit-box-align: end;
+  -moz-box-align: end;
+  box-align: end;
+  -webkit-align-items: flex-end;
+  -moz-align-items: flex-end;
+  -ms-align-items: flex-end;
+  -o-align-items: flex-end;
+  align-items: flex-end;
+  -ms-flex-align: end;
+}
+
+.flex-align-end-ch > div, .flex-align-end-ch > section, .flex-align-end-ch > header, .flex-align-end-ch > footer, .flex-align-end-ch > main, .flex-align-end-ch > aside,
+.flex-align-end-ch > a, .flex-align-end-ch > span, .flex-align-end-ch > li, .flex-align-end-ch > p, .flex-align-end-ch > i, .flex-align-end-ch > em, .flex-align-end-ch > small, .flex-align-end-ch > blockquote, .flex-align-end-ch > pre, .flex-align-end-ch > code
+> h1, .flex-align-end-ch > h2, .flex-align-end-ch > h3, .flex-align-end-ch > h4, .flex-align-end-ch > h5, .flex-align-end-ch > h6,
+.flex-align-end-ch > .h1, .flex-align-end-ch > .h2, .flex-align-end-ch > .h3, .flex-align-end-ch > .h4, .flex-align-end-ch > .h5, .flex-align-end-ch > .h6, .flex-align-end-ch > .p,
+.flex-align-end-ch > ul, .flex-align-end-ch > ol, .flex-align-end-ch > button {
+  -webkit-box-align: end;
+  -moz-box-align: end;
+  box-align: end;
+  -webkit-align-items: flex-end;
+  -moz-align-items: flex-end;
+  -ms-align-items: flex-end;
+  -o-align-items: flex-end;
+  align-items: flex-end;
+  -ms-flex-align: end;
+}
+
+.flex-align-stretch {
+  -webkit-box-align: stretch;
+  -moz-box-align: stretch;
+  box-align: stretch;
+  -webkit-align-items: stretch;
+  -moz-align-items: stretch;
+  -ms-align-items: stretch;
+  -o-align-items: stretch;
+  align-items: stretch;
+  -ms-flex-align: stretch;
+}
+
+.flex-align-stretch-ch > div, .flex-align-stretch-ch > section, .flex-align-stretch-ch > header, .flex-align-stretch-ch > footer, .flex-align-stretch-ch > main, .flex-align-stretch-ch > aside,
+.flex-align-stretch-ch > a, .flex-align-stretch-ch > span, .flex-align-stretch-ch > li, .flex-align-stretch-ch > p, .flex-align-stretch-ch > i, .flex-align-stretch-ch > em, .flex-align-stretch-ch > small, .flex-align-stretch-ch > blockquote, .flex-align-stretch-ch > pre, .flex-align-stretch-ch > code
+> h1, .flex-align-stretch-ch > h2, .flex-align-stretch-ch > h3, .flex-align-stretch-ch > h4, .flex-align-stretch-ch > h5, .flex-align-stretch-ch > h6,
+.flex-align-stretch-ch > .h1, .flex-align-stretch-ch > .h2, .flex-align-stretch-ch > .h3, .flex-align-stretch-ch > .h4, .flex-align-stretch-ch > .h5, .flex-align-stretch-ch > .h6, .flex-align-stretch-ch > .p,
+.flex-align-stretch-ch > ul, .flex-align-stretch-ch > ol, .flex-align-stretch-ch > button {
+  -webkit-box-align: stretch;
+  -moz-box-align: stretch;
+  box-align: stretch;
+  -webkit-align-items: stretch;
+  -moz-align-items: stretch;
+  -ms-align-items: stretch;
+  -o-align-items: stretch;
+  align-items: stretch;
+  -ms-flex-align: stretch;
 }
 
 @media only screen and (max-width: 480px) {
-  .flex-space-between-break-xs {
-    display: -webkit-box;
-    display: -moz-box;
-    display: box;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -moz-box-orient: vertical;
-    box-orient: vertical;
-    -webkit-flex-direction: column;
-    -moz-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-direction: column;
-  }
-  .flex-space-between-break-xs > div, .flex-space-between-break-xs > section, .flex-space-between-break-xs > header, .flex-space-between-break-xs > footer, .flex-space-between-break-xs > main, .flex-space-between-break-xs > aside,
-  .flex-space-between-break-xs > a, .flex-space-between-break-xs > span, .flex-space-between-break-xs > li, .flex-space-between-break-xs > p, .flex-space-between-break-xs > i, .flex-space-between-break-xs > em, .flex-space-between-break-xs > small, .flex-space-between-break-xs > blockquote, .flex-space-between-break-xs > pre, .flex-space-between-break-xs > code
-  > h1, .flex-space-between-break-xs > h2, .flex-space-between-break-xs > h3, .flex-space-between-break-xs > h4, .flex-space-between-break-xs > h5, .flex-space-between-break-xs > h6,
-  .flex-space-between-break-xs > .h1, .flex-space-between-break-xs > .h2, .flex-space-between-break-xs > .h3, .flex-space-between-break-xs > .h4, .flex-space-between-break-xs > .h5, .flex-space-between-break-xs > .h6, .flex-space-between-break-xs > .p,
-  .flex-space-between-break-xs > ul, .flex-space-between-break-xs > ol, .flex-space-between-break-xs > button {
+  .flex-break-xs {
     display: -webkit-box;
     display: -moz-box;
     display: box;
@@ -3253,11 +3543,11 @@ input[type="button"].btn-block {
     -ms-flex-direction: column;
   }
 
-  .flex-space-between-break-xs-ch > div, .flex-space-between-break-xs-ch > section, .flex-space-between-break-xs-ch > header, .flex-space-between-break-xs-ch > footer, .flex-space-between-break-xs-ch > main, .flex-space-between-break-xs-ch > aside,
-  .flex-space-between-break-xs-ch > a, .flex-space-between-break-xs-ch > span, .flex-space-between-break-xs-ch > li, .flex-space-between-break-xs-ch > p, .flex-space-between-break-xs-ch > i, .flex-space-between-break-xs-ch > em, .flex-space-between-break-xs-ch > small, .flex-space-between-break-xs-ch > blockquote, .flex-space-between-break-xs-ch > pre, .flex-space-between-break-xs-ch > code
-  > h1, .flex-space-between-break-xs-ch > h2, .flex-space-between-break-xs-ch > h3, .flex-space-between-break-xs-ch > h4, .flex-space-between-break-xs-ch > h5, .flex-space-between-break-xs-ch > h6,
-  .flex-space-between-break-xs-ch > .h1, .flex-space-between-break-xs-ch > .h2, .flex-space-between-break-xs-ch > .h3, .flex-space-between-break-xs-ch > .h4, .flex-space-between-break-xs-ch > .h5, .flex-space-between-break-xs-ch > .h6, .flex-space-between-break-xs-ch > .p,
-  .flex-space-between-break-xs-ch > ul, .flex-space-between-break-xs-ch > ol, .flex-space-between-break-xs-ch > button {
+  .flex-break-xs-ch > div, .flex-break-xs-ch > section, .flex-break-xs-ch > header, .flex-break-xs-ch > footer, .flex-break-xs-ch > main, .flex-break-xs-ch > aside,
+  .flex-break-xs-ch > a, .flex-break-xs-ch > span, .flex-break-xs-ch > li, .flex-break-xs-ch > p, .flex-break-xs-ch > i, .flex-break-xs-ch > em, .flex-break-xs-ch > small, .flex-break-xs-ch > blockquote, .flex-break-xs-ch > pre, .flex-break-xs-ch > code
+  > h1, .flex-break-xs-ch > h2, .flex-break-xs-ch > h3, .flex-break-xs-ch > h4, .flex-break-xs-ch > h5, .flex-break-xs-ch > h6,
+  .flex-break-xs-ch > .h1, .flex-break-xs-ch > .h2, .flex-break-xs-ch > .h3, .flex-break-xs-ch > .h4, .flex-break-xs-ch > .h5, .flex-break-xs-ch > .h6, .flex-break-xs-ch > .p,
+  .flex-break-xs-ch > ul, .flex-break-xs-ch > ol, .flex-break-xs-ch > button {
     display: -webkit-box;
     display: -moz-box;
     display: box;
@@ -3275,27 +3565,7 @@ input[type="button"].btn-block {
   }
 }
 @media only screen and (min-width: 768px) {
-  .flex-space-between-break-sm {
-    display: -webkit-box;
-    display: -moz-box;
-    display: box;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -moz-box-orient: vertical;
-    box-orient: vertical;
-    -webkit-flex-direction: column;
-    -moz-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-direction: column;
-  }
-  .flex-space-between-break-sm > div, .flex-space-between-break-sm > section, .flex-space-between-break-sm > header, .flex-space-between-break-sm > footer, .flex-space-between-break-sm > main, .flex-space-between-break-sm > aside,
-  .flex-space-between-break-sm > a, .flex-space-between-break-sm > span, .flex-space-between-break-sm > li, .flex-space-between-break-sm > p, .flex-space-between-break-sm > i, .flex-space-between-break-sm > em, .flex-space-between-break-sm > small, .flex-space-between-break-sm > blockquote, .flex-space-between-break-sm > pre, .flex-space-between-break-sm > code
-  > h1, .flex-space-between-break-sm > h2, .flex-space-between-break-sm > h3, .flex-space-between-break-sm > h4, .flex-space-between-break-sm > h5, .flex-space-between-break-sm > h6,
-  .flex-space-between-break-sm > .h1, .flex-space-between-break-sm > .h2, .flex-space-between-break-sm > .h3, .flex-space-between-break-sm > .h4, .flex-space-between-break-sm > .h5, .flex-space-between-break-sm > .h6, .flex-space-between-break-sm > .p,
-  .flex-space-between-break-sm > ul, .flex-space-between-break-sm > ol, .flex-space-between-break-sm > button {
+  .flex-break-sm {
     display: -webkit-box;
     display: -moz-box;
     display: box;
@@ -3312,11 +3582,11 @@ input[type="button"].btn-block {
     -ms-flex-direction: column;
   }
 
-  .flex-space-between-break-sm-ch > div, .flex-space-between-break-sm-ch > section, .flex-space-between-break-sm-ch > header, .flex-space-between-break-sm-ch > footer, .flex-space-between-break-sm-ch > main, .flex-space-between-break-sm-ch > aside,
-  .flex-space-between-break-sm-ch > a, .flex-space-between-break-sm-ch > span, .flex-space-between-break-sm-ch > li, .flex-space-between-break-sm-ch > p, .flex-space-between-break-sm-ch > i, .flex-space-between-break-sm-ch > em, .flex-space-between-break-sm-ch > small, .flex-space-between-break-sm-ch > blockquote, .flex-space-between-break-sm-ch > pre, .flex-space-between-break-sm-ch > code
-  > h1, .flex-space-between-break-sm-ch > h2, .flex-space-between-break-sm-ch > h3, .flex-space-between-break-sm-ch > h4, .flex-space-between-break-sm-ch > h5, .flex-space-between-break-sm-ch > h6,
-  .flex-space-between-break-sm-ch > .h1, .flex-space-between-break-sm-ch > .h2, .flex-space-between-break-sm-ch > .h3, .flex-space-between-break-sm-ch > .h4, .flex-space-between-break-sm-ch > .h5, .flex-space-between-break-sm-ch > .h6, .flex-space-between-break-sm-ch > .p,
-  .flex-space-between-break-sm-ch > ul, .flex-space-between-break-sm-ch > ol, .flex-space-between-break-sm-ch > button {
+  .flex-break-sm-ch > div, .flex-break-sm-ch > section, .flex-break-sm-ch > header, .flex-break-sm-ch > footer, .flex-break-sm-ch > main, .flex-break-sm-ch > aside,
+  .flex-break-sm-ch > a, .flex-break-sm-ch > span, .flex-break-sm-ch > li, .flex-break-sm-ch > p, .flex-break-sm-ch > i, .flex-break-sm-ch > em, .flex-break-sm-ch > small, .flex-break-sm-ch > blockquote, .flex-break-sm-ch > pre, .flex-break-sm-ch > code
+  > h1, .flex-break-sm-ch > h2, .flex-break-sm-ch > h3, .flex-break-sm-ch > h4, .flex-break-sm-ch > h5, .flex-break-sm-ch > h6,
+  .flex-break-sm-ch > .h1, .flex-break-sm-ch > .h2, .flex-break-sm-ch > .h3, .flex-break-sm-ch > .h4, .flex-break-sm-ch > .h5, .flex-break-sm-ch > .h6, .flex-break-sm-ch > .p,
+  .flex-break-sm-ch > ul, .flex-break-sm-ch > ol, .flex-break-sm-ch > button {
     display: -webkit-box;
     display: -moz-box;
     display: box;
@@ -3334,27 +3604,7 @@ input[type="button"].btn-block {
   }
 }
 @media only screen and (min-width: 992px) {
-  .flex-space-between-break-md {
-    display: -webkit-box;
-    display: -moz-box;
-    display: box;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -moz-box-orient: vertical;
-    box-orient: vertical;
-    -webkit-flex-direction: column;
-    -moz-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-direction: column;
-  }
-  .flex-space-between-break-md > div, .flex-space-between-break-md > section, .flex-space-between-break-md > header, .flex-space-between-break-md > footer, .flex-space-between-break-md > main, .flex-space-between-break-md > aside,
-  .flex-space-between-break-md > a, .flex-space-between-break-md > span, .flex-space-between-break-md > li, .flex-space-between-break-md > p, .flex-space-between-break-md > i, .flex-space-between-break-md > em, .flex-space-between-break-md > small, .flex-space-between-break-md > blockquote, .flex-space-between-break-md > pre, .flex-space-between-break-md > code
-  > h1, .flex-space-between-break-md > h2, .flex-space-between-break-md > h3, .flex-space-between-break-md > h4, .flex-space-between-break-md > h5, .flex-space-between-break-md > h6,
-  .flex-space-between-break-md > .h1, .flex-space-between-break-md > .h2, .flex-space-between-break-md > .h3, .flex-space-between-break-md > .h4, .flex-space-between-break-md > .h5, .flex-space-between-break-md > .h6, .flex-space-between-break-md > .p,
-  .flex-space-between-break-md > ul, .flex-space-between-break-md > ol, .flex-space-between-break-md > button {
+  .flex-break-md {
     display: -webkit-box;
     display: -moz-box;
     display: box;
@@ -3371,11 +3621,11 @@ input[type="button"].btn-block {
     -ms-flex-direction: column;
   }
 
-  .flex-space-between-break-md-ch > div, .flex-space-between-break-md-ch > section, .flex-space-between-break-md-ch > header, .flex-space-between-break-md-ch > footer, .flex-space-between-break-md-ch > main, .flex-space-between-break-md-ch > aside,
-  .flex-space-between-break-md-ch > a, .flex-space-between-break-md-ch > span, .flex-space-between-break-md-ch > li, .flex-space-between-break-md-ch > p, .flex-space-between-break-md-ch > i, .flex-space-between-break-md-ch > em, .flex-space-between-break-md-ch > small, .flex-space-between-break-md-ch > blockquote, .flex-space-between-break-md-ch > pre, .flex-space-between-break-md-ch > code
-  > h1, .flex-space-between-break-md-ch > h2, .flex-space-between-break-md-ch > h3, .flex-space-between-break-md-ch > h4, .flex-space-between-break-md-ch > h5, .flex-space-between-break-md-ch > h6,
-  .flex-space-between-break-md-ch > .h1, .flex-space-between-break-md-ch > .h2, .flex-space-between-break-md-ch > .h3, .flex-space-between-break-md-ch > .h4, .flex-space-between-break-md-ch > .h5, .flex-space-between-break-md-ch > .h6, .flex-space-between-break-md-ch > .p,
-  .flex-space-between-break-md-ch > ul, .flex-space-between-break-md-ch > ol, .flex-space-between-break-md-ch > button {
+  .flex-break-md-ch > div, .flex-break-md-ch > section, .flex-break-md-ch > header, .flex-break-md-ch > footer, .flex-break-md-ch > main, .flex-break-md-ch > aside,
+  .flex-break-md-ch > a, .flex-break-md-ch > span, .flex-break-md-ch > li, .flex-break-md-ch > p, .flex-break-md-ch > i, .flex-break-md-ch > em, .flex-break-md-ch > small, .flex-break-md-ch > blockquote, .flex-break-md-ch > pre, .flex-break-md-ch > code
+  > h1, .flex-break-md-ch > h2, .flex-break-md-ch > h3, .flex-break-md-ch > h4, .flex-break-md-ch > h5, .flex-break-md-ch > h6,
+  .flex-break-md-ch > .h1, .flex-break-md-ch > .h2, .flex-break-md-ch > .h3, .flex-break-md-ch > .h4, .flex-break-md-ch > .h5, .flex-break-md-ch > .h6, .flex-break-md-ch > .p,
+  .flex-break-md-ch > ul, .flex-break-md-ch > ol, .flex-break-md-ch > button {
     display: -webkit-box;
     display: -moz-box;
     display: box;
@@ -3393,27 +3643,7 @@ input[type="button"].btn-block {
   }
 }
 @media only screen and (min-width: 1200px) {
-  .flex-space-between-break-lg {
-    display: -webkit-box;
-    display: -moz-box;
-    display: box;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -moz-box-orient: vertical;
-    box-orient: vertical;
-    -webkit-flex-direction: column;
-    -moz-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-direction: column;
-  }
-  .flex-space-between-break-lg > div, .flex-space-between-break-lg > section, .flex-space-between-break-lg > header, .flex-space-between-break-lg > footer, .flex-space-between-break-lg > main, .flex-space-between-break-lg > aside,
-  .flex-space-between-break-lg > a, .flex-space-between-break-lg > span, .flex-space-between-break-lg > li, .flex-space-between-break-lg > p, .flex-space-between-break-lg > i, .flex-space-between-break-lg > em, .flex-space-between-break-lg > small, .flex-space-between-break-lg > blockquote, .flex-space-between-break-lg > pre, .flex-space-between-break-lg > code
-  > h1, .flex-space-between-break-lg > h2, .flex-space-between-break-lg > h3, .flex-space-between-break-lg > h4, .flex-space-between-break-lg > h5, .flex-space-between-break-lg > h6,
-  .flex-space-between-break-lg > .h1, .flex-space-between-break-lg > .h2, .flex-space-between-break-lg > .h3, .flex-space-between-break-lg > .h4, .flex-space-between-break-lg > .h5, .flex-space-between-break-lg > .h6, .flex-space-between-break-lg > .p,
-  .flex-space-between-break-lg > ul, .flex-space-between-break-lg > ol, .flex-space-between-break-lg > button {
+  .flex-break-lg {
     display: -webkit-box;
     display: -moz-box;
     display: box;
@@ -3430,11 +3660,11 @@ input[type="button"].btn-block {
     -ms-flex-direction: column;
   }
 
-  .flex-space-between-break-lg-ch > div, .flex-space-between-break-lg-ch > section, .flex-space-between-break-lg-ch > header, .flex-space-between-break-lg-ch > footer, .flex-space-between-break-lg-ch > main, .flex-space-between-break-lg-ch > aside,
-  .flex-space-between-break-lg-ch > a, .flex-space-between-break-lg-ch > span, .flex-space-between-break-lg-ch > li, .flex-space-between-break-lg-ch > p, .flex-space-between-break-lg-ch > i, .flex-space-between-break-lg-ch > em, .flex-space-between-break-lg-ch > small, .flex-space-between-break-lg-ch > blockquote, .flex-space-between-break-lg-ch > pre, .flex-space-between-break-lg-ch > code
-  > h1, .flex-space-between-break-lg-ch > h2, .flex-space-between-break-lg-ch > h3, .flex-space-between-break-lg-ch > h4, .flex-space-between-break-lg-ch > h5, .flex-space-between-break-lg-ch > h6,
-  .flex-space-between-break-lg-ch > .h1, .flex-space-between-break-lg-ch > .h2, .flex-space-between-break-lg-ch > .h3, .flex-space-between-break-lg-ch > .h4, .flex-space-between-break-lg-ch > .h5, .flex-space-between-break-lg-ch > .h6, .flex-space-between-break-lg-ch > .p,
-  .flex-space-between-break-lg-ch > ul, .flex-space-between-break-lg-ch > ol, .flex-space-between-break-lg-ch > button {
+  .flex-break-lg-ch > div, .flex-break-lg-ch > section, .flex-break-lg-ch > header, .flex-break-lg-ch > footer, .flex-break-lg-ch > main, .flex-break-lg-ch > aside,
+  .flex-break-lg-ch > a, .flex-break-lg-ch > span, .flex-break-lg-ch > li, .flex-break-lg-ch > p, .flex-break-lg-ch > i, .flex-break-lg-ch > em, .flex-break-lg-ch > small, .flex-break-lg-ch > blockquote, .flex-break-lg-ch > pre, .flex-break-lg-ch > code
+  > h1, .flex-break-lg-ch > h2, .flex-break-lg-ch > h3, .flex-break-lg-ch > h4, .flex-break-lg-ch > h5, .flex-break-lg-ch > h6,
+  .flex-break-lg-ch > .h1, .flex-break-lg-ch > .h2, .flex-break-lg-ch > .h3, .flex-break-lg-ch > .h4, .flex-break-lg-ch > .h5, .flex-break-lg-ch > .h6, .flex-break-lg-ch > .p,
+  .flex-break-lg-ch > ul, .flex-break-lg-ch > ol, .flex-break-lg-ch > button {
     display: -webkit-box;
     display: -moz-box;
     display: box;
@@ -3451,6 +3681,55 @@ input[type="button"].btn-block {
     -ms-flex-direction: column;
   }
 }
+.flex-grow-1 {
+  -webkit-flex-grow: 1;
+  -moz-flex-grow: 1;
+  flex-grow: 1;
+  -ms-flex-positive: 1;
+}
+
+.flex-grow-2 {
+  -webkit-flex-grow: 2;
+  -moz-flex-grow: 2;
+  flex-grow: 2;
+  -ms-flex-positive: 2;
+}
+
+.flex-grow-3 {
+  -webkit-flex-grow: 3;
+  -moz-flex-grow: 3;
+  flex-grow: 3;
+  -ms-flex-positive: 3;
+}
+
+.flex-grow-4 {
+  -webkit-flex-grow: 4;
+  -moz-flex-grow: 4;
+  flex-grow: 4;
+  -ms-flex-positive: 4;
+}
+
+.flex-grow-5 {
+  -webkit-flex-grow: 5;
+  -moz-flex-grow: 5;
+  flex-grow: 5;
+  -ms-flex-positive: 5;
+}
+
+.flex-grow-6 {
+  -webkit-flex-grow: 6;
+  -moz-flex-grow: 6;
+  flex-grow: 6;
+  -ms-flex-positive: 6;
+}
+
+.flex-grow-7 {
+  -webkit-flex-grow: 7;
+  -moz-flex-grow: 7;
+  flex-grow: 7;
+  -ms-flex-positive: 7;
+}
+
 /*========================================
 =            CSS3 ANIMATIONS             =
 ========================================*/
@@ -4732,19 +5011,19 @@ https://github.com/videojs/video.js/blob/master/src/css/video-js.less */
 ========================================*/
 /* PROJECT ESPECIFIC FONTS */
 .light {
-  font-family: "gesta", Helvetica, Arial, sans-serif !important;
+  font-family: "DINRegular", Helvetica, Arial, sans-serif !important;
   font-weight: 300;
   font-style: normal;
 }
 
 .book {
-  font-family: "gesta", Helvetica, Arial, sans-serif !important;
+  font-family: "DINRegular", Helvetica, Arial, sans-serif !important;
   font-weight: 400;
   font-style: normal;
 }
 
 .medium {
-  font-family: "gesta", Helvetica, Arial, sans-serif !important;
+  font-family: "DINRegular", Helvetica, Arial, sans-serif !important;
   font-weight: 500;
   font-style: normal;
 }
@@ -5991,11 +6270,9 @@ body::-webkit-scrollbar {
   font-weight: 300;
   font-style: normal;
   text-align: justify;
-  font-size: 12px;
-  font-size: 0.85714rem;
 }
 .bio-grid .name {
-  font-family: "gesta", Helvetica, Arial, sans-serif !important;
+  font-family: "DINRegular", Helvetica, Arial, sans-serif !important;
   font-weight: 500;
   font-style: normal;
   text-transform: uppercase;
@@ -9481,124 +9758,6 @@ button.btn.btn-white.btn-icon-outline.btn-lg i,
 input[type="submit"].btn.btn-white.btn-icon-outline.btn-lg i,
 .btn.btn-white.btn-icon-outline.btn-lg i {
   width: 52px;
-}
-
-/* I created a global sufix var in _settings.scss to experiment with HTML5 elements. 
-	See its use on the experimental.html file.
- */
-ebm-banner:before, ebm-banner:after,
-.banner:before,
-.banner:after {
-  content: " ";
-  display: table;
-}
-ebm-banner:after,
-.banner:after {
-  clear: both;
-}
-ebm-banner .banner-pic,
-ebm-banner .banner-content,
-.banner .banner-pic,
-.banner .banner-content {
-  position: relative;
-}
-ebm-banner ebm-banner-pic,
-ebm-banner .banner-pic,
-.banner ebm-banner-pic,
-.banner .banner-pic {
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 350px;
-  overflow: hidden;
-}
-@media only screen and (min-width: 768px) {
-  ebm-banner ebm-banner-pic,
-  ebm-banner .banner-pic,
-  .banner ebm-banner-pic,
-  .banner .banner-pic {
-    padding: 0;
-  }
-}
-ebm-banner ebm-banner-pic img,
-ebm-banner .banner-pic img,
-.banner ebm-banner-pic img,
-.banner .banner-pic img {
-  width: 100%;
-  height: auto;
-}
-ebm-banner .banner-label,
-.banner .banner-label {
-  position: absolute;
-  top: -14px;
-  left: 14px;
-  text-align: center;
-  padding: 3px 7px;
-}
-ebm-banner .banner-label span,
-.banner .banner-label span {
-  text-transform: uppercase;
-}
-ebm-banner ebm-banner-content,
-ebm-banner .banner-content,
-.banner ebm-banner-content,
-.banner .banner-content {
-  min-height: 350px;
-  min-height: 25rem;
-  display: -webkit-box;
-  display: -moz-box;
-  display: box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -moz-box-orient: vertical;
-  box-orient: vertical;
-  -webkit-flex-direction: column;
-  -moz-flex-direction: column;
-  flex-direction: column;
-  -ms-flex-direction: column;
-  -webkit-box-pack: center;
-  -moz-box-pack: center;
-  box-pack: center;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  -ms-justify-content: center;
-  -o-justify-content: center;
-  justify-content: center;
-  -ms-flex-pack: center;
-  padding: 0 28px;
-}
-@media only screen and (max-width: 768px) {
-  ebm-banner ebm-banner-content,
-  ebm-banner .banner-content,
-  .banner ebm-banner-content,
-  .banner .banner-content {
-    min-height: 175px;
-    min-height: 12.5rem;
-    padding: 0 14px;
-  }
-}
-ebm-banner.banner-label-bottom .banner-label,
-.banner.banner-label-bottom .banner-label {
-  position: absolute;
-  bottom: 0;
-  left: 14px;
-  top: inherit;
-}
-ebm-banner.half-height .banner-pic,
-.banner.half-height .banner-pic {
-  height: 175px;
-}
-ebm-banner.half-height .banner-content,
-.banner.half-height .banner-content {
-  min-height: 175px;
-}
-ebm-banner.flex-none .banner-pic,
-ebm-banner.flex-none .banner-content,
-.banner.flex-none .banner-pic,
-.banner.flex-none .banner-content {
-  display: block !important;
 }
 
 @font-face {

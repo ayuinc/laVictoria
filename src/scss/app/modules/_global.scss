@@ -88,12 +88,12 @@ body {
 			min-height: 70px;
 			padding: ($container-fluid * 2) 0;
 			.container {
-				@include flex-space-between;
+				@include flex-row-space-between;
 				border-top: 1px solid $gray-light;
 			}
 			.left,
 			.right {
-				@include flex-middle;
+				@include flex-column-center;
 				width: 50%;
 				min-height: 70px;
 			}
@@ -223,8 +223,8 @@ body {
 					p {
 						@include serif-light;
 						text-align: justify;
-						font-size: 12px;
-						font-size: rem(12px);
+						// font-size: 12px;
+						// font-size: rem(12px);
 					}
 				}
 			}
