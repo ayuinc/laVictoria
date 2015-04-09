@@ -5010,21 +5010,55 @@ https://github.com/videojs/video.js/blob/master/src/css/video-js.less */
 =             APP CUSTOM                 =
 ========================================*/
 /* PROJECT ESPECIFIC FONTS */
+@font-face {
+  font-family: 'DINProLight';
+  src: url("../fonts/DINProLight.eot");
+  src: url("../fonts/DINProLight.eot") format("embedded-opentype"), url("../fonts/DINProLight.woff") format("woff"), url("../fonts/DINProLight.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'DINRegular';
+  src: url("../fonts/DINRegular.eot");
+  src: url("../fonts/DINRegular.eot") format("embedded-opentype"), url("../fonts/DINRegular.woff") format("woff"), url("../fonts/DINRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'DINMedium';
+  src: url("../fonts/DINMedium.eot");
+  src: url("../fonts/DINMedium.eot") format("embedded-opentype"), url("../fonts/DINMedium.woff") format("woff"), url("../fonts/DINMedium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'DINBold';
+  src: url("../fonts/DINBold.eot");
+  src: url("../fonts/DINBold.eot") format("embedded-opentype"), url("../fonts/DINBold.woff") format("woff"), url("../fonts/DINBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 .light {
-  font-family: "DINRegular", Helvetica, Arial, sans-serif !important;
+  font-family: 'DINProLight' !important;
   font-weight: 300;
   font-style: normal;
 }
 
 .book {
-  font-family: "DINRegular", Helvetica, Arial, sans-serif !important;
+  font-family: 'DINRegular' !important;
   font-weight: 400;
   font-style: normal;
 }
 
 .medium {
-  font-family: "DINRegular", Helvetica, Arial, sans-serif !important;
+  font-family: 'DINMedium' !important;
   font-weight: 500;
+  font-style: normal;
+}
+
+.bold {
+  font-family: 'DINBold' !important;
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -6271,7 +6305,7 @@ body::-webkit-scrollbar {
   font-style: normal;
 }
 .bio-grid .name {
-  font-family: "DINRegular", Helvetica, Arial, sans-serif !important;
+  font-family: 'DINMedium' !important;
   font-weight: 500;
   font-style: normal;
   text-transform: uppercase;
