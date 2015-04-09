@@ -36,20 +36,23 @@
     <section class="minhp-100">
       <div class="bg-gallery-wrapper">
         <div class="gallery js-flickity" data-flickity-options='{ "cellAlign": "left", "contain": true, "pageDots": false, "prevNextButtons": false, "autoPlay": 7000, "wrapAround": true }'>
-          <div class="gallery-cell" 
+	        {exp:channel:entries channel="projects" limit="3" dynamic="off"}
+          <div class="gallery-cell"
+	          	{project-image-main} 
               data-responsive-bg-img='{ 
-                "vw-phone": "{site_url}app/assets/img/projects_innova-champs.jpg",
-                "vw-tablet": "{site_url}app/assets/img/projects_innova-champs.jpg",
-                "vw-desktop": "{site_url}app/assets/img/projects_innova-champs.jpg",
-                "vw-lg-desktop": "{site_url}app/assets/img/projects_innova-champs.jpg"
-              }'>
+                "vw-phone": "{image:url:small}",
+                "vw-tablet": "{image:url:medium}",
+                "vw-desktop": "{image:url:large}",
+                "vw-lg-desktop": "{image:url:large}"
+              }'
+	            {/project-image-main}>
             <div class="gallery-cell-wrapper">
               <div class="gallery-cell-content flex-middle-center">
                 <div class="container-sm text-white lead-ch text-shadow text-center">
-                  <h3>Understanding The New Peruvian Middle-Class</h3>
+                  <h3>{title}</h3>
                   <div class="separator separator-white separator-centered"></div>
-                  <p class="custom-quotes">How might we understand the desires and aspirations of middle-class families to develop better products and services?</p>
-                  <a href="#" class="btn btn-icon-outline btn-white unlead">
+                  <p class="custom-quotes">{project-intro}</p>
+                  <a href="{site_url}projects/project-show/{url_title}" class="btn btn-icon-outline btn-white unlead">
                     <span>Learn more</span>
                     <i class="icon-chevron-right"></i>
                   </a>
@@ -57,27 +60,7 @@
               </div>
             </div>
           </div>
-          <div class="gallery-cell" 
-              data-responsive-bg-img='{ 
-                "vw-phone": "{site_url}app/assets/img/projects_interbank.jpg",
-                "vw-tablet": "{site_url}app/assets/img/projects_interbank.jpg",
-                "vw-desktop": "{site_url}app/assets/img/projects_interbank.jpg",
-                "vw-lg-desktop": "{site_url}app/assets/img/projects_interbank.jpg"
-              }'>
-            <div class="gallery-cell-wrapper">
-              <div class="gallery-cell-content flex-middle-center">
-                <div class="container-sm text-white lead-ch text-shadow text-center">
-                  <h3>Understanding The New Peruvian Middle-Class</h3>
-                  <div class="separator separator-white separator-centered"></div>
-                  <p class="custom-quotes">How might we understand the desires and aspirations of middle-class families to develop better products and services?</p>
-                  <a href="#" class="btn btn-icon-outline btn-white unlead">
-                    <span>Learn more</span>
-                    <i class="icon-chevron-right"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+          {/exp:channel:entries}    
         </div>
       </div>
     </section>
