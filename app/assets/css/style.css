@@ -6294,6 +6294,8 @@ section:not(.section) .overlay {
 }
 .bio-grid .bio-item div .pic {
   position: relative;
+  overflow: hidden;
+  height: 280px;
 }
 .bio-grid .bio-item div .pic .overlay {
   position: absolute;

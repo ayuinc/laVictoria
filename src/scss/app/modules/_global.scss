@@ -220,6 +220,8 @@ section:not(.section) {
 			display: block;
 			.pic {
 				position: relative;
+				overflow: hidden;
+				height: 280px;
 				img {}
 				.overlay {
 					@include position(absolute, 0 0 0 0);
