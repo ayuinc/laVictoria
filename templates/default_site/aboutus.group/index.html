@@ -89,150 +89,28 @@
     <section class="minhp-100 bg-white flex-middle">
       <div class="container pv-70 pv-35-xs">
         <ul class="bio-grid list-unstyled row">
-          <li class="bio-item">
-            <div>
-              <div class="pic">
-                <img src="{site_url}assets/img/lavictoria-team_fiorella-belli.JPG" alt="" class="img-responsive">
-                <div class="overlay text-white">
-                  <p>Design Researcher at La Victoria Lab. Fiorella holds a B.A. in Anthropology from the Catholic University of Peru, and has led interdisciplinary research efforts on developing innovations for the Peruvian Amazon and indigenous populations. </p>
-                  <nav class="h3 mt-21">
-                    <a href="mailto:fiorella@lavictoria.pe"><i class="flaticon-packet"></i></a>
-                    <a href="http://twitter.com/FiorellaBelli"><i class="flaticon-twitter42"></i></a>
-                  </nav>
+          {exp:channel:entries channel="team"}
+            <li class="bio-item">
+              <div>
+                <div class="pic">
+                  {imagen-del-colaborador limit="1"}
+                  <img src="{image:url:large}" alt="LaVictoriaLabs:{title}" srcset="{image:url:small}.jpg 480w, {image:url:medium}.jpg 720w, {image:url:large}.jpg 940w, {image:url:large}.jpg 1140w">
+                  {/imagen-del-colaborador}
+                  <div class="overlay text-white">
+                    <p>{descripcion-team}</p>
+                    <nav class="h3 mt-21">
+                      <a href="mailto:{correo-team}"><i class="flaticon-packet"></i></a>
+                      <a href="http://twitter.com/{twitter-team}"><i class="flaticon-twitter42"></i></a>
+                    </nav>
+                  </div>
+                </div>
+                <div class="details normalize-text pv-7">
+                  <h3 class="name">{title}</h3>
+                  <span>{titulo-team}</span>
                 </div>
               </div>
-              <div class="details normalize-text pv-7">
-                <h3 class="name">Fiorella Belli</h3>
-                <span>Design Research</span>
-              </div>
-            </div>
-          </li>
-          <li class="bio-item">
-            <div>
-              <div class="pic">
-                <img src="{site_url}assets/img/lavictoria-team_hernan-carranza.JPG" alt="" class="img-responsive">
-                <div class="overlay text-white">
-                  <p>Founder and Head of La Victoria Lab. Hernan holds a Masters in Interactive Strategy from New York University. Previously, Hernan has worked as Adjunct Professor at Universidad del Pacífico, and as Marketing Director of Casa Andina, Intercorp’s hotel network.</p>
-                  <nav class="h3 mt-21">
-                    <a href="mailto:hernan@lavictoria.pe"><i class="flaticon-packet"></i></a>
-                    <a href="http://twitter.com/hernancarranza"><i class="flaticon-twitter42"></i></a>
-                  </nav>
-                </div>
-              </div>
-              <div class="details normalize-text pv-7">
-                <h3 class="name">Hernán Carranza</h3>
-                <span>Director</span>
-              </div>
-            </div>
-          </li>
-          <li class="bio-item">
-            <div>
-              <div class="pic">
-                <img src="{site_url}assets/img/lavictoria-team_luis-cilimingras.JPG" alt="" class="img-responsive">
-                <div class="overlay text-white">
-                  <p>Works for IDEO's London office where he is a director focusing on digital and service design. Since January he has been living in Lima to launch La Victoria Lab, supporting the setup of the studio and has led its first project, aimed at providing insight into Peru's new middle class.</p>
-                  <nav class="h3 mt-21">
-                    <a href="mailto:luis@lavictoria.pe"><i class="flaticon-packet"></i></a>
-                    <!-- <a href="http://twitter.com/hernancarranza"><i class="flaticon-twitter42"></i></a> -->
-                  </nav>
-                </div>
-              </div>
-              <div class="details normalize-text pv-7">
-                <h3 class="name">Luis Cilimingras</h3>
-                <span>IDEO London</span>
-              </div>
-            </div>
-          </li>
-          <li class="bio-item">
-            <div>
-              <div class="pic">
-                <img src="{site_url}assets/img/lavictoria-team_oscar-malaspina.JPG" alt="" class="img-responsive">
-                <div class="overlay text-white">
-                  <p>Environment designer and founding member of La Victoria Lab. Oscar also works as adjunct professor at Pontificia Universidad Católica del Perú. He holds a Master of Architecture in Urban Design from Harvard. Previously, Oscar has worked as an architect at Barclay&Crousse, as a consultant for the World Bank and as part of the MIT Urban Risk Lab.</p>
-                  <nav class="h3 mt-21">
-                    <a href="mailto:oscar@lavictoria.pe"><i class="flaticon-packet"></i></a>
-                    <!-- <a href="#"><i class="flaticon-twitter42"></i></a> -->
-                  </nav>
-                </div>
-              </div>
-              <div class="details normalize-text pv-7">
-                <h3 class="name">Oscar Malaspina</h3>
-                <span>Environmental Design</span>
-              </div>
-            </div>
-          </li>
-          <li class="bio-item">
-            <div>
-              <div class="pic">
-                <img src="{site_url}assets/img/lavictoria-team_eduardo-marisca.JPG" alt="" class="img-responsive">
-                <div class="overlay text-white">
-                  <p>Digital Innovator at La Victoria Lab. Eduardo holds a B.A. in Philosophy from the Catholic University of Peru and an M.S. in Comparative Media Studies from MIT.</p>
-                  <nav class="h3 mt-21">
-                    <a href="mailto:eduardo@lavictoria.pe"><i class="flaticon-packet"></i></a>
-                    <a href="http://twitter.com/piscosour"><i class="flaticon-twitter42"></i></a>
-                  </nav>
-                </div>
-              </div>
-              <div class="details normalize-text pv-7">
-                <h3 class="name">Eduardo Marisca</h3>
-                <span>Digital Innovation</span>
-              </div>
-            </div>
-          </li>
-          <!-- <li class="bio-item">
-            <div>
-              <div class="pic">
-                <img src="{site_url}assets/img/lavictoria-team_sina-.JPG" alt="" class="img-responsive">
-                <div class="overlay text-white">
-                  <p>Design lead and system thinker at IDEO’s San Francisco office, focusing much of his work on complex and organizational design. Sina has a background in social movements and education, and has a Ph.D in Comparative and International Education from Columbia University. He has been living in Lima since February 2014.</p>
-                  <nav class="h3 mt-21">
-                    <a href="mailto:sina@lavictoria.pe"><i class="flaticon-packet"></i></a>
-                    <a href="http://twitter.com/sinamossayeb"><i class="flaticon-twitter42"></i></a>
-                  </nav>
-                </div>
-              </div>
-              <div class="details normalize-text pv-7">
-                <h3 class="name">Sina Mossayeb</h3>
-                <span>IDEO San Francisco</span>
-              </div>
-            </div>
-          </li> -->
-          <li class="bio-item">
-            <div>
-              <div class="pic">
-                <img src="{site_url}assets/img/lavictoria-team_gonzalo-perez.JPG" alt="" class="img-responsive">
-                <div class="overlay text-white">
-                  <p>Gonzalo has advised corporate and social leaders on how to tell their stories and has outlined the communication strategy for Enseña Perú and Perú Champs, both non-profits. He holds a Bachelor of Communications (University of Lima) and a specialization in Design for Social Change (School of Visual Arts).</p>
-                  <nav class="h3 mt-21">
-                    <a href="mailto:gonzalo@lavictoria.pe"><i class="flaticon-packet"></i></a>
-                    <!-- <a href="http://twitter.com/sinamossayeb"><i class="flaticon-twitter42"></i></a> -->
-                  </nav>
-                </div>
-              </div>
-              <div class="details normalize-text pv-7">
-                <h3 class="name">Gonzalo Pérez Paredes</h3>
-                <span>Communications Design</span>
-              </div>
-            </div>
-          </li>
-          <li class="bio-item">
-            <div>
-              <div class="pic">
-                <img src="{site_url}assets/img/lavictoria-team_lucia-valencia.JPG" alt="" class="img-responsive">
-                <div class="overlay text-white">
-                  <p>Business Innovator at La Victoria Lab. Lucía is the first Peruvian to be recognized by the MIT Technology Review as an Innovators Under 35 and Social Innovator. She is the co-founder of DUHEM.co, the first Latin American e-commerce for cause-oriented brands; and Wayra winner.  Lucía holds a B.A. in Business Administration from Universidad del Pacífico.</p>
-                  <nav class="h3 mt-21">
-                    <a href="mailto:lucia@lavictoria.pe"><i class="flaticon-packet"></i></a>
-                    <a href="http://twitter.com/luciavdq"><i class="flaticon-twitter42"></i></a>
-                  </nav>
-                </div>
-              </div>
-              <div class="details normalize-text pv-7">
-                <h3 class="name">Lucía Valencia-Dongo</h3>
-                <span>Business Design</span>
-              </div>
-            </div>
-          </li>
+            </li>
+          {/exp:channel:entries}
         </ul>
       </div>
     </section>
