@@ -6293,6 +6293,8 @@ section:not(.section) .overlay {
   display: block;
 }
 .bio-grid .bio-item div .pic {
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
   overflow: hidden;
   height: 280px;

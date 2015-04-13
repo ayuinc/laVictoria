@@ -219,6 +219,7 @@ section:not(.section) {
 			color: $gray-dark;
 			display: block;
 			.pic {
+				@include bg-img-control;
 				position: relative;
 				overflow: hidden;
 				height: 280px;
