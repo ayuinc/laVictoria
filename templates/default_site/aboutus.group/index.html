@@ -92,10 +92,17 @@
           {exp:channel:entries channel="team"}
             <li class="bio-item">
               <div>
-                <div class="pic">
-                  {imagen-del-colaborador limit="1" sort="asc"}
+                <div class="pic" 
+                {imagen-del-colaborador limit="1" sort="desc"}
+                data-responsive-bg-img='{ 
+                  "vw-phone": "{image:url:small}",
+                  "vw-tablet": "{image:url:medium}",
+                  "vw-desktop": "{image:url:large}",
+                  "vw-lg-desktop": "{image:url:large}"
+                }'{/imagen-del-colaborador}>
+                  <!-- {imagen-del-colaborador limit="1" sort="desc"}
                   <img src="{image:url:large}" alt="LaVictoriaLabs:{title}" srcset="{image:url:small} 480w, {image:url:medium} 720w, {image:url:large} 940w, {image:url:large} 1140w" class="img-responsive">
-                  {/imagen-del-colaborador}
+                  {/imagen-del-colaborador} -->
                   <div class="overlay text-white">
                     <p>{descripcion-team}</p>
                     <nav class="h3 mt-21">
