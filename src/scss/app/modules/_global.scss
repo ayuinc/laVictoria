@@ -126,7 +126,7 @@ section:not(.section) {
 
 // CUSTOM QUOTES
 .custom-quotes {
-	@include serif-light-italic;
+	@include light;
 	margin-top: $container-fluid + 7;
 	margin-bottom: $container-fluid + 14;
 	position: relative;
