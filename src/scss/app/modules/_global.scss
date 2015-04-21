@@ -253,14 +253,14 @@ section:not(.section) {
 	}
 }
 
-@media #{$sm-down} {
-	.bio-grid {
-		@include margin(null 0px null 0px);
-		.bio-item {
-			width: 49.95%;
-		}
-	}
-}
+// @media #{$sm-down} {
+// 	.bio-grid {
+// 		@include margin(null 0px null 0px);
+// 		.bio-item {
+// 			width: 49.95%;
+// 		}
+// 	}
+// }
 
 .grid-sizer {
 	width: 33.28%;
