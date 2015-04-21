@@ -1,5 +1,6 @@
 {embed="includes/head"}
   <main class="site-content onepage-scroll-content" role="main">
+    {exp:channel:entries channel="home" limit="1" dynamic="off"}
     <section class="hero-unit">
       <video
         id="videocover"
@@ -14,6 +15,9 @@
         <source src="{site_url}app/assets/video/WebVideo.ogg" type='video/ogg' />
         <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
       </video>
+      {home_placeholder_image}
+      <div class="hero-unit-pic visible-xs-block bg-img-block" style="background-image: url(image:url:large)"></div>
+      {/home_placeholder_image}
       <div class="overlay flex-column-center flex-align-center">
         <div class="container-sm text-center on-scroll text-shadow">
           <h1 class="lead text-white book">How might we improve the lives of Peruvian people?</h1>
@@ -33,6 +37,7 @@
         </div>
       </div>
     </section>
+    {/exp:channel:entries}
     <section class="minhp-100">
       <div class="bg-gallery-wrapper">
         <div class="gallery js-flickity" data-flickity-options='{ "cellAlign": "left", "contain": true, "pageDots": false, "prevNextButtons": false, "autoPlay": 5000, "wrapAround": true }'>
