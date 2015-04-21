@@ -1,5 +1,6 @@
 {embed="includes/head"}
   <main class="site-content" role="main">
+    {exp:channel:entries channel="aboutus" limit="1"}
     <section class="hero-unit full-height video-bg">
       <video
         id="videocover"
@@ -14,13 +15,15 @@
         <source src="{site_url}app/assets/video/TeamPicture.ogg" type='video/ogg' />
         <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
       </video>
+      {aboutus_featured}
+      <div class="hero-unit-pic visible-xs-block bg-img-block" style="background-image: url({image:url:large})"></div>
+      {/aboutus_featured}
       <div class="overlay flex-column-center flex-align-center">
         <div class="container-sm text-center on-scroll text-shadow">
           <!--<h1 class="lead text-white book">How might we improve the lives of Peruvian people?</h1>-->
         </div>
       </div>
     </section>
-    {exp:channel:entries channel="aboutus" limit="1"}
     <section class="minhp-100 bg-white">
       <div class="overlay flex-column-center flex-align-center text-center">
         <div class="container-sm lead-ch">
