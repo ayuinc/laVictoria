@@ -13892,11 +13892,6 @@ header.header .container, header.header-fixed .container {
   -ms-flex-pack: justify;
 }
 header.header .left, header.header-fixed .left,
-header.header .right,
-header.header-fixed .right {
-  width: 50%;
-}
-header.header .left, header.header-fixed .left,
 header.header .center,
 header.header-fixed .center,
 header.header .right,
@@ -13926,10 +13921,14 @@ header.header-fixed .right {
   justify-content: center;
   -ms-flex-pack: center;
 }
+header.header .left, header.header-fixed .left {
+  width: 35%;
+}
 header.header .center, header.header-fixed .center {
   text-align: center;
 }
 header.header .right, header.header-fixed .right {
+  width: 65%;
   text-transform: uppercase;
   text-align: right;
 }
@@ -13941,6 +13940,16 @@ header.header .right nav a, header.header-fixed .right nav a {
 }
 header.header .right nav a:hover, header.header-fixed .right nav a:hover, header.header .right nav a.active, header.header-fixed .right nav a.active {
   color: white;
+}
+header.header .logo a img, header.header-fixed .logo a img {
+  width: 112px;
+  height: auto;
+}
+@media only screen and (max-width: 768px) {
+  header.header .logo a img, header.header-fixed .logo a img {
+    width: 91px;
+    height: auto;
+  }
 }
 
 header.header-fixed {

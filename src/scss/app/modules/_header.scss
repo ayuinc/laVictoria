@@ -14,10 +14,10 @@ header.header {
 	.container {
 		@include flex-row-space-between;
 	}
-	.left,
-	.right {
-		width: 50%;
-	}
+	// .left,
+	// .right {
+	// 	width: 50%;
+	// }
 	.left,
 	.center,
 	.right {
@@ -25,12 +25,13 @@ header.header {
 		@include flex-column-center;
 	}
 	.left {
-
+		width: 35%;
 	}
 	.center {
 		text-align: center;
 	}
 	.right {
+		width: 65%;
 		text-transform: uppercase;
 		text-align: right;
 		nav {
@@ -42,6 +43,20 @@ header.header {
 				&:hover,
 				&.active {
 					color: white;
+				}
+			}
+		}
+	}
+	.logo {
+		a {
+			img {
+				width: 112px;
+				height: auto;
+			}
+			@media #{$sm-down} {
+				img {
+					width: 91px;
+					height: auto;
 				}
 			}
 		}

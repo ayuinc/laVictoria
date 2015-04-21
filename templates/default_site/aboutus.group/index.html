@@ -48,7 +48,7 @@
         <div class="container-sm lead-ch">
           <!--<div class="text-center">
             {titulo1_about_image limit="1"}
-            <img src="{image:url:small}">
+            <img src="{image:url:medium}">
             {/titulo1_about_image}
           </div>-->	        
           <h3 class="pt-56">{ttulo1_about}</h3>
@@ -62,7 +62,7 @@
         <div class="container-sm lead-ch">
           <div class="text-center pb-14">
             {titulo2_about_image limit="1"}
-            <img src="{image:url:small}">
+            <img src="{image:url:medium}">
             {/titulo2_about_image}
           </div>                 
           <h3>{titulo2-about}</h3>
@@ -76,7 +76,7 @@
         <div class="container-sm lead-ch">	
           <div class="text-center pb-14">
             {titulo3_about_image limit="1"}
-            <img src="{image:url:small}">
+            <img src="{image:url:medium}">
             {/titulo3_about_image}
           </div>                 
           <h3>{titulo3-about}</h3>
@@ -95,13 +95,13 @@
                 <div class="pic" 
                 {imagen-del-colaborador limit="1" sort="desc"}
                 data-responsive-bg-img='{ 
-                  "vw-phone": "{image:url:small}",
+                  "vw-phone": "{image:url:medium}",
                   "vw-tablet": "{image:url:medium}",
                   "vw-desktop": "{image:url:large}",
                   "vw-lg-desktop": "{image:url:large}"
                 }'{/imagen-del-colaborador}>
                   <!-- {imagen-del-colaborador limit="1" sort="desc"}
-                  <img src="{image:url:large}" alt="LaVictoriaLabs:{title}" srcset="{image:url:small} 480w, {image:url:medium} 720w, {image:url:large} 940w, {image:url:large} 1140w" class="img-responsive">
+                  <img src="{image:url:large}" alt="LaVictoriaLabs:{title}" srcset="{image:url:medium} 480w, {image:url:medium} 720w, {image:url:large} 940w, {image:url:large} 1140w" class="img-responsive">
                   {/imagen-del-colaborador} -->
                   <div class="overlay text-white">
                     <p>{descripcion-team}</p>
