@@ -24,8 +24,8 @@
     RBGIMG = $('[data-responsive-bg-img]');
     screenSizes = {
       screenPhone: 480,
-      screenTablet: 960,
-      screenDesktop: 960,
+      screenTablet: 768,
+      screenDesktop: 1024,
       screenLargeDesktop: 1140
     };
     addBgImg = function(item, img) {
