@@ -6333,15 +6333,6 @@ section:not(.section) .overlay {
   font-size: 0.85714rem;
 }
 
-@media only screen and (max-width: 768px) {
-  .bio-grid {
-    margin-right: 0;
-    margin-left: 0;
-  }
-  .bio-grid .bio-item {
-    width: 49.95%;
-  }
-}
 .grid-sizer {
   width: 33.28%;
 }
