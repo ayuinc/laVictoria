@@ -70,3 +70,13 @@ $RECYCLE.BIN/
 
 ## WORDPRESS
 wp-content/uploads/**
+
+# For security do not publish the following files
+system/expressionengine/config/database.php
+system/expressionengine/config/config.php
+
+# Caches
+sized/
+thumbs/
+_thumbs/
+*/expressionengine/cache/*
